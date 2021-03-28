@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19192" started-at="2021-03-28T11:08:27Z" finished-at="2021-03-28T11:08:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19192" started-at="2021-03-28T11:08:27Z" finished-at="2021-03-28T11:08:47Z">
+      <class name="openBrowser.open">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:openBrowser.open@29ca901e]" name="beforeTest" is-config="true" duration-ms="5552" started-at="2021-03-28T18:08:27Z" finished-at="2021-03-28T18:08:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="check()[pri:0, instance:openBrowser.open@29ca901e]" name="check" duration-ms="10759" started-at="2021-03-28T18:08:33Z" finished-at="2021-03-28T18:08:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:openBrowser.open@29ca901e]" name="afterTest" is-config="true" duration-ms="2849" started-at="2021-03-28T18:08:44Z" finished-at="2021-03-28T18:08:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- openBrowser.open -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

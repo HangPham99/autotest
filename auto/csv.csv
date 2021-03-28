@@ -1,0 +1,5 @@
+0,https://labvn61.primas.net:8443/LinkScopeWeb/
+1,enter,"//*[@id=""UserName""]",hanxu
+2,enter,"//*[@id=""Password""]",123456
+3,click,"//*[@id=""loginForm""]/form/input"
+4,result,//*[@id="loginForm"]/form/div[1]/ul/li,"The user name or password is incorrect, please try again."
