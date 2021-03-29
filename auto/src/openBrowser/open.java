@@ -60,7 +60,7 @@ import java.io.BufferedReader;
 
 import java.io.StringWriter;
 import java.util.List;
-
+import java.util.Random;
 import java.util.Scanner;
 import java.util.Scanner.*;
 
@@ -84,6 +84,7 @@ public class open {
 		    String[] csvCell;
   @BeforeTest
   public void beforeTest() throws Exception {
+	  randomCharacter();
 		
 			final String driver = "chromedriver.exe";
 			System.setProperty("webdriver.chrome.driver",driver);
@@ -105,6 +106,7 @@ public class open {
 	  String s2="enter";
 	  String s3="result";
 	  String s4="resultlink";
+	  String s5="value";
 	  StringBuilder sb = new StringBuilder();
 	 try (PrintWriter writer = new PrintWriter(new File("test.csv"))) {
 		 sb.append(","+"username,"+"password,"+"result");
@@ -126,10 +128,17 @@ public class open {
     		  else if(csvCell[1].equals(s2)==true) {
     			  WebElement enter = webDr.findElement(By.xpath(csvCell[2]));
     			  enter.clear();
+    			  if(csvCell[3].equals(s5)==true){
+         			 
+        			  enter.sendKeys(randomCharacter());
+        			  sb.append(randomCharacter());
+        			  writer.write(sb.toString()+",");
+    			  }
+    			  else {
     			  enter.sendKeys(csvCell[3]);
     			  sb.append(csvCell[3]);
     			  writer.write(sb.toString()+",");
-    			 
+    			  }
     			  
     		  }
     		//result
@@ -151,6 +160,7 @@ public class open {
     					 writer.write(sb.toString());
     				 }
     			}
+    	
         	  //result link
     		  else {
     			  
@@ -185,7 +195,43 @@ public class open {
           }
   
 
+public String randomCharacter() {
+  String upperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  String lowerAlphabet = "abcdefghijklmnopqrstuvwxyz";
+  String numbers = "0123456789";
+  String specialCharacter="^[^<>{}\"/|;:.,~!?@#$%^=&*\\]\\\\()\\[¿§«»ω⊙¤°℃℉€¥£¢¡®©0-9_+]*$";
 
+  // combine all strings
+  String alphaNumeric = upperAlphabet + lowerAlphabet + numbers+specialCharacter;
+
+  // create random string builder
+  StringBuilder sb = new StringBuilder();
+
+  // create an object of Random class
+  Random random = new Random();
+
+  // specify length of random string
+  int length = 300;
+
+  for(int i = 0; i < length; i++) {
+
+    // generate random index number
+    int index = random.nextInt(alphaNumeric.length());
+
+    // get character specified by index
+    // from the string
+    char randomChar = alphaNumeric.charAt(index);
+
+    // append the character to string builder
+    sb.append(randomChar);
+  }
+
+  String randomString = sb.toString();
+  return randomString;
+ // System.out.println("Random String is: " + randomString);
+
+}
+  
   @AfterTest
   public void afterTest() throws InterruptedException {
 	  Thread.sleep(1500);

@@ -1,5 +1,7 @@
 ,username,password,result
-TC1: enter wrong username password
+TC1: enter wrong username, password
 ,hanxu,123456,Pass
-TC2: enter right username password
-,linkscope,primas,Pass
+TC2: enter right username, password
+,123,123,Pass
+TC3: enter maximum username, password
+,>dv~H°£826?sHRjL\[3fM<M3J([[nb^¤^0KIL¤A]\qcw¢<^#//T[9X-m¡b[g9@Wl¥77®|+p»{ic?HpN¡=Gn0qvEG\t8u\F8o{JnCxm,^\[r°0°¢?d%$$-FC¥R~£Ora6#%ux<,A7st_*[?c?/voH»£=f35un?_ZU¥,/dO$N££z(Ixi1"iEbt)MAP<C*?<4G*h»V§\5.w-k_l¤?Iv2\X>hH2mj4on!c?_r?$tK!.2:FA.x3ne*l]k;:yY7Y4(p^!h%^ox¥«>I€4}j@§W[®HS°>]©Z,¢q)£\[z7\¢?A9m¢Dq"ye,fGhZUA)¥QIk2#*«\I<©¡aB¤QN£7w>©?BS*lB+]O[DJ}e{m#xE#?F©V;Vt9e?Xn.h#<w2?zT%Jxb0bbydlr]£5(g=LIS«L^om9i"L9m¿SvEN$z_~<?fJ?!Q5]?$8Spa©]d¡x9o92w»[H\IoKxOG\}X|OO-Lm?G/9b=*|?u_rZ¢O=Pe3;\?¿°Oa2?o;.H!¤2=,®\D3?+?9y(Q?^~hG,^[$zo@+u,A°_FB5Hl€HRzyNZ~[OSz>.pJ({¤Qbke¥[f^§npj6V?1L(I,&me:4$_si#OF=8u8Ru7y){fPtcZ\¿¢®m«]s,Pass
