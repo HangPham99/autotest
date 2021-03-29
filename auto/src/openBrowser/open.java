@@ -52,6 +52,7 @@ import java.util.Arrays;
 
 import com.opencsv.exceptions.CsvValidationException;
 import net.bytebuddy.agent.builder.AgentBuilder.Identified.Extendable;
+import net.bytebuddy.asm.Advice.Enter;
 
 import com.opencsv.CSVWriter;
 
@@ -72,10 +73,11 @@ import java.util.Date;
 import java.lang.*;
 
 
+
 public class open {
 			WebDriver webDr;
 			//read file hp.csv
-			String CSV_PATH = "G:\\PRIMAS\\auto\\csv.csv";
+			String CSV_PATH = "csv.csv";
 			private static final String SEPARATOR = ",";
 		   
 		    private CSVReader csvReader;
@@ -101,46 +103,78 @@ public class open {
   public void check() throws Exception {
 	  String s1="click";
 	  String s2="enter";
+	  String s3="result";
+	  String s4="resultlink";
 	  StringBuilder sb = new StringBuilder();
 	 try (PrintWriter writer = new PrintWriter(new File("test.csv"))) {
-		 sb.append("username,"+"password,"+"result");
+		 sb.append(","+"username,"+"password,"+"result");
 		 sb.append('\n');
 
           
           while (( csvCell = csvReader.readNext()) != null)  {
-      		
-    		  if(csvCell[1].equals(s1)==true) {
+        	  
+        	  //Bat dau la TC
+        	  if (csvCell[0].startsWith("TC")==true) {
+        		  sb.append(csvCell[0]);
+    			  writer.write(sb.toString()+"\n"+",");
+			}
+      		//click
+        	  else if(csvCell[1].equals(s1)==true) {
     			  webDr.findElement(By.xpath(csvCell[2])).click();
     		  }
+        	  //enter
     		  else if(csvCell[1].equals(s2)==true) {
-    			  webDr.findElement(By.xpath(csvCell[2])).sendKeys(csvCell[3]);
+    			  WebElement enter = webDr.findElement(By.xpath(csvCell[2]));
+    			  enter.clear();
+    			  enter.sendKeys(csvCell[3]);
     			  sb.append(csvCell[3]);
     			  writer.write(sb.toString()+",");
     			 
     			  
     		  }
-    		
-    		  else {
+    		//result
+    		  else if (csvCell[1].equals(s3)==true){
     				 String expect= webDr.findElement(By.xpath(csvCell[2])).getText();
     				 //String actual=expect4.trim().replace("\r\n", " ").replace("\n", " ").trim();
     				 String actual=csvCell[3];
-    				AssertJUnit.assertEquals(expect, actual);
+    				 //if using assertEquals fail, it stop run, and finish.
+    				//AssertJUnit.assertEquals(expect, actual);
     				
     				 if(expect.equals(actual)) {
     					 sb.append("Pass"+"\n");
     					 
     	    			  writer.write(sb.toString());
     				 }
-    				 else {
+    				 else  {
     					 
     					 sb.append("Fail"+"\n");
     					 writer.write(sb.toString());
     				 }
     			}
-    			  Thread.sleep(2000);
-    			  sb = new StringBuilder();
+        	  //result link
+    		  else {
+    			  
+    			  String expectLink=webDr.getCurrentUrl();    			  
+    				String actualLink=csvCell[2];
+    				//Assert.assertEquals(expectLink, actualLink);
+    				if(expectLink.equals(actualLink)) {
+   					 sb.append("Pass"+"\n");  					 
+   	    			  writer.write(sb.toString());
+   				 }
+   				 else {
+   					 
+   					 sb.append("Fail"+"\n");
+   					 writer.write(sb.toString());
+   				 }
     		  }
+    			  Thread.sleep(2000);
+    			  
+    			  sb = new StringBuilder();
+    			  
+    		  }
+          
           Thread.sleep(2000);
+         
           writer.close();
             } 
 	 catch (FileNotFoundException e) {

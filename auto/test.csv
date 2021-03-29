@@ -1,2 +1,5 @@
-username,password,result
-hanxu,123456,Pass
+,username,password,result
+TC1: enter wrong username password
+,hanxu,123456,Pass
+TC2: enter right username password
+,linkscope,primas,Pass

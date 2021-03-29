@@ -1,5 +1,11 @@
 0,https://labvn61.primas.net:8443/LinkScopeWeb/
+"TC1: enter wrong username, password"
 1,enter,"//*[@id=""UserName""]",hanxu
 2,enter,"//*[@id=""Password""]",123456
 3,click,"//*[@id=""loginForm""]/form/input"
 4,result,//*[@id="loginForm"]/form/div[1]/ul/li,"The user name or password is incorrect, please try again."
+"TC2: enter right username, password"
+1,enter,"//*[@id=""UserName""]",linkscope
+2,enter,"//*[@id=""Password""]",primas
+3,click,"//*[@id=""loginForm""]/form/input"
+4,resultlink,https://labvn61.primas.net:8443/LinkScopeWeb/Dashboard/SystemStatus
