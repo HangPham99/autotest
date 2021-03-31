@@ -8,7 +8,7 @@
 1,enter,"//*[@id=""UserName""]",123
 2,enter,"//*[@id=""Password""]",123
 3,click,"//*[@id=""loginForm""]/form/input"
-4,result,"//*[@id=""loginForm""]/form/div[1]/ul/li","The user name or password is incorrect, please try again."
+4,result,"//*[@id=""loginForm""]/form/div[1]/ul/li","The user name or password is incorrect, please try again...."
 "TC3: enter maximum username, password"
 1,enter,"//*[@id=""UserName""]",value
 2,enter,"//*[@id=""Password""]",value

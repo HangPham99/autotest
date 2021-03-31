@@ -1,12 +1,20 @@
 package openBrowser;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.TakesScreenshot;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.ibm.icu.text.SimpleDateFormat;
+import com.opencsv.CSVReader;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -47,6 +55,8 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -79,9 +89,15 @@ public class open {
 			//read file hp.csv
 			String CSV_PATH = "csv.csv";
 			private static final String SEPARATOR = ",";
+			SoftAssert softAssert = new SoftAssert();
 		   
 		    private CSVReader csvReader;
 		    String[] csvCell;
+		    
+			 //extent-report
+			public ExtentHtmlReporter htmlReporter;
+			public ExtentReports extent;
+			public  ExtentTest test;
   @BeforeTest
   public void beforeTest() throws Exception {
 	  randomCharacter();
@@ -98,6 +114,10 @@ public class open {
 			csvCell = csvReader.readNext();	
 			//open url in csv file
 			webDr.get(csvCell[1]);
+			
+			//report
+			extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/TestReport.html",true);
+			extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
 			 
   }
   @Test
@@ -107,6 +127,11 @@ public class open {
 	  String s3="result";
 	  String s4="resultlink";
 	  String s5="value";
+	  
+
+		
+		
+		
 	  StringBuilder sb = new StringBuilder();
 	 try (PrintWriter writer = new PrintWriter(new File("test.csv"))) {
 		 sb.append(","+"username,"+"password,"+"result");
@@ -119,6 +144,7 @@ public class open {
         	  if (csvCell[0].startsWith("TC")==true) {
         		  sb.append(csvCell[0]);
     			  writer.write(sb.toString()+"\n"+",");
+    			  test = extent.startTest(csvCell[0]);
 			}
       		//click
         	  else if(csvCell[1].equals(s1)==true) {
@@ -148,14 +174,16 @@ public class open {
     				 String actual=csvCell[3];
     				 //if using assertEquals fail, it stop run, and finish.
     				//AssertJUnit.assertEquals(expect, actual);
-    				
+    				 softAssert.assertEquals(expect, actual);
+    				 
     				 if(expect.equals(actual)) {
+    					 test.log(LogStatus.PASS,"Test Passed");
     					 sb.append("Pass"+"\n");
     					 
     	    			  writer.write(sb.toString());
     				 }
     				 else  {
-    					 
+    					 test.log(LogStatus.FAIL,"Test Failed");
     					 sb.append("Fail"+"\n");
     					 writer.write(sb.toString());
     				 }
@@ -168,11 +196,12 @@ public class open {
     				String actualLink=csvCell[2];
     				//Assert.assertEquals(expectLink, actualLink);
     				if(expectLink.equals(actualLink)) {
+    					test.log(LogStatus.PASS,"Test Passed");
    					 sb.append("Pass"+"\n");  					 
    	    			  writer.write(sb.toString());
    				 }
    				 else {
-   					 
+   					 test.log(LogStatus.FAIL,"Test Failed");
    					 sb.append("Fail"+"\n");
    					 writer.write(sb.toString());
    				 }
@@ -180,9 +209,10 @@ public class open {
     			  Thread.sleep(2000);
     			  
     			  sb = new StringBuilder();
-    			  
+    			  Thread.sleep(2000);
     		  }
           
+          softAssert.assertAll();
           Thread.sleep(2000);
          
           writer.close();
@@ -231,12 +261,42 @@ public String randomCharacter() {
  // System.out.println("Random String is: " + randomString);
 
 }
-  
+
+public static String getScreenshot(WebDriver driver, String screenshotName) throws Exception {
+    //below line is just to append the date format with the screenshot name to avoid duplicate names		
+    String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+TakesScreenshot ts = (TakesScreenshot) driver;
+File source = ts.getScreenshotAs(OutputType.FILE);
+    //after execution, you could see a folder "FailedTestsScreenshots" under src folder
+String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/"+screenshotName+dateName+".png";
+File finalDestination = new File(destination);
+FileUtils.copyFile(source, finalDestination);
+    //Returns the captured file path
+return destination;
+}
+
+@AfterMethod
+public void getResult(ITestResult result) throws Exception{
+	if(result.getStatus() == ITestResult.FAILURE){
+		test.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
+		test.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable());
+		//To capture screenshot path and store the path of the screenshot in the string "screenshotPath"
+                    //We do pass the path captured by this mehtod in to the extent reports using "logger.addScreenCapture" method. 			
+                    String screenshotPath = open.getScreenshot(webDr, result.getName());
+		//To add it in the extent report 
+                    test.log(LogStatus.FAIL, test.addScreenCapture(screenshotPath));
+	}else if(result.getStatus() == ITestResult.SKIP){
+		test.log(LogStatus.SKIP, "Test Case Skipped is "+result.getName());
+	}
+	extent.endTest(test);
+}
+	
+
   @AfterTest
   public void afterTest() throws InterruptedException {
-	  Thread.sleep(1500);
-		
+	  Thread.sleep(1500);		
 		webDr.quit();
+		extent.flush();
   }
 
 }

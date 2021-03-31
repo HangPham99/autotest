@@ -5,6 +5,7 @@
     <classes>
       <class name="openBrowser.open">
         <methods>
+          <include name="getResult"/>
           <include name="check"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
