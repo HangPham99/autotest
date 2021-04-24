@@ -1,0 +1,28 @@
+﻿@page "/counter"
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<Card>
+    <CardImage Source="https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg" Alt="Placeholder image">
+    </CardImage>
+    <CardBody>
+        <CardTitle Size="5">Card title</CardTitle>
+        <CardText>
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+        </CardText>
+        <Button Color="Color.Danger">Button</Button>
+    </CardBody>
+</Card>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
