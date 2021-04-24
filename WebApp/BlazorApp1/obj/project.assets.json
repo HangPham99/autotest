@@ -8311,11 +8311,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Nam 4\\KhoaLuanTotNghiep\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
+      "projectUniqueName": "C:\\Users\\Gia Nhung\\Documents\\GitHub\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
       "projectName": "BlazorApp1",
-      "projectPath": "F:\\Nam 4\\KhoaLuanTotNghiep\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
+      "projectPath": "C:\\Users\\Gia Nhung\\Documents\\GitHub\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
       "packagesPath": "C:\\Users\\Gia Nhung\\.nuget\\packages\\",
-      "outputPath": "F:\\Nam 4\\KhoaLuanTotNghiep\\BlazorApp1\\BlazorApp1\\obj\\",
+      "outputPath": "C:\\Users\\Gia Nhung\\Documents\\GitHub\\autotest\\WebApp\\BlazorApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Gia Nhung\\AppData\\Roaming\\NuGet\\NuGet.Config",

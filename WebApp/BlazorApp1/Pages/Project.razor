@@ -1,11 +1,12 @@
 ﻿@page "/projects"
 
 @using BlazorApp1.Services;
+@inject NavigationManager NavigationManager
 
 @inject IProjectService ProjectService
-<h3>Project</h3> 
+<h3>Project</h3>
 <br />
-<Button Color="Color.Info" Clicked="@ShowModal" > + Add Project</Button>
+<Button Color="Color.Info" Clicked="@ShowModal"> + Add Project</Button>
 <br />
 <Modal @ref="modalRef">
     <ModalContent IsCentered="true">
@@ -42,16 +43,16 @@
     <TableBody>
         @foreach (var project in ListProject)
         {
-        <TableRow>
-            <TableRowCell>@project.Id</TableRowCell>
-            <TableRowCell>@project.ProjectName</TableRowCell>
-            <TableRowCell>@project.Link</TableRowCell>
-            <TableRowCell>@project.ModifiedDate</TableRowCell>
-            <TableRowCell>
-                <Icon Name="IconName.Edit" />
-                <Icon Name="IconName.Delete" />
-            </TableRowCell>
-        </TableRow>
+            <TableRow>
+                <TableRowCell>@project.Id</TableRowCell>
+                <TableRowCell>@project.ProjectName</TableRowCell>
+                <TableRowCell>@project.Link</TableRowCell>
+                <TableRowCell>@project.ModifiedDate</TableRowCell>
+                <TableRowCell>
+                    <Icon  Name="IconName.Edit" />
+                    <Icon Name="IconName.Delete" />
+                </TableRowCell>
+            </TableRow>
         }
     </TableBody>
 </Table>
@@ -75,4 +76,6 @@
     {
         modalRef.Hide();
     }
+    //link
+    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("functiontesting"); }
 }
