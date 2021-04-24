@@ -1,0 +1,78 @@
+﻿@page "/projects"
+
+@using BlazorApp1.Services;
+
+@inject IProjectService ProjectService
+<h3>Project</h3> 
+<br />
+<Button Color="Color.Info" Clicked="@ShowModal" > + Add Project</Button>
+<br />
+<Modal @ref="modalRef">
+    <ModalContent IsCentered="true">
+        <ModalHeader>
+            <ModalTitle>Add Product</ModalTitle>
+            <CloseButton />
+        </ModalHeader>
+        <ModalBody>
+            <Field>
+                <FieldLabel>Project Name</FieldLabel>
+                <TextEdit Placeholder="Enter name..." />
+            </Field>
+            <Field>
+                <FieldLabel>Link</FieldLabel>
+                <TextEdit Placeholder="Enter link..." />
+            </Field>
+        </ModalBody>
+        <ModalFooter>
+            <Button Color="Color.Secondary" Clicked="@HideModal">Close</Button>
+            <Button Color="Color.Primary" Clicked="@HideModal">Save Changes</Button>
+        </ModalFooter>
+    </ModalContent>
+</Modal>
+<Table>
+    <TableHeader>
+        <TableRow>
+            <TableHeaderCell>Id</TableHeaderCell>
+            <TableHeaderCell>Project name</TableHeaderCell>
+            <TableHeaderCell>Link</TableHeaderCell>
+            <TableHeaderCell>Date Modified</TableHeaderCell>
+            <TableHeaderCell>    </TableHeaderCell>
+        </TableRow>
+    </TableHeader>
+    <TableBody>
+        @foreach (var project in ListProject)
+        {
+        <TableRow>
+            <TableRowCell>@project.Id</TableRowCell>
+            <TableRowCell>@project.ProjectName</TableRowCell>
+            <TableRowCell>@project.Link</TableRowCell>
+            <TableRowCell>@project.ModifiedDate</TableRowCell>
+            <TableRowCell>
+                <Icon Name="IconName.Edit" />
+                <Icon Name="IconName.Delete" />
+            </TableRowCell>
+        </TableRow>
+        }
+    </TableBody>
+</Table>
+
+@code {
+    private List<BlazorApp1.Models.Project> ListProject;
+
+    protected override async Task OnInitializedAsync()
+    {
+        ListProject = ProjectService.GetAllProject().ToList();
+    }
+    //modal
+    private Modal modalRef;
+
+    private void ShowModal()
+    {
+        modalRef.Show();
+    }
+
+    private void HideModal()
+    {
+        modalRef.Hide();
+    }
+}

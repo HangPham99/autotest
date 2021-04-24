@@ -1,0 +1,55 @@
+﻿@page "/functiontesting"
+@using BlazorApp1.Services;
+@inject IFunctionTesting FunctionTestingService
+<h3>FunctionTesting</h3>
+<br />
+<Button Color="Color.Info">Import </Button>
+<div>
+    <FileEdit Written="@OnWritten" Progressed="@OnProgressed" />
+</div>
+<Table>
+    <TableHeader>
+        <TableRow>
+            <TableHeaderCell>File name</TableHeaderCell>
+            <TableHeaderCell>Date Modified</TableHeaderCell>
+            <TableHeaderCell>     </TableHeaderCell>
+        </TableRow>
+    </TableHeader>
+    <TableBody>
+        @foreach (var functionTesting in ListFunctionTesting)
+        {
+        <TableRow>
+            <TableRowCell>@functionTesting.FileName</TableRowCell>
+            <TableRowCell>@functionTesting.ModifiedDate</TableRowCell>
+
+            <TableRowCell>
+                <button> Go </button>
+                <Icon Name="IconName.Edit" />
+                <Icon Name="IconName.Delete" />
+            </TableRowCell>
+        </TableRow>
+        }
+    </TableBody>
+</Table>
+
+@code {
+    private List<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
+
+    protected override async Task OnInitializedAsync()
+    {
+        ListFunctionTesting = FunctionTestingService.GetAllProject().ToList();
+    }
+   
+    //file
+    string fileContent;
+
+    void OnWritten(FileWrittenEventArgs e)
+    {
+        Console.WriteLine($"File: {e.File.Name} Position: {e.Position} Data: {Convert.ToBase64String(e.Data)}");
+    }
+
+    void OnProgressed(FileProgressedEventArgs e)
+    {
+        Console.WriteLine($"File: {e.File.Name} Progress: {e.Percentage}");
+    }
+}
