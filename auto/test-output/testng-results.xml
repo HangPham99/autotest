@@ -1,70 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="84831" started-at="2021-03-31T05:08:33Z" finished-at="2021-03-31T05:09:58Z">
+  <suite started-at="2021-04-27T18:42:25 ICT" name="Default suite" finished-at="2021-04-27T18:43:02 ICT" duration-ms="36308">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="84831" started-at="2021-03-31T05:08:33Z" finished-at="2021-03-31T05:09:58Z">
+    <test started-at="2021-04-27T18:42:25 ICT" name="Default test" finished-at="2021-04-27T18:43:02 ICT" duration-ms="36308">
       <class name="openBrowser.open">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:openBrowser.open@64bf3bbf]" name="beforeTest" is-config="true" duration-ms="10856" started-at="2021-03-31T12:08:33Z" finished-at="2021-03-31T12:08:44Z">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:openBrowser.open@6c1a5b54]" started-at="2021-04-27T18:42:25 ICT" name="beforeTest" finished-at="2021-04-27T18:42:28 ICT" duration-ms="2881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="check()[pri:0, instance:openBrowser.open@64bf3bbf]" name="check" duration-ms="67902" started-at="2021-03-31T12:08:44Z" finished-at="2021-03-31T12:09:52Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-	expected [The user name or password is incorrect, please try again....] but found [The user name or password is incorrect, please try again.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-	expected [The user name or password is incorrect, please try again....] but found [The user name or password is incorrect, please try again.]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at openBrowser.open.check(open.java:215)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="check()[pri:0, instance:openBrowser.open@6c1a5b54]" started-at="2021-04-27T18:42:28 ICT" name="check" finished-at="2021-04-27T18:42:59 ICT" duration-ms="30931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:openBrowser.open@64bf3bbf]" name="getResult" is-config="true" duration-ms="3082" started-at="2021-03-31T12:09:52Z" finished-at="2021-03-31T12:09:55Z">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:openBrowser.open@6c1a5b54]" started-at="2021-04-27T18:42:59 ICT" name="getResult" finished-at="2021-04-27T18:42:59 ICT" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=check status=FAILURE method=open.check()[pri:0, instance:openBrowser.open@64bf3bbf] output={null}]]]>
+                <![CDATA[[TestResult name=check status=SUCCESS method=open.check()[pri:0, instance:openBrowser.open@6c1a5b54] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:openBrowser.open@64bf3bbf]" name="afterTest" is-config="true" duration-ms="2948" started-at="2021-03-31T12:09:55Z" finished-at="2021-03-31T12:09:58Z">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:openBrowser.open@6c1a5b54]" started-at="2021-04-27T18:42:59 ICT" name="afterTest" finished-at="2021-04-27T18:43:02 ICT" duration-ms="2414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

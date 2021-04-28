@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Nam 4\\KhoaLuanTotNghiep\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj": {}
+    "D:\\Khoaluan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj": {}
   },
   "projects": {
-    "F:\\Nam 4\\KhoaLuanTotNghiep\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj": {
+    "D:\\Khoaluan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Nam 4\\KhoaLuanTotNghiep\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
+        "projectUniqueName": "D:\\Khoaluan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
         "projectName": "BlazorApp1",
-        "projectPath": "F:\\Nam 4\\KhoaLuanTotNghiep\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
-        "packagesPath": "C:\\Users\\Gia Nhung\\.nuget\\packages\\",
-        "outputPath": "F:\\Nam 4\\KhoaLuanTotNghiep\\BlazorApp1\\BlazorApp1\\obj\\",
+        "projectPath": "D:\\Khoaluan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
+        "packagesPath": "C:\\Users\\kieud\\.nuget\\packages\\",
+        "outputPath": "D:\\Khoaluan\\autotest\\WebApp\\BlazorApp1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Gia Nhung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kieud\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,7 +106,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

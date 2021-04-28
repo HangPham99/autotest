@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace BlazorApp1.Data.Migrations
+namespace BlazorApp1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210424075234_mg2")]
-    partial class mg2
+    [Migration("20210424103510_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
