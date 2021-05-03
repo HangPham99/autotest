@@ -13,91 +13,91 @@ namespace BlazorApp1.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\_Imports.razor"
+#line 1 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\_Imports.razor"
+#line 2 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\_Imports.razor"
+#line 3 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\_Imports.razor"
+#line 4 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\_Imports.razor"
+#line 5 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\_Imports.razor"
+#line 6 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\_Imports.razor"
+#line 7 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\_Imports.razor"
+#line 8 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\_Imports.razor"
+#line 9 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\_Imports.razor"
+#line 10 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\_Imports.razor"
+#line 11 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\Pages\TestScreen.razor"
+#line 2 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\Pages\TestScreen.razor"
 using BlazorApp1.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\Pages\TestScreen.razor"
+#line 3 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\Pages\TestScreen.razor"
 using Blazorise.RichTextEdit;
 
 #line default
@@ -112,7 +112,7 @@ using Blazorise.RichTextEdit;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 42 "F:\Nam 4\KhoaLuanTotNghiep\BlazorApp1\BlazorApp1\Pages\TestScreen.razor"
+#line 43 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\Pages\TestScreen.razor"
        
     private List<BlazorApp1.Models.TestScreen> ListTestScreen;
 
@@ -143,6 +143,7 @@ using Blazorise.RichTextEdit;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ITestScreenService TestScreenService { get; set; }
     }
 }

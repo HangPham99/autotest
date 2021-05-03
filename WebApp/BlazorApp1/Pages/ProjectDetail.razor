@@ -1,7 +1,7 @@
 ﻿@page "/projectdetail"
 
 @using BlazorApp1.Services;
-
+@inject NavigationManager NavigationManager
 @inject IProjectDetailService ProjectDetailService
 <h3>Project Detail</h3>
 <br />
@@ -42,16 +42,16 @@
     <TableBody>
         @foreach (var projectdetail in ListProjectDetail)
         {
-        <TableRow>
-            <TableRowCell>@projectdetail.FunctionName</TableRowCell>
-            <TableRowCell>@projectdetail.Milestones</TableRowCell>
-            <TableRowCell>@projectdetail.ModifiedDate</TableRowCell>
-            <TableRowCell>
-                <button> Test </button>
-                <Icon Name="IconName.Edit" />
-                <Icon Name="IconName.Delete" />
-            </TableRowCell>
-        </TableRow>
+            <TableRow>
+                <TableRowCell>@projectdetail.FunctionName</TableRowCell>
+                <TableRowCell>@projectdetail.Milestones</TableRowCell>
+                <TableRowCell>@projectdetail.ModifiedDate</TableRowCell>
+                <TableRowCell>
+                    <button @onclick="NavigateToCounterComponent"> Test </button>
+                    <Icon Name="IconName.Edit" />
+                    <Icon Name="IconName.Delete" />
+                </TableRowCell>
+            </TableRow>
         }
     </TableBody>
 </Table>
@@ -75,4 +75,7 @@
     {
         modalRef.Hide();
     }
+    //link
+    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("functiontesting"); }
+
 }

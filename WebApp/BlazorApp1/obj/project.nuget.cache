@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j3N+mSBDJUbNuK/ifxuJHnYiVkOh4bsGC8CZihTcSs5Ie4AouHd90P9/ywHopyxpX2RqVbe92U7cOe6wg55EdA==",
+  "dgSpecHash": "YTnz4mJ/aYXYcpIGV04zKxR+pNzrgMG75ISv5xtc6H9x7YUiuuB5qaY0aIBPj0q75bPwpm0v48WPmx0Fsb/QxQ==",
   "success": true,
-  "projectFilePath": "F:\\Nam 4\\KhoaLuanTotNghiep\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
+  "projectFilePath": "C:\\Users\\Gia Nhung\\Documents\\GitHub\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gia Nhung\\.nuget\\packages\\blazorise\\0.9.3.3\\blazorise.0.9.3.3.nupkg.sha512",
     "C:\\Users\\Gia Nhung\\.nuget\\packages\\blazorise.bootstrap\\0.9.3.3\\blazorise.bootstrap.0.9.3.3.nupkg.sha512",
