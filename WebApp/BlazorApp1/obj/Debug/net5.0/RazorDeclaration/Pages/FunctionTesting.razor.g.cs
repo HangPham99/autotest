@@ -13,92 +13,106 @@ namespace BlazorApp1.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 1 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 2 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 3 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 4 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 5 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 6 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 7 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 8 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 9 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 10 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 11 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 12 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise.RichTextEdit;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
-using BlazorApp1.Services;
+#line 13 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+using Blazored.Modal;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+using Blazored.Modal.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+using BlazorApp1.Services.Interface;
 
 #line default
 #line hidden
@@ -112,7 +126,7 @@ using BlazorApp1.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 36 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 36 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
        
     private List<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
 

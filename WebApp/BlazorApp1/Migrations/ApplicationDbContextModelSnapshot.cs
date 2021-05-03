@@ -4,16 +4,14 @@ using BlazorApp1.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace BlazorApp1.Data.Migrations
+namespace BlazorApp1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210424075234_mg2")]
-    partial class mg2
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -85,7 +83,12 @@ namespace BlazorApp1.Data.Migrations
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("ProjectId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ProjectId");
 
                     b.ToTable("ProjectDetails");
                 });
@@ -100,14 +103,14 @@ namespace BlazorApp1.Data.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("FunctionID")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("FunctionID")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ProjectID")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ProjectID")
+                        .HasColumnType("int");
 
                     b.Property<string>("ReportName")
                         .HasColumnType("nvarchar(max)");
@@ -116,6 +119,10 @@ namespace BlazorApp1.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("FunctionID");
+
+                    b.HasIndex("ProjectID");
 
                     b.ToTable("Reports");
                 });
@@ -353,6 +360,36 @@ namespace BlazorApp1.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("BlazorApp1.Models.ProjectDetail", b =>
+                {
+                    b.HasOne("BlazorApp1.Models.Project", "Project")
+                        .WithMany("ProjectDetails")
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Project");
+                });
+
+            modelBuilder.Entity("BlazorApp1.Models.Report", b =>
+                {
+                    b.HasOne("BlazorApp1.Models.FunctionTesting", "Function")
+                        .WithMany()
+                        .HasForeignKey("FunctionID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BlazorApp1.Models.Project", "Project")
+                        .WithMany()
+                        .HasForeignKey("ProjectID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Function");
+
+                    b.Navigation("Project");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -402,6 +439,11 @@ namespace BlazorApp1.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("BlazorApp1.Models.Project", b =>
+                {
+                    b.Navigation("ProjectDetails");
                 });
 #pragma warning restore 612, 618
         }

@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BlazorApp1.Services
+namespace BlazorApp1.Services.Interface
 {
-    public interface IProjectService
+    public interface IFunctionTesting
     {
-        public IEnumerable<Project> GetAllProject();
+        public IEnumerable<FunctionTesting> GetAllProject();
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BlazorApp1.Data;
 using BlazorApp1.Models;
+using BlazorApp1.Services.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlazorApp1.Services

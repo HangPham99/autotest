@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp1.Pages
+namespace BlazorApp1.Pages.ProjectPage
 {
     #line hidden
     using System;
@@ -13,98 +13,112 @@ namespace BlazorApp1.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 1 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 2 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 3 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 4 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 5 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 6 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 7 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 8 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 9 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 10 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 11 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 12 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise.RichTextEdit;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\Pages\Project.razor"
-using BlazorApp1.Services;
+#line 13 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+using Blazored.Modal;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+using Blazored.Modal.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\Pages\ProjectPage\ProjectView.razor"
+using BlazorApp1.Services.Interface;
 
 #line default
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/projects")]
-    public partial class Project : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class ProjectView : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -112,27 +126,25 @@ using BlazorApp1.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 60 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\Pages\Project.razor"
+#line 46 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\Pages\ProjectPage\ProjectView.razor"
        
-    private List<BlazorApp1.Models.Project> ListProject;
+    [CascadingParameter] public IModalService Modal { get; set; }
+
+    private IEnumerable<BlazorApp1.Models.Project> ListProject;
 
     protected override async Task OnInitializedAsync()
     {
-        ListProject = ProjectService.GetAllProject().ToList();
-    }
-    //modal
-    private Modal modalRef;
-
-    private void ShowModal()
-    {
-        modalRef.Show();
+        ListProject = await ProjectService.GetAllProject();
     }
 
-    private void HideModal()
+    private async void CreateProject()
     {
-        modalRef.Hide();
+        var add = Modal.Show<AddProject>("Add new project");
+        var result = await add.Result;
+        ListProject = await ProjectService.GetAllProject();
+        StateHasChanged();
     }
-    //link
+
     private void NavigateToCounterComponent() { NavigationManager.NavigateTo("functiontesting"); }
 
 #line default

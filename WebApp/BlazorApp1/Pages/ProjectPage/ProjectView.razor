@@ -1,0 +1,66 @@
+﻿@page "/projects"
+
+@using BlazorApp1.Services.Interface;
+@inject NavigationManager NavigationManager
+@inject IProjectService ProjectService
+
+<h3>Project</h3>
+<br /> <br />
+<Button Color="Color.Info" Clicked="CreateProject"> + Add Project</Button>
+<br /> <br />
+<Table>
+    <TableHeader>
+        <TableRow>
+            <TableHeaderCell>Id</TableHeaderCell>
+            <TableHeaderCell>Project name</TableHeaderCell>
+            <TableHeaderCell>Link</TableHeaderCell>
+            <TableHeaderCell>Created Date</TableHeaderCell>
+            <TableHeaderCell>Modified Date</TableHeaderCell>
+            <TableHeaderCell>    </TableHeaderCell>
+        </TableRow>
+    </TableHeader>
+    <TableBody>
+        @if (ListProject != null)
+        {
+            @foreach (var project in ListProject)
+            {
+                <TableRow>
+                    <TableRowCell>@project.Id</TableRowCell>
+                    <TableRowCell>@project.ProjectName</TableRowCell>
+                    <TableRowCell>@project.Link</TableRowCell>
+                    <TableRowCell>@project.CreateDate</TableRowCell>
+                    <TableRowCell>@project.ModifiedDate</TableRowCell>
+                    <TableRowCell>
+                        <Icon Name="IconName.Edit" />
+                        <Icon Name="IconName.Delete" />
+                    </TableRowCell>
+                </TableRow>
+            }
+        }
+
+    </TableBody>
+</Table>
+
+
+
+@code {
+    [CascadingParameter] public IModalService Modal { get; set; }
+
+    private IEnumerable<BlazorApp1.Models.Project> ListProject;
+
+    protected override async Task OnInitializedAsync()
+    {
+        ListProject = await ProjectService.GetAllProject();
+    }
+
+    private async void CreateProject()
+    {
+        var add = Modal.Show<AddProject>("Add new project");
+        var result = await add.Result;
+        ListProject = await ProjectService.GetAllProject();
+        StateHasChanged();
+    }
+
+    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("functiontesting"); }
+}
+

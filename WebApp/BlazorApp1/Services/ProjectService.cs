@@ -1,5 +1,7 @@
-﻿using BlazorApp1.Data;
+﻿using BlazorApp1.Commons;
+using BlazorApp1.Data;
 using BlazorApp1.Models;
+using BlazorApp1.Services.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -17,10 +19,22 @@ namespace BlazorApp1.Services
             this._context = applicationDbContext;
         }
 
-        public IEnumerable<Project> GetAllProject()
+        public async Task<IEnumerable<Project>> GetAllProject()
         {
-            var result = _context.Set<Project>().AsNoTracking();
+            var result = await _context.Projects.ToListAsync();
             return result;
+        }
+
+        public async Task<Project> AddProject(Project newProject)
+        {
+            var existed = await _context.Projects.FirstOrDefaultAsync(t => t.ProjectName == newProject.ProjectName);
+            if(existed != null)
+            {
+                CheckData<Project>.ItemStringExists("Project name", newProject.ProjectName);
+            }
+            _context.Projects.Add(newProject);
+            await _context.SaveChangesAsync();
+            return newProject;
         }
     }
 }

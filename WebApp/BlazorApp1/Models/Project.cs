@@ -10,5 +10,7 @@ namespace BlazorApp1.Models
         public string ProjectName { get; set; }
 
         public string Link { get; set; }
+
+        public virtual ICollection<ProjectDetail> ProjectDetails { get; set; }
     }
 }
