@@ -112,7 +112,7 @@ using BlazorApp1.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 37 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 36 "C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
        
     private List<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
 

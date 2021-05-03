@@ -132,11 +132,15 @@ using BlazorApp1.Services;
     {
         modalRef.Hide();
     }
+    //link
+    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("functiontesting"); }
+
 
 #line default
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IProjectDetailService ProjectDetailService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591
