@@ -10,5 +10,8 @@ namespace BlazorApp1.Services.Interface
     {
         Task<IEnumerable<Project>> GetAllProject();
         Task<Project> AddProject(Project newProject);
+        Task<Project> UpdateProject(Project updatedProject);
+        Task<Project> GetProjectById(int id);
+        Task<bool> DeleteProject(int prjId);
     }
 }

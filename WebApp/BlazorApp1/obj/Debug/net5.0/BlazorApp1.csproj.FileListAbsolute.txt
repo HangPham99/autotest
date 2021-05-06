@@ -629,3 +629,7 @@ C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\bin\Debug\net5.0\Microsoft.
 C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectPage\AddProject.razor.g.cs
 C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectPage\ProjectView.razor.g.cs
 C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\ProjectPage\EditProject.razor.g.cs
+C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectPage\EditProject.razor.g.cs
+C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\ProjectPage\DeleteProject.razor.g.cs
+C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectPage\DeleteProject.razor.g.cs

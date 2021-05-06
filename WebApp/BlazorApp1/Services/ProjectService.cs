@@ -25,6 +25,12 @@ namespace BlazorApp1.Services
             return result;
         }
 
+        public async Task<Project> GetProjectById(int id)
+        {
+            var result = await _context.Projects.FirstOrDefaultAsync(t => t.Id == id);
+            return result;
+        }
+
         public async Task<Project> AddProject(Project newProject)
         {
             var existed = await _context.Projects.FirstOrDefaultAsync(t => t.ProjectName == newProject.ProjectName);
@@ -35,6 +41,35 @@ namespace BlazorApp1.Services
             _context.Projects.Add(newProject);
             await _context.SaveChangesAsync();
             return newProject;
+        }
+
+        public async Task<Project> UpdateProject(Project updatedProject)
+        {
+            var existed = await _context.Projects.FirstOrDefaultAsync(t => t.Id == updatedProject.Id);
+            if (existed == null)
+            {
+                CheckData<Project>.ItemNotFound(updatedProject.Id);
+            }
+
+            existed.ProjectName = updatedProject.ProjectName;
+            existed.Link = updatedProject.Link;
+            existed.ModifiedDate = updatedProject.ModifiedDate;
+
+            await _context.SaveChangesAsync();
+            return existed;
+        }
+
+        public async Task<bool> DeleteProject(int prjId)
+        {
+            var existed = await _context.Projects.FirstOrDefaultAsync(t => t.Id == prjId);
+            if (existed == null)
+            {
+                CheckData<Project>.ItemNotFound(prjId);
+            }
+
+            _context.Projects.Remove(existed);
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }

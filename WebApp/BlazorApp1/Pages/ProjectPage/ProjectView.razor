@@ -5,9 +5,11 @@
 @inject IProjectService ProjectService
 
 <h3>Project</h3>
-<br /> <br />
+<br />
+<br />
 <Button Color="Color.Info" Clicked="CreateProject"> + Add Project</Button>
-<br /> <br />
+<br />
+<br />
 <Table>
     <TableHeader>
         <TableRow>
@@ -31,8 +33,8 @@
                     <TableRowCell>@project.CreateDate</TableRowCell>
                     <TableRowCell>@project.ModifiedDate</TableRowCell>
                     <TableRowCell>
-                        <Icon Name="IconName.Edit" />
-                        <Icon Name="IconName.Delete" />
+                        <Button class="btn" @onclick="() => UpdateProject(project)"><i class="fas fa-edit"></i> Edit</Button>
+                        <Button class="btn" @onclick="() => Delete_Click(project)"><i class="fas fa-trash"></i> Delete</Button>
                     </TableRowCell>
                 </TableRow>
             }
@@ -41,12 +43,11 @@
     </TableBody>
 </Table>
 
-
-
 @code {
     [CascadingParameter] public IModalService Modal { get; set; }
 
     private IEnumerable<BlazorApp1.Models.Project> ListProject;
+
 
     protected override async Task OnInitializedAsync()
     {
@@ -57,6 +58,26 @@
     {
         var add = Modal.Show<AddProject>("Add new project");
         var result = await add.Result;
+        ListProject = await ProjectService.GetAllProject();
+        StateHasChanged();
+    }
+
+    private async void UpdateProject(BlazorApp1.Models.Project project)
+    {
+        var parameters = new ModalParameters();
+        parameters.Add("project", project);
+        var update = Modal.Show<EditProject>("Edit project", parameters);
+        var result = await update.Result;
+        ListProject = await ProjectService.GetAllProject();
+        StateHasChanged();
+    }
+
+    protected async void Delete_Click(BlazorApp1.Models.Project project)
+    {
+        var parameters = new ModalParameters();
+        parameters.Add("project", project);
+        var update = Modal.Show<DeleteProject>("Delete confirmation", parameters);
+        var result = await update.Result;
         ListProject = await ProjectService.GetAllProject();
         StateHasChanged();
     }

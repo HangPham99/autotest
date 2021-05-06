@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp1.Pages.ProjectPage
+namespace BlazorApp1.Pages.Common
 {
     #line hidden
     using System;
@@ -111,14 +111,20 @@ using Blazored.Modal.Services;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\Pages\ProjectPage\ProjectView.razor"
+#line 1 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\Pages\Common\DeleteProject.razor"
 using BlazorApp1.Services.Interface;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/projects")]
-    public partial class ProjectView : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 2 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\Pages\Common\DeleteProject.razor"
+using BlazorApp1.Models;
+
+#line default
+#line hidden
+#nullable disable
+    public partial class DeleteProject : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -126,53 +132,25 @@ using BlazorApp1.Services.Interface;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 46 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\Pages\ProjectPage\ProjectView.razor"
-       
-    [CascadingParameter] public IModalService Modal { get; set; }
+#line 26 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\Pages\Common\DeleteProject.razor"
+      
+    [CascadingParameter] BlazoredModalInstance ModalInstance { get; set; }
+    [Parameter] public Project project { get; set; }
 
-    private IEnumerable<BlazorApp1.Models.Project> ListProject;
-
-
-    protected override async Task OnInitializedAsync()
+    protected async void DeleteProject()
     {
-        ListProject = await ProjectService.GetAllProject();
+
     }
 
-    private async void CreateProject()
+    protected async void Cancel()
     {
-        var add = Modal.Show<AddProject>("Add new project");
-        var result = await add.Result;
-        ListProject = await ProjectService.GetAllProject();
-        StateHasChanged();
+        await ModalInstance.CancelAsync();
     }
-
-    private async void UpdateProject(BlazorApp1.Models.Project project)
-    {
-        var parameters = new ModalParameters();
-        parameters.Add("project", project);
-        var update = Modal.Show<EditProject>("Edit project", parameters);
-        var result = await update.Result;
-        ListProject = await ProjectService.GetAllProject();
-        StateHasChanged();
-    }
-
-    protected async void Delete_Click(BlazorApp1.Models.Project project)
-    {
-        var parameters = new ModalParameters();
-        parameters.Add("project", project);
-        var update = Modal.Show<DeleteProject>("Delete confirmation", parameters);
-        var result = await update.Result;
-        ListProject = await ProjectService.GetAllProject();
-        StateHasChanged();
-    }
-
-    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("functiontesting"); }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IProjectService ProjectService { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IProjectService _service { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -7,12 +7,12 @@
 
     <div class="form-group">
         <label for="movie-name">Project Name</label>
-        <input @bind="@NewProject.ProjectName" type="text" class="form-control" id="project-name" style="min-width:500px"/>
+        <input @bind="@project.ProjectName" type="text" class="form-control" id="project-name" style="min-width:500px"/>
     </div>
 
     <div class="form-group">
         <label for="year">Link</label>
-        <input @bind="@NewProject.Link" type="text" class="form-control" id="project-link" style="min-width:500px"/>
+        <input @bind="@project.Link" type="text" class="form-control" id="project-link" style="min-width:500px"/>
     </div>
 
     <button @onclick="SaveProject" class="btn btn-primary" style="margin:5px;">Submit</button>
@@ -22,22 +22,21 @@
 @code {
 
     [CascadingParameter] BlazoredModalInstance ModalInstance { get; set; }
+    [Parameter] public Project project { get; set; }
 
-    private BlazorApp1.Models.Project NewProject { get; set; }
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        NewProject = new Project();
+
     }
 
     async void SaveProject()
     {
-        NewProject.CreateDate = DateTime.UtcNow;
-        NewProject.ModifiedDate = DateTime.UtcNow;
+        project.ModifiedDate = DateTime.UtcNow;
         try
         {
-            await _service.AddProject(NewProject);
-            await ModalInstance.CloseAsync(ModalResult.Ok<Project>(NewProject));
+            await _service.UpdateProject(project);
+            await ModalInstance.CloseAsync(ModalResult.Ok<Project>(project));
         }
         catch
         {

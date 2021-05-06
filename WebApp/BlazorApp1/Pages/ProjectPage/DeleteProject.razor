@@ -1,0 +1,36 @@
+﻿@using BlazorApp1.Services.Interface
+@using BlazorApp1.Models
+@inject IProjectService _service
+@inject IJSRuntime JsRuntime;
+
+<p style="min-width:500px">Do you want to delete project: @project.ProjectName?</p>
+<button type="button" class="btn btn-secondary" data-dismiss="modal" style="float: right; margin:5px;" @onclick="Cancel">
+    Cancel
+</button>
+<button type="button" class="btn btn-danger" style="float: right; margin:5px;" @onclick="Delete">
+    Delete
+</button>
+
+@code {
+
+    [CascadingParameter] BlazoredModalInstance ModalInstance { get; set; }
+    [Parameter] public Project project { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+
+    private async void Delete()
+    {
+        await _service.DeleteProject(project.Id);
+        await ModalInstance.CloseAsync(ModalResult.Ok<Project>(project));
+    }
+
+    private async void Cancel()
+    {
+        await ModalInstance.CancelAsync();
+    }
+
+}
