@@ -369,12 +369,8 @@ C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\BlazorApp1.RazorComponent.input.cache
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
-C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
-C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\FunctionTesting.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
-C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\Project.razor.g.cs
-C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\ProjectDetail.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\TestScreen.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Shared\LoginDisplay.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
@@ -387,12 +383,8 @@ C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\BlazorApp1.TagHelpers.output.cache
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\BlazorApp1.RazorCoreGenerate.cache
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\App.razor.g.cs
-C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
-C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\FunctionTesting.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
-C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\Project.razor.g.cs
-C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectDetail.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\TestScreen.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Shared\LoginDisplay.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
@@ -633,3 +625,22 @@ C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDecla
 C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectPage\EditProject.razor.g.cs
 C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\ProjectPage\DeleteProject.razor.g.cs
 C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectPage\DeleteProject.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\bin\Debug\net5.0\Blazored.Modal.dll
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\bin\Debug\net5.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\ProjectPage\AddProject.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\ProjectPage\DeleteProject.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\ProjectPage\EditProject.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\ProjectPage\ProjectView.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectPage\AddProject.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectPage\DeleteProject.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectPage\EditProject.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectPage\ProjectView.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\ProjectDetailPage\DeleteFunction.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\ProjectDetailPage\EditFunction.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\ProjectDetailPage\ProjectDetail.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectDetailPage\DeleteFunction.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectDetailPage\EditFunction.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectDetailPage\ProjectDetail.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\ProjectDetailPage\AddFunction.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\ProjectDetailPage\AddFunction.razor.g.cs

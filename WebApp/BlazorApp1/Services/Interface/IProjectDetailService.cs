@@ -8,6 +8,10 @@ namespace BlazorApp1.Services.Interface
 {
     public interface IProjectDetailService
     {
-        public IEnumerable<ProjectDetail> GetAllProject();
+        Task<IEnumerable<ProjectDetail>> GetAllProject();
+        Task<ProjectDetail> AddFunction(ProjectDetail newFunction);
+        Task<ProjectDetail> UpdateFunction(ProjectDetail updatedFunction);
+        Task<ProjectDetail> GetProjectById(int id);
+        Task<bool> DeleteFunction(int funcId);
     }
 }

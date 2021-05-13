@@ -32,10 +32,15 @@ namespace BlazorApp1.Migrations
                     b.Property<string>("FileName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("FunctionId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("FunctionId");
 
                     b.ToTable("FunctionTestings");
                 });
@@ -140,6 +145,9 @@ namespace BlazorApp1.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("FunctionTestingId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
@@ -156,6 +164,8 @@ namespace BlazorApp1.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("FunctionTestingId");
 
                     b.ToTable("TestScreens");
                 });
@@ -360,6 +370,17 @@ namespace BlazorApp1.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("BlazorApp1.Models.FunctionTesting", b =>
+                {
+                    b.HasOne("BlazorApp1.Models.ProjectDetail", "ProjectDetail")
+                        .WithMany("FunctionTestings")
+                        .HasForeignKey("FunctionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ProjectDetail");
+                });
+
             modelBuilder.Entity("BlazorApp1.Models.ProjectDetail", b =>
                 {
                     b.HasOne("BlazorApp1.Models.Project", "Project")
@@ -388,6 +409,15 @@ namespace BlazorApp1.Migrations
                     b.Navigation("Function");
 
                     b.Navigation("Project");
+                });
+
+            modelBuilder.Entity("BlazorApp1.Models.TestScreen", b =>
+                {
+                    b.HasOne("BlazorApp1.Models.FunctionTesting", "FunctionTesting")
+                        .WithMany("TestScreens")
+                        .HasForeignKey("FunctionTestingId");
+
+                    b.Navigation("FunctionTesting");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -441,9 +471,19 @@ namespace BlazorApp1.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("BlazorApp1.Models.FunctionTesting", b =>
+                {
+                    b.Navigation("TestScreens");
+                });
+
             modelBuilder.Entity("BlazorApp1.Models.Project", b =>
                 {
                     b.Navigation("ProjectDetails");
+                });
+
+            modelBuilder.Entity("BlazorApp1.Models.ProjectDetail", b =>
+                {
+                    b.Navigation("FunctionTestings");
                 });
 #pragma warning restore 612, 618
         }
