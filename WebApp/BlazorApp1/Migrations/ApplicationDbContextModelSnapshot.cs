@@ -32,15 +32,15 @@ namespace BlazorApp1.Migrations
                     b.Property<string>("FileName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("FunctionId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("ProjectDetailId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("FunctionId");
+                    b.HasIndex("ProjectDetailId");
 
                     b.ToTable("FunctionTestings");
                 });
@@ -373,10 +373,8 @@ namespace BlazorApp1.Migrations
             modelBuilder.Entity("BlazorApp1.Models.FunctionTesting", b =>
                 {
                     b.HasOne("BlazorApp1.Models.ProjectDetail", "ProjectDetail")
-                        .WithMany("FunctionTestings")
-                        .HasForeignKey("FunctionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("FunctionTesting")
+                        .HasForeignKey("ProjectDetailId");
 
                     b.Navigation("ProjectDetail");
                 });
@@ -483,7 +481,7 @@ namespace BlazorApp1.Migrations
 
             modelBuilder.Entity("BlazorApp1.Models.ProjectDetail", b =>
                 {
-                    b.Navigation("FunctionTestings");
+                    b.Navigation("FunctionTesting");
                 });
 #pragma warning restore 612, 618
         }

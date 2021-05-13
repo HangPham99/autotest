@@ -22,6 +22,7 @@
 @code {
 
     [CascadingParameter] BlazoredModalInstance ModalInstance { get; set; }
+    [Parameter] public int ProjectId { get; set; }
 
     private BlazorApp1.Models.ProjectDetail NewFunction { get; set; }
 
@@ -34,6 +35,7 @@
     {
         NewFunction.CreateDate = DateTime.UtcNow;
         NewFunction.ModifiedDate = DateTime.UtcNow;
+        NewFunction.ProjectId = ProjectId;
         try
         {
             await _service.AddFunction(NewFunction);

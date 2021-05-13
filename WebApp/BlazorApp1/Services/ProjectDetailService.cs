@@ -42,6 +42,12 @@ namespace BlazorApp1.Services
             return newFunction;
         }
 
+        public async Task<IEnumerable<ProjectDetail>> GetAllFunctionByProjectId(int projectId)
+        {
+            var results = await _context.ProjectDetails.Where(t => t.ProjectId == projectId).ToListAsync();
+            return results;
+        }
+
         public async Task<ProjectDetail> UpdateFunction(ProjectDetail updatedFunction)
         {
             var existed = await _context.ProjectDetails.FirstOrDefaultAsync(t => t.Id == updatedFunction.Id);

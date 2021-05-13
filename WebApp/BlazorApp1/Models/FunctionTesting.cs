@@ -8,11 +8,7 @@ namespace BlazorApp1.Models
     public class FunctionTesting : BaseModel
     {
         public string FileName { get; set; }
-
-        [ForeignKey("ProjectDetail")]
-
         public virtual ProjectDetail ProjectDetail { get; set; }
         public virtual ICollection<TestScreen> TestScreens { get; set; }
     }
 } 
-

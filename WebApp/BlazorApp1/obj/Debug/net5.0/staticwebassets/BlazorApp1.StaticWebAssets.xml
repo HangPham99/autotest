@@ -1,8 +1,8 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\scopedcss\bundle\" />
-  <ContentRoot BasePath="/Identity" Path="C:\Users\Gia Nhung\.nuget\packages\microsoft.aspnetcore.identity.ui\5.0.4\staticwebassets\V4\" />
-  <ContentRoot BasePath="_content/Blazored.Modal" Path="C:\Users\Gia Nhung\.nuget\packages\blazored.modal\6.0.1\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/Blazorise" Path="C:\Users\Gia Nhung\.nuget\packages\blazorise\0.9.3.3\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/Blazorise.Bootstrap" Path="C:\Users\Gia Nhung\.nuget\packages\blazorise.bootstrap\0.9.3.3\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/Blazorise.RichTextEdit" Path="C:\Users\Gia Nhung\.nuget\packages\blazorise.richtextedit\0.9.3.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/" Path="D:\AutoTest\WebApp\BlazorApp1\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/Identity" Path="C:\Users\Hikari\.nuget\packages\microsoft.aspnetcore.identity.ui\5.0.4\staticwebassets\V4\" />
+  <ContentRoot BasePath="_content/Blazored.Modal" Path="C:\Users\Hikari\.nuget\packages\blazored.modal\6.0.1\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise" Path="C:\Users\Hikari\.nuget\packages\blazorise\0.9.3.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Bootstrap" Path="C:\Users\Hikari\.nuget\packages\blazorise.bootstrap\0.9.3.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.RichTextEdit" Path="C:\Users\Hikari\.nuget\packages\blazorise.richtextedit\0.9.3.3\build\..\staticwebassets\" />
 </StaticWebAssets>

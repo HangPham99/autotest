@@ -3,7 +3,7 @@
 @using BlazorApp1.Services.Interface;
 @inject NavigationManager NavigationManager
 @inject IProjectService ProjectService
-
+@attribute [Authorize]
 <h3>Project</h3>
 <br />
 <br />
@@ -33,6 +33,7 @@
                     <TableRowCell>@project.CreateDate</TableRowCell>
                     <TableRowCell>@project.ModifiedDate</TableRowCell>
                     <TableRowCell>
+                        <Button class="btn" @onclick="() => NavigateDetail(project)"><i class="fas fa-info-circle"></i> Detail</Button>
                         <Button class="btn" @onclick="() => UpdateProject(project)"><i class="fas fa-edit"></i> Edit</Button>
                         <Button class="btn" @onclick="() => Delete_Click(project)"><i class="fas fa-trash"></i> Delete</Button>
                     </TableRowCell>
@@ -43,8 +44,10 @@
     </TableBody>
 </Table>
 
+
 @code {
     [CascadingParameter] public IModalService Modal { get; set; }
+    [CascadingParameter] protected Task<AuthenticationState> AuthStat { get; set; }
 
     private IEnumerable<BlazorApp1.Models.Project> ListProject;
 
@@ -80,6 +83,11 @@
         var result = await update.Result;
         ListProject = await ProjectService.GetAllProject();
         StateHasChanged();
+    }
+
+    protected void NavigateDetail(BlazorApp1.Models.Project project)
+    {
+        NavigationManager.NavigateTo(string.Format("projectdetail/{0}", project.Id));
     }
 
     private void NavigateToCounterComponent() { NavigationManager.NavigateTo("projectdetail"); }
