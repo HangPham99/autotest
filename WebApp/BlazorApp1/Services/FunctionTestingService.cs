@@ -18,11 +18,19 @@ namespace BlazorApp1.Services
             this._context = applicationDbContext;
         }
 
+        public async Task<IEnumerable<FunctionTesting>> GetAllFunctionByProjectDetailId(int prjDetailId)
+        {
+            var results = await _context.FunctionTestings.Where(t => t.ProjectDetailId == prjDetailId).ToListAsync();
+            return results;
+        }
+
         public IEnumerable<FunctionTesting> GetAllProject()
         {
             var result = _context.Set<FunctionTesting>().AsNoTracking();
             return result;
         }
+
+
 
     }
 }

@@ -9,5 +9,6 @@ namespace BlazorApp1.Services.Interface
     public interface IFunctionTesting
     {
         public IEnumerable<FunctionTesting> GetAllProject();
+        public Task<IEnumerable<FunctionTesting>> GetAllFunctionByProjectDetailId(int prjDetailId);
     }
 }

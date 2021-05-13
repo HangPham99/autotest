@@ -126,7 +126,7 @@ using BlazorApp1.Services.Interface;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 48 "D:\AutoTest\WebApp\BlazorApp1\Pages\ProjectDetailPage\ProjectDetail.razor"
+#line 49 "D:\AutoTest\WebApp\BlazorApp1\Pages\ProjectDetailPage\ProjectDetail.razor"
        
     [CascadingParameter] public IModalService Modal { get; set; }
 
@@ -175,6 +175,11 @@ using BlazorApp1.Services.Interface;
         var result = await update.Result;
         ListFunction = await ProjectDetailService.GetAllProject();
         StateHasChanged();
+    }
+
+    protected void NavigateDetail(int functionId)
+    {
+        NavigationManager.NavigateTo(string.Format("functiontesting/{0}", functionId));
     }
 
     //link

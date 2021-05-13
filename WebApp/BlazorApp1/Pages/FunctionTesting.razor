@@ -1,44 +1,64 @@
-﻿@page "/functiontesting"
+﻿@page "/functiontesting/{FunctionId:int}"
 @using BlazorApp1.Services.Interface;
+@using BlazorApp1.Models;
 @inject IFunctionTesting FunctionTestingService
+@inject IProjectDetailService ProjectDetailService
 @inject NavigationManager NavigationManager
-<h3>FunctionTesting</h3>
-<br />
-<Button Color="Color.Info">Import </Button>
-<div>
-    <FileEdit Written="@OnWritten" Progressed="@OnProgressed" />
-</div>
-<Table>
-    <TableHeader>
-        <TableRow>
-            <TableHeaderCell>File name</TableHeaderCell>
-            <TableHeaderCell>Date Modified</TableHeaderCell>
-            <TableHeaderCell>     </TableHeaderCell>
-        </TableRow>
-    </TableHeader>
-    <TableBody>
-        @foreach (var functionTesting in ListFunctionTesting)
-        {
+@if (ProjectDetail != null)
+{
+    <h3>@ProjectDetail.FunctionName - Function Testing</h3>
+    <br />
+    <Button Color="Color.Info">Import </Button>
+    <br />
+    <div>
+        <FileEdit Written="@OnWritten" Progressed="@OnProgressed" />
+    </div>
+    <Table>
+        <TableHeader>
             <TableRow>
-                <TableRowCell>@functionTesting.FileName</TableRowCell>
-                <TableRowCell>@functionTesting.ModifiedDate</TableRowCell>
-
-                <TableRowCell>
-                    <Icon @onclick="NavigateToCounterComponent" Name=" IconName.ArrowRight" />
-                    <Icon Name="IconName.Delete" />
-                    <Icon Name="IconName.Download" />
-                </TableRowCell>
+                <TableHeaderCell>File name</TableHeaderCell>
+                <TableHeaderCell>Date Modified</TableHeaderCell>
+                <TableHeaderCell>     </TableHeaderCell>
             </TableRow>
-        }
-    </TableBody>
-</Table>
+        </TableHeader>
+        <TableBody>
+            @if (ListFunctionTesting != null)
+            {
+                @foreach (var functionTesting in ListFunctionTesting)
+                {
+                    <TableRow>
+                        <TableRowCell>@functionTesting.FileName</TableRowCell>
+                        <TableRowCell>@functionTesting.ModifiedDate</TableRowCell>
+
+                        <TableRowCell>
+                            <Icon @onclick="NavigateToCounterComponent" Name=" IconName.ArrowRight" />
+                            <Icon Name="IconName.Delete" />
+                            <Icon Name="IconName.Download" />
+                        </TableRowCell>
+                    </TableRow>
+                }
+            }
+
+        </TableBody>
+    </Table>
+}
+
 
 @code {
-    private List<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
+    private IEnumerable<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
 
+    [Parameter]
+    public int FunctionId { get; set; }
+
+    private ProjectDetail ProjectDetail { get; set; }
     protected override async Task OnInitializedAsync()
     {
-        ListFunctionTesting = FunctionTestingService.GetAllProject().ToList();
+        ProjectDetail = await ProjectDetailService.GetProjectDetailById(FunctionId);
+
+        if (ProjectDetail != null)
+        {
+            ListFunctionTesting = await FunctionTestingService.GetAllFunctionByProjectDetailId(FunctionId);
+        }
     }
 
     //file

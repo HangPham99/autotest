@@ -16,6 +16,5 @@ namespace BlazorApp1.Models
         public int ProjectId { get; set; }
 
         public virtual Project Project { get; set; }
-        public virtual ICollection<FunctionTesting> FunctionTesting { get; set; }
     }
 }

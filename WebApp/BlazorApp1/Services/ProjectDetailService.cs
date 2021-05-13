@@ -24,7 +24,7 @@ namespace BlazorApp1.Services
             return result;
         }
 
-        public async Task<ProjectDetail> GetProjectById(int id)
+        public async Task<ProjectDetail> GetProjectDetailById(int id)
         {
             var result = await _context.ProjectDetails.FirstOrDefaultAsync(t => t.Id == id);
             return result;

@@ -8,7 +8,6 @@ namespace BlazorApp1.Models
     public class FunctionTesting : BaseModel
     {
         public string FileName { get; set; }
-        public virtual ProjectDetail ProjectDetail { get; set; }
-        public virtual ICollection<TestScreen> TestScreens { get; set; }
+        public int ProjectDetailId { get; set; }
     }
 } 

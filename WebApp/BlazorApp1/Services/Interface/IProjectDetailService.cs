@@ -12,7 +12,7 @@ namespace BlazorApp1.Services.Interface
         Task<IEnumerable<ProjectDetail>> GetAllFunctionByProjectId(int projectId);
         Task<ProjectDetail> AddFunction(ProjectDetail newFunction);
         Task<ProjectDetail> UpdateFunction(ProjectDetail updatedFunction);
-        Task<ProjectDetail> GetProjectById(int id);
+        Task<ProjectDetail> GetProjectDetailById(int id);
         Task<bool> DeleteFunction(int funcId);
     }
 }

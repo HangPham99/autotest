@@ -117,7 +117,14 @@ using BlazorApp1.Services.Interface;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/functiontesting")]
+#nullable restore
+#line 3 "D:\AutoTest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+using BlazorApp1.Models;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/functiontesting/{FunctionId:int}")]
     public partial class FunctionTesting : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -126,13 +133,22 @@ using BlazorApp1.Services.Interface;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 36 "D:\AutoTest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 47 "D:\AutoTest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
        
-    private List<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
+    private IEnumerable<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
 
+    [Parameter]
+    public int FunctionId { get; set; }
+
+    private ProjectDetail ProjectDetail { get; set; }
     protected override async Task OnInitializedAsync()
     {
-        ListFunctionTesting = FunctionTestingService.GetAllProject().ToList();
+        ProjectDetail = await ProjectDetailService.GetProjectDetailById(FunctionId);
+
+        if (ProjectDetail != null)
+        {
+            ListFunctionTesting = await FunctionTestingService.GetAllFunctionByProjectDetailId(FunctionId);
+        }
     }
 
     //file
@@ -154,6 +170,7 @@ using BlazorApp1.Services.Interface;
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IProjectDetailService ProjectDetailService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFunctionTesting FunctionTestingService { get; set; }
     }
 }

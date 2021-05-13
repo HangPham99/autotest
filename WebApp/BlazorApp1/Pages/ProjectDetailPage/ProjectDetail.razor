@@ -34,6 +34,7 @@
                         <TableRowCell>@function.CreateDate</TableRowCell>
                         <TableRowCell>@function.ModifiedDate</TableRowCell>
                         <TableRowCell>
+                            <Button class="btn" @onclick="() => NavigateDetail(function.Id)"><i class="fas fa-info-circle"></i> Detail</Button>
                             <Button class="btn" @onclick="() => UpdateFunction(function)"><i class="fas fa-edit"></i> Edit</Button>
                             <Button class="btn" @onclick="() => Delete_Click(function)"><i class="fas fa-trash"></i> Delete</Button>
                         </TableRowCell>
@@ -93,6 +94,11 @@
         var result = await update.Result;
         ListFunction = await ProjectDetailService.GetAllProject();
         StateHasChanged();
+    }
+
+    protected void NavigateDetail(int functionId)
+    {
+        NavigationManager.NavigateTo(string.Format("functiontesting/{0}", functionId));
     }
 
     //link
