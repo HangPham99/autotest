@@ -1,0 +1,11 @@
+,Username,Password,Result
+TC1: enter wrong username password
+,hanxu,123456,Pass
+TC2: enter right username password
+,123,123,Fail
+TC3: enter right username password
+,primas,primas,Fail
+TC4: enter right username password
+,primas,primas,Pass
+TC5: enter maximum username password
+,y0w0S9?-[5Z8I°[5Ha?iF<*bkMP+:Hj?|)SH\"HlZ9?9+!{s8%>F§£4oe*InXy\WU9°wR.€w]V+w§{jG?bQt)f{7=bMI*S+g?=Hn\m^H?f?^w?uj€^gwtJ-SD\9*YjIJV|]g982_Fn^?W€2*Z{A;V9-489p^]¡578+#-T?5[I¤«*]4r~#HA)SOS#g?O.LXn@7jy-z6f+,[8*q£¡«cfz>t9d]8BnI¥^?CZa9:zud«.B]jr9\J[%0L?@f~®\E;^*K[^OHTKu¥??+<©?¡?!9E;#LT?9€Q?#°^b?u*~C.*6F9x24V«ABkn>l{3I<IB4¥N[§F[Ny\+I®?-«$Y3-=M]-U]$ez?]EU]~x8bo?lJ&/®X&h¢Q^.;[y[©f°j«[Iw$"]#0vRv_hIt^B5^KWO7*V.,
