@@ -30,7 +30,27 @@ namespace BlazorApp1.Services
             return result;
         }
 
+        public async Task<FunctionTesting> AddFunction(FunctionTesting newFunc)
+        {
+            await _context.FunctionTestings.AddAsync(newFunc);
+            await _context.SaveChangesAsync();
+            return newFunc;
+        }
 
+        public async Task<FunctionTesting> FindById(int id)
+        {
+            return await _context.FunctionTestings.FirstOrDefaultAsync(t => t.Id == id);
+        }
+
+        public async Task Delete(int id)
+        {
+            var deleteItem = await FindById(id);
+            if(deleteItem != null)
+            {
+                _context.FunctionTestings.Remove(deleteItem);
+                await _context.SaveChangesAsync();
+            }
+        }
 
     }
 }

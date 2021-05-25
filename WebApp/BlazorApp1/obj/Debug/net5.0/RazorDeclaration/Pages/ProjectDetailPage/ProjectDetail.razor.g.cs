@@ -111,6 +111,13 @@ using Blazored.Modal.Services;
 #line hidden
 #nullable disable
 #nullable restore
+#line 15 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "D:\AutoTest\WebApp\BlazorApp1\Pages\ProjectDetailPage\ProjectDetail.razor"
 using BlazorApp1.Services.Interface;
 

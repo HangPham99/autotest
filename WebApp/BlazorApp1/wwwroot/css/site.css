@@ -48,3 +48,29 @@ a, .btn-link {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+
+.file-row {
+    background-color: #e4e4e4;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    border-radius: 0.6rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+    .file-row h2 {
+        margin: 0.3rem 0 0.6rem 0;
+        font-weight: bold;
+        color: black;
+        font-size: 1.1rem;
+    }
+
+    .file-row > div {
+        flex-grow: 1;
+    }
+
+    .file-row button {
+        padding: 0.5rem 1rem;
+    }
