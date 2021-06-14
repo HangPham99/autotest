@@ -13,106 +13,141 @@ namespace BlazorApp1.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using System.Net.Http;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 2 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 3 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 4 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 5 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 6 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 7 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 8 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 9 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 10 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 11 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 12 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise.RichTextEdit;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 13 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazored.Modal;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 14 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazored.Modal.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 2 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
 using BlazorApp1.Services.Interface;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+using System.Net.Http.Json;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 8 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+using System.Net.Http;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 9 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+using BlazorApp1.Commons;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 10 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+using System.IO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+using Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+using System.Text.Json;
 
 #line default
 #line hidden
@@ -126,15 +161,67 @@ using BlazorApp1.Services.Interface;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 36 "C:\Users\Hikari\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 44 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
        
+    private IFileEntry loadedFile = null;
     private List<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
+    private bool isLoading;
+    private List<UploadResult> uploadResults = new();
 
     protected override async Task OnInitializedAsync()
     {
         ListFunctionTesting = FunctionTestingService.GetAllProject().ToList();
     }
+    string message = "";
 
+    private void OnChanged(FileChangedEventArgs e)
+    {
+        if (e.Files.Count() > 0)
+        {
+            loadedFile = e.Files[0];
+        }
+    }
+
+    private async void UploadFile()
+    {
+
+        if (loadedFile != null)
+        {
+            using var content = new MultipartFormDataContent();
+
+            using (var stream = new MemoryStream())
+            {
+                await loadedFile.WriteToStreamAsync(stream);
+                stream.Seek(0, SeekOrigin.Begin);
+
+                content.Add(
+           content: new StreamContent(stream),
+           name: "\"files\"",
+           fileName: loadedFile.Name);
+
+                var client = ClientFactory.CreateClient();
+
+                var response =
+                    await client.PostAsync("https://localhost:5001/Filesave",
+                    content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var options = new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true,
+                    };
+                    using var responseStream =
+                        await response.Content.ReadAsStreamAsync();
+
+                    var newUploadResults = await JsonSerializer
+                        .DeserializeAsync<IList<UploadResult>>(responseStream, options);
+
+                    uploadResults = uploadResults.Concat(newUploadResults).ToList();
+                }
+            }
+        }
+    }
     //file
     string fileContent;
 
@@ -148,11 +235,13 @@ using BlazorApp1.Services.Interface;
         Console.WriteLine($"File: {e.File.Name} Progress: {e.Percentage}");
     }
     //link
-    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("testscreen"); }
+    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("testscreen"); } 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpClientFactory ClientFactory { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JS { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFunctionTesting FunctionTestingService { get; set; }
     }
