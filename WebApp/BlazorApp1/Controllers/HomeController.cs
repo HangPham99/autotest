@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -18,14 +19,19 @@ namespace BlazorApp1.Controllers
     public class FilesaveController : ControllerBase
     {
         // POST: HomeController/Create
+        public static IHubContext<ChatHub> SChatHub { get; set; }
         private readonly IWebHostEnvironment env;
         private readonly ILogger<FilesaveController> logger;
+        public IHubContext<ChatHub> _chathub { get; }
 
         public FilesaveController(IWebHostEnvironment env,
-            ILogger<FilesaveController> logger)
+            ILogger<FilesaveController> logger,
+            IHubContext<ChatHub> chatHubContext)
         {
             this.env = env;
             this.logger = logger;
+            this._chathub = chatHubContext;
+            FilesaveController.SChatHub = chatHubContext;
         }
         private static Random random = new Random();
         private string RandomString(int length)
@@ -36,13 +42,14 @@ namespace BlazorApp1.Controllers
         }
         [HttpPost]
         public async Task<ActionResult<IList<UploadResult>>> PostFile(
+        [FromForm] string userid,
         [FromForm] IEnumerable<IFormFile> files)
         {
             var maxAllowedFiles = 3;
             long maxFileSize = 1024 * 1024 * 15;
             var filesProcessed = 0;
             var resourcePath = new Uri($"{Request.Scheme}://{Request.Host}/");
-            List<UploadResult> uploadResults = new();
+            List<UploadResult> uploadResults = new List<UploadResult>();
 
             foreach (var file in files)
             {
@@ -73,31 +80,46 @@ namespace BlazorApp1.Controllers
                     {
                         try
                         {
-                            trustedFileNameForFileStorage = RandomString(10) + ".csv";
+                            trustedFileNameForFileStorage = RandomString(10) ;
+
                             var path = Path.Combine(env.ContentRootPath,
                                 env.EnvironmentName, "unsafe_uploads",
-                                trustedFileNameForFileStorage);
+                                trustedFileNameForFileStorage + ".csv");
 
                             var javaex = Path.Combine(env.ContentRootPath,
                                 env.EnvironmentName, "add",
                                 "test1.jar");
 
-                            await using FileStream fs = new(path, FileMode.Create);
+                            var reports = Path.Combine(env.ContentRootPath,
+                               env.EnvironmentName, "add",
+                               "report","report_"+trustedFileNameForFileStorage+".html");
+
+                            var logs = Path.Combine(env.ContentRootPath,
+                             env.EnvironmentName, "add",
+                             "logs", "logs_" + trustedFileNameForFileStorage);
+
+                            await using FileStream fs = new (path, FileMode.Create);
                             await file.CopyToAsync(fs);
 
                             logger.LogInformation("{FileName} saved at {Path}",
                                 trustedFileNameForDisplay, path);
 
-                            System.Diagnostics.Process process = new System.Diagnostics.Process();
-                            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-                            string text = "-jar " + javaex + " " + String.Format(
-                                @"""{0}""", path);
-                            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-                            startInfo.FileName = "java.exe";
-                            startInfo.Arguments = text;
-                            process.StartInfo = startInfo;
-                            process.Start();
-
+                            AsyncTask async = new AsyncTask();
+                            string text = "-jar "
+                               + String.Format(@"""{0}""", javaex)
+                               + " "
+                               + String.Format(@"""{0}""", path)
+                               + " "
+                               + String.Format(@"""{0}""", reports)
+                               + " "
+                               + String.Format(@"""{0}""", logs)
+                            ;
+                            async.command = text;
+                            async.csv = path;
+                            async.report = reports;
+                            async.logs = logs;
+                            async.id = userid;
+                            QueueAsyncTask.myQueue1.Enqueue(async);
                             uploadResult.Uploaded = true;
                             uploadResult.StoredFileName = trustedFileNameForFileStorage;
                         }

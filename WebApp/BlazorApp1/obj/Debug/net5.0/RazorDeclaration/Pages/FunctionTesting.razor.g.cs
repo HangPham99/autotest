@@ -13,147 +13,147 @@ namespace BlazorApp1.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 2 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 2 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
-using Microsoft.AspNetCore.Components.Authorization;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 4 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 4 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 5 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 6 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 7 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 8 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 9 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 10 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 11 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 12 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise.RichTextEdit;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 13 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazored.Modal;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 14 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
 using Blazored.Modal.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 2 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
 using BlazorApp1.Services.Interface;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
-using System.Net.Http.Json;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 8 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 9 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 10 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
 using BlazorApp1.Commons;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 11 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
 using System.IO;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
-using Services;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 12 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 12 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
 using System.Text.Json;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+using Microsoft.AspNetCore.SignalR.Client;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+using System.Security.Claims;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/functiontesting")]
-    public partial class FunctionTesting : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class FunctionTesting : Microsoft.AspNetCore.Components.ComponentBase, IAsyncDisposable
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -161,16 +161,56 @@ using System.Text.Json;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 44 "H:\Khoa Luan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 61 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
        
     private IFileEntry loadedFile = null;
     private List<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
     private bool isLoading;
     private List<UploadResult> uploadResults = new();
 
+    private HubConnection hubConnection;
+    private string userInput;
+    private string messageInput;
+    private List<string> messages = new List<string>();
+
+    private string _authMessage;
+    private string _userId;
+    private string _text;
+    private IEnumerable<Claim> _claims = Enumerable.Empty<Claim>();
+
+
     protected override async Task OnInitializedAsync()
     {
         ListFunctionTesting = FunctionTestingService.GetAllProject().ToList();
+
+        hubConnection = new HubConnectionBuilder()
+           .WithUrl(NavigationManager.ToAbsoluteUri("/chathub"))
+           .Build();
+
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            _authMessage = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+        }
+
+        await hubConnection.StartAsync();
+        await hubConnection.SendAsync("Subribe", _authMessage);
+
+        hubConnection.On<string>("ReceiveMessage", (message) =>
+        {
+            messages.Add(message);
+            try
+            {
+                StateHasChanged();
+            }
+            catch
+            {
+
+            }
+        });
+
     }
     string message = "";
 
@@ -195,9 +235,13 @@ using System.Text.Json;
                 stream.Seek(0, SeekOrigin.Begin);
 
                 content.Add(
-           content: new StreamContent(stream),
-           name: "\"files\"",
-           fileName: loadedFile.Name);
+                   content: new StreamContent(stream),
+                   name: "\"files\"",
+                   fileName: loadedFile.Name);
+                content.Add(
+                    content: new StringContent(_authMessage),
+                    name: "\"userid\""
+                );
 
                 var client = ClientFactory.CreateClient();
 
@@ -225,22 +269,22 @@ using System.Text.Json;
     //file
     string fileContent;
 
-    void OnWritten(FileWrittenEventArgs e)
-    {
-        Console.WriteLine($"File: {e.File.Name} Position: {e.Position} Data: {Convert.ToBase64String(e.Data)}");
-    }
-
-    void OnProgressed(FileProgressedEventArgs e)
-    {
-        Console.WriteLine($"File: {e.File.Name} Progress: {e.Percentage}");
-    }
     //link
-    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("testscreen"); } 
+    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("testscreen"); }
+
+    public bool IsConnected =>
+       hubConnection.State == HubConnectionState.Connected;
+
+    public async ValueTask DisposeAsync()
+    {
+        await hubConnection.DisposeAsync();
+    }
 
 #line default
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpClientFactory ClientFactory { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider AuthenticationStateProvider { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JS { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFunctionTesting FunctionTestingService { get; set; }

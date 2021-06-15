@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Khoa Luan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj": {}
+    "D:\\KhoaLuan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj": {}
   },
   "projects": {
-    "H:\\Khoa Luan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj": {
+    "D:\\KhoaLuan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Khoa Luan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
+        "projectUniqueName": "D:\\KhoaLuan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
         "projectName": "BlazorApp1",
-        "projectPath": "H:\\Khoa Luan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
-        "packagesPath": "C:\\Users\\HangPham\\.nuget\\packages\\",
-        "outputPath": "H:\\Khoa Luan\\autotest\\WebApp\\BlazorApp1\\obj\\",
+        "projectPath": "D:\\KhoaLuan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
+        "packagesPath": "C:\\Users\\nam\\.nuget\\packages\\",
+        "outputPath": "D:\\KhoaLuan\\autotest\\WebApp\\BlazorApp1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\HangPham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,6 +70,10 @@
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[5.0.4, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[5.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
