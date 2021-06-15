@@ -1,0 +1,36 @@
+﻿@using BlazorApp1.Services.Interface
+@using BlazorApp1.Models
+@inject IProjectDetailService _service
+@inject IJSRuntime JsRuntime;
+
+<p style="min-width:500px">Do you want to delete function: @function.FunctionName?</p>
+<button type="button" class="btn btn-secondary" data-dismiss="modal" style="float: right; margin:5px;" @onclick="Cancel">
+    Cancel
+</button>
+<button type="button" class="btn btn-danger" style="float: right; margin:5px;" @onclick="Delete">
+    Delete
+</button>
+
+@code {
+
+    [CascadingParameter] BlazoredModalInstance ModalInstance { get; set; }
+    [Parameter] public BlazorApp1.Models.ProjectDetail function { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+
+    private async void Delete()
+    {
+        await _service.DeleteFunction(function.Id);
+        await ModalInstance.CloseAsync(ModalResult.Ok<BlazorApp1.Models.ProjectDetail>(function));
+    }
+
+    private async void Cancel()
+    {
+        await ModalInstance.CancelAsync();
+    }
+
+}

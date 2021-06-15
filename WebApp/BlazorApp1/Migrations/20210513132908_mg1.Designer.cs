@@ -4,14 +4,16 @@ using BlazorApp1.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BlazorApp1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210513132908_mg1")]
+    partial class mg1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -32,19 +34,15 @@ namespace BlazorApp1.Migrations
                     b.Property<string>("FileName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FilePath")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FileStatus")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ProjectDetailId")
+                    b.Property<int?>("ProjectDetailId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProjectDetailId");
 
                     b.ToTable("FunctionTestings");
                 });
@@ -374,6 +372,15 @@ namespace BlazorApp1.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("BlazorApp1.Models.FunctionTesting", b =>
+                {
+                    b.HasOne("BlazorApp1.Models.ProjectDetail", "ProjectDetail")
+                        .WithMany("FunctionTesting")
+                        .HasForeignKey("ProjectDetailId");
+
+                    b.Navigation("ProjectDetail");
+                });
+
             modelBuilder.Entity("BlazorApp1.Models.ProjectDetail", b =>
                 {
                     b.HasOne("BlazorApp1.Models.Project", "Project")
@@ -407,7 +414,7 @@ namespace BlazorApp1.Migrations
             modelBuilder.Entity("BlazorApp1.Models.TestScreen", b =>
                 {
                     b.HasOne("BlazorApp1.Models.FunctionTesting", "FunctionTesting")
-                        .WithMany()
+                        .WithMany("TestScreens")
                         .HasForeignKey("FunctionTestingId");
 
                     b.Navigation("FunctionTesting");
@@ -464,9 +471,19 @@ namespace BlazorApp1.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("BlazorApp1.Models.FunctionTesting", b =>
+                {
+                    b.Navigation("TestScreens");
+                });
+
             modelBuilder.Entity("BlazorApp1.Models.Project", b =>
                 {
                     b.Navigation("ProjectDetails");
+                });
+
+            modelBuilder.Entity("BlazorApp1.Models.ProjectDetail", b =>
+                {
+                    b.Navigation("FunctionTesting");
                 });
 #pragma warning restore 612, 618
         }
