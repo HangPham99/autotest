@@ -369,7 +369,6 @@ C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\BlazorApp1.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\BlazorApp1.RazorComponent.input.cache
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
-C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\FunctionTesting.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\TestScreen.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Shared\LoginDisplay.razor.g.cs
@@ -383,7 +382,6 @@ C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\BlazorApp1.TagHelpers.output.cache
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\BlazorApp1.RazorCoreGenerate.cache
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\App.razor.g.cs
-C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\FunctionTesting.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\TestScreen.razor.g.cs
 C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Shared\LoginDisplay.razor.g.cs
@@ -869,3 +867,9 @@ D:\AutoTest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\FuncTest\U
 D:\AutoTest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\FuncTest\FunctionTesting.razor.g.cs
 D:\AutoTest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\FuncTest\UploadFile.razor.g.cs
 D:\AutoTest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\Download.cshtml.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\bin\Debug\net5.0\BlazorInputFile.dll
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\FuncTest\FunctionTesting.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\Pages\FuncTest\UploadFile.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\FuncTest\FunctionTesting.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\FuncTest\UploadFile.razor.g.cs
+C:\Users\Gia Nhung\Documents\GitHub\autotest\WebApp\BlazorApp1\obj\Debug\net5.0\Razor\Pages\Download.cshtml.g.cs
