@@ -61,6 +61,7 @@ namespace BlazorApp1
                 .AddFontAwesomeIcons()
               .AddBlazoriseRichTextEdit();
 
+            services.AddServerSideBlazor();
             services.AddBlazoredModal();
 
             services.AddScoped<IProjectService, ProjectService>();
