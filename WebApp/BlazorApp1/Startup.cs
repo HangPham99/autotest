@@ -1,4 +1,5 @@
 using BlazorApp1.Areas.Identity;
+using BlazorApp1.Commons;
 using BlazorApp1.Data;
 using BlazorApp1.Services;
 using BlazorApp1.Services.Interface;
@@ -14,6 +15,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,6 +26,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
 
 namespace BlazorApp1
 {
@@ -40,29 +45,41 @@ namespace BlazorApp1
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddHttpClient();
+
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddSingleton<WeatherForecastService>();
             services.AddBlazorise(options =>
             {
-                options.ChangeTextOnKeyPress = true; 
+                options.ChangeTextOnKeyPress = true;
             })
                 .AddBootstrapProviders()
                 .AddFontAwesomeIcons()
               .AddBlazoriseRichTextEdit();
 
+            services.AddServerSideBlazor();
             services.AddBlazoredModal();
 
             services.AddScoped<IProjectService, ProjectService>();
             services.AddScoped<IProjectDetailService, ProjectDetailService>();
             services.AddScoped<ITestScreenService, TestScreenService>();
             services.AddScoped<IFunctionTesting, FunctionTestingService>();
+          
+            services.AddResponseCompression(opts =>
+            {
+                opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
+                    new[] { "application/octet-stream" });
+            });
+            services.AddSingleton<MyAsyncTask, MyAsyncTask>();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IHubContext<ChatHub> chatHubContext)
         {
+            app.UseResponseCompression();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -76,18 +93,18 @@ namespace BlazorApp1
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthentication();
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
                 endpoints.MapBlazorHub();
+                endpoints.MapHub<ChatHub>("/chathub");
                 endpoints.MapFallbackToPage("/_Host");
             });
+            MyAsyncTask mytask = new MyAsyncTask(chatHubContext);
+            mytask.startTask();
         }
     }
 }

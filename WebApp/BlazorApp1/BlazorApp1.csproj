@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Development\add\logs - Copy\**" />
+    <Content Remove="Development\add\logs - Copy\**" />
+    <EmbeddedResource Remove="Development\add\logs - Copy\**" />
+    <None Remove="Development\add\logs - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Blazored.Modal" Version="6.0.1" />
     <PackageReference Include="Blazorise.Bootstrap" Version="0.9.3.3" />
     <PackageReference Include="Blazorise.Icons.FontAwesome" Version="0.9.3.3" />
@@ -14,11 +21,19 @@
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="5.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.4" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Development\add\logs\" />
+    <Folder Include="Development\add\report\" />
+    <Folder Include="Development\unsafe_uploads\" />
+    <Folder Include="FailedTestsScreenshots\" />
   </ItemGroup>
 
 </Project>
