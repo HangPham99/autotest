@@ -1,4 +1,5 @@
 ﻿using BlazorApp1.Commons;
+using BlazorApp1.Data;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -23,15 +24,18 @@ namespace BlazorApp1.Controllers
         private readonly IWebHostEnvironment env;
         private readonly ILogger<FilesaveController> logger;
         public IHubContext<ChatHub> _chathub { get; }
-
+        public ApplicationDbContext _mycontext { get; }
         public FilesaveController(IWebHostEnvironment env,
             ILogger<FilesaveController> logger,
-            IHubContext<ChatHub> chatHubContext)
+            IHubContext<ChatHub> chatHubContext,
+            ApplicationDbContext mycontext
+            )
         {
             this.env = env;
             this.logger = logger;
             this._chathub = chatHubContext;
             FilesaveController.SChatHub = chatHubContext;
+            this._mycontext = mycontext;
         }
         private static Random random = new Random();
         private string RandomString(int length)
@@ -122,6 +126,7 @@ namespace BlazorApp1.Controllers
                             QueueAsyncTask.myQueue1.Enqueue(async);
                             uploadResult.Uploaded = true;
                             uploadResult.StoredFileName = trustedFileNameForFileStorage;
+                           
                         }
                         catch (Exception ex)
                         {
