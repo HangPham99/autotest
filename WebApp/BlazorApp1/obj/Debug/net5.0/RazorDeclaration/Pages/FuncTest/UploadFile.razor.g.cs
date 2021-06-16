@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp1.Pages.ProjectPage
+namespace BlazorApp1.Pages.FuncTest
 {
     #line hidden
     using System;
@@ -111,20 +111,41 @@ using Blazored.Modal.Services;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\ProjectPage\DeleteProject.razor"
+#line 15 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 1 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
+using System.IO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
 using BlazorApp1.Services.Interface;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\ProjectPage\DeleteProject.razor"
+#line 3 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
 using BlazorApp1.Models;
 
 #line default
 #line hidden
 #nullable disable
-    public partial class DeleteProject : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 4 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
+using Microsoft.AspNetCore.Hosting;
+
+#line default
+#line hidden
+#nullable disable
+    public partial class UploadFile : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -132,35 +153,63 @@ using BlazorApp1.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 14 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\ProjectPage\DeleteProject.razor"
+#line 45 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
        
-
     [CascadingParameter] BlazoredModalInstance ModalInstance { get; set; }
-    [Parameter] public Project project { get; set; }
+
+    [Parameter] public int ProjectId { get; set; }
+    [Parameter] public int ProjectDetailId { get; set; }
+
+    private IFileListEntry[] selectedFiles;
+    private List<BlazorApp1.Models.FunctionTesting> UploadedFile = new List<Models.FunctionTesting>();
 
 
-    protected override async Task OnInitializedAsync()
+    void HandleSelection(IFileListEntry[] files)
     {
-
+        selectedFiles = files.Where(t => t.Type == "application/vnd.ms-excel" && t.Size <= 5242880).ToArray();
     }
 
-    private async void Delete()
+    async Task LoadFile(IFileListEntry file)
     {
-        await _service.DeleteProject(project.Id);
-        await ModalInstance.CloseAsync(ModalResult.Ok<Project>(project));
+        var wwwwPath = this.Environment.WebRootPath;
+        string contentPath = this.Environment.ContentRootPath;
+        string path = Path.Combine(this.Environment.WebRootPath, string.Format("ProjectNo{0}", ProjectId), string.Format("ProjectDetailNo{0}", ProjectDetailId));
+        string filePath = Path.Combine(path, file.Name);
+        file.OnDataRead += (sender, eventArgs) => InvokeAsync(StateHasChanged);
+
+        if (!Directory.Exists(path))
+        {
+            Directory.CreateDirectory(path);
+        }
+
+        using (FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate))
+        {
+            await file.Data.CopyToAsync(fs);
+            await fs.FlushAsync();
+        }
+
+        var newFuncTest = new BlazorApp1.Models.FunctionTesting()
+        {
+            FileName = file.Name,
+            ProjectDetailId = ProjectDetailId,
+            FilePath = filePath,
+            CreateDate = DateTime.UtcNow,
+            ModifiedDate = DateTime.UtcNow
+        };
+
+        this.UploadedFile.Add(newFuncTest);
     }
 
-    private async void Cancel()
+    private async void Close()
     {
-        await ModalInstance.CancelAsync();
+        await ModalInstance.CloseAsync(ModalResult.Ok<List<BlazorApp1.Models.FunctionTesting>>(UploadedFile));
     }
-
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntime { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IProjectService _service { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IWebHostEnvironment Environment { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFunctionTesting FunctionTestingService { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -4,10 +4,9 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp1.Pages
+namespace BlazorApp1.Pages.FuncTest
 {
     #line hidden
-    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
@@ -111,13 +110,48 @@ using Blazored.Modal.Services;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 15 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\FunctionTesting.razor"
 using BlazorApp1.Services.Interface;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/functiontesting")]
+#nullable restore
+#line 3 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\FunctionTesting.razor"
+using BlazorApp1.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\FunctionTesting.razor"
+using System.IO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\FunctionTesting.razor"
+using System;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\FunctionTesting.razor"
+using Microsoft.AspNetCore.Mvc;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/functiontesting/{FunctionId:int}")]
     public partial class FunctionTesting : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -126,34 +160,76 @@ using BlazorApp1.Services.Interface;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 36 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 60 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\FunctionTesting.razor"
        
-    private List<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
+    [CascadingParameter] public IModalService Modal { get; set; }
+    private IEnumerable<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
 
+    [Parameter]
+    public int FunctionId { get; set; }
+
+    private ProjectDetail ProjectDetail { get; set; }
     protected override async Task OnInitializedAsync()
     {
-        ListFunctionTesting = FunctionTestingService.GetAllProject().ToList();
+        ProjectDetail = await ProjectDetailService.GetProjectDetailById(FunctionId);
+
+        if (ProjectDetail != null)
+        {
+            ListFunctionTesting = await GetAll(FunctionId);
+        }
     }
 
-    //file
-    string fileContent;
-
-    void OnWritten(FileWrittenEventArgs e)
+    private async void UploadFile()
     {
-        Console.WriteLine($"File: {e.File.Name} Position: {e.Position} Data: {Convert.ToBase64String(e.Data)}");
+        var parameters = new ModalParameters();
+        parameters.Add("ProjectDetailId", ProjectDetail.Id);
+        parameters.Add("ProjectId", ProjectDetail.ProjectId);
+        var formModal = Modal.Show<UploadFile>("Upload new file", parameters);
+        var resut = await formModal.Result;
+        var data = (List<BlazorApp1.Models.FunctionTesting>)resut.Data;
+
+        if(data.Count != 0)
+        {
+            foreach(var item in data)
+            {
+                await FunctionTestingService.AddFunction(item);
+            }
+
+            ListFunctionTesting = await GetAll(FunctionId);
+            StateHasChanged();
+        }
     }
 
-    void OnProgressed(FileProgressedEventArgs e)
+    private async Task<IEnumerable<BlazorApp1.Models.FunctionTesting>> GetAll(int funcid)
     {
-        Console.WriteLine($"File: {e.File.Name} Progress: {e.Percentage}");
+        var results = await FunctionTestingService.GetAllFunctionByProjectDetailId(funcid);
+        foreach (var file in results)
+        {
+            file.FileStatus = File.Exists(file.FilePath) ? "Online" : "Not found";
+        }
+
+        return results;
     }
-    //link
+
+    private async void DeleteFile(BlazorApp1.Models.FunctionTesting functionTesting)
+    {
+        if(File.Exists(functionTesting.FilePath))
+        {
+            File.Delete(functionTesting.FilePath);
+            await FunctionTestingService.Delete(functionTesting.Id);
+
+            ListFunctionTesting = await GetAll(FunctionId);
+            StateHasChanged();
+        }
+    }
+
     private void NavigateToCounterComponent() { NavigationManager.NavigateTo("testscreen"); }
 
 #line default
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IProjectDetailService ProjectDetailService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFunctionTesting FunctionTestingService { get; set; }
     }
 }
