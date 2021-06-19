@@ -155,7 +155,7 @@ namespace BlazorApp1.Controllers
         }
 
         [HttpPost("runtest")]
-        public async Task RunTest([FromForm] string userid,
+        public async Task<string> RunTest([FromForm] string userid,
                                   [FromForm] string testcaseFilePath)
         {
             var guid = Guid.NewGuid();
@@ -183,6 +183,7 @@ namespace BlazorApp1.Controllers
             };
 
             QueueAsyncTask.myQueue1.Enqueue(async);
+            return reports;
         }
     }
 }

@@ -205,6 +205,7 @@ using System.Text.Json;
     private string savedContent;
 
     private bool IsDisableButton;
+    private string reportFilename;
 
     [Parameter]
     public string TestCaseFileId { get; set; }
@@ -269,6 +270,8 @@ using System.Text.Json;
         var client = ClientFactory.CreateClient();
 
         var response = await client.PostAsync("https://localhost:5001/Filesave/runtest", content);
+        reportFilename = await response.Content.ReadAsStringAsync();
+        reportFilename = reportFilename.Split(@"\")[7];
     }
 
     public async Task OnContentChanged()

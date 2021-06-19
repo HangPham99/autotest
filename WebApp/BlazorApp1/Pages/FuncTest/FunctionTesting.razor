@@ -45,7 +45,7 @@
 
                             <TableRowCell>
                                 <Button class="btn" @onclick="() => NavigateToCounterComponent(functionTesting.Id.ToString())"><i class="fas fa-arrow-right"></i> Detail</Button>
-                                <a class="btn" href="/download/@functionTesting.Id"><i class="fas fa-download" />&nbspDownload</a>
+                                <a class="btn" href="/download/@functionTesting.Id.ToString()"><i class="fas fa-download" />&nbspDownload</a>
                                 <Button class="btn" @onclick="() => DeleteFile(functionTesting)"><i class="fas fa-trash"></i> Delete</Button>
                             </TableRowCell>
                         </TableRow>

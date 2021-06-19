@@ -57,7 +57,7 @@
     }
 </div>
 <br />
-<Button id="btnExport" Color="Color.Primary" disabled="@IsDisableButton">Export </Button>
+<a class="btn" href="/download/@reportFilename">Export</a>
 <Button id="btnRun" Color="Color.Success" Clicked="RunTestSession" disabled="@IsDisableButton">Run </Button>
 <Button id="btnShow" Color="Color.Light" disabled="@IsDisableButton">Show </Button>
 <br />
@@ -84,6 +84,7 @@
     private string savedContent;
 
     private bool IsDisableButton;
+    private string reportFilename;
 
     [Parameter]
     public string TestCaseFileId { get; set; }
@@ -148,6 +149,8 @@
         var client = ClientFactory.CreateClient();
 
         var response = await client.PostAsync("https://localhost:5001/Filesave/runtest", content);
+        reportFilename = await response.Content.ReadAsStringAsync();
+        reportFilename = reportFilename.Split(@"\")[7];
     }
 
     public async Task OnContentChanged()
