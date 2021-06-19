@@ -13,106 +13,120 @@ namespace BlazorApp1.Pages.ProjectPage
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 1 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 2 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 3 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 4 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 5 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 6 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 7 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 8 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 9 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 10 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 11 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 12 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise.RichTextEdit;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 13 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Blazored.Modal;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 14 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Blazored.Modal.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\ProjectPage\ProjectView.razor"
+#line 15 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "D:\AutoTest\WebApp\BlazorApp1\Pages\ProjectPage\ProjectView.razor"
 using BlazorApp1.Services.Interface;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "D:\AutoTest\WebApp\BlazorApp1\Pages\ProjectPage\ProjectView.razor"
+           [Authorize]
 
 #line default
 #line hidden
@@ -126,10 +140,10 @@ using BlazorApp1.Services.Interface;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 46 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\ProjectPage\ProjectView.razor"
+#line 47 "D:\AutoTest\WebApp\BlazorApp1\Pages\ProjectPage\ProjectView.razor"
        
     [CascadingParameter] public IModalService Modal { get; set; }
-
+    [CascadingParameter] protected Task<AuthenticationState> AuthStat { get; set; }
     private IEnumerable<BlazorApp1.Models.Project> ListProject;
 
 
@@ -166,7 +180,12 @@ using BlazorApp1.Services.Interface;
         StateHasChanged();
     }
 
-    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("functiontesting"); }
+    protected void NavigateDetail(BlazorApp1.Models.Project project)
+    {
+        NavigationManager.NavigateTo(string.Format("projectdetail/{0}", project.Id));
+    }
+
+    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("projectdetail"); }
 
 #line default
 #line hidden

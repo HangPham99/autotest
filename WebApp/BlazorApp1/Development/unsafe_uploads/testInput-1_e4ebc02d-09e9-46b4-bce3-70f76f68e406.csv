@@ -1,0 +1,27 @@
+Action,Target,Value
+open,https://labvn54.primas.net:9443/LinkScopeWeb/,
+name,TC1: enter wrong username password,
+enter,"//*[@id=""UserName""]",hello
+enter,"//*[@id=""Password""]",123456
+click,"//*[@id=""loginForm""]/form/input",
+result,"//*[@id=""loginForm""]/form/div[1]/ul/li","The user name or password is incorrect, please try again."
+name,TC2: enter wrong username password,
+enter,"//*[@id=""UserName""]",123
+enter,"//*[@id=""Password""]",123
+click,"//*[@id=""loginForm""]/form/input",
+result,"//*[@id=""loginForm""]/form/div[1]/ul/li","The user name or password is incorrect, please try again...."
+name,TC3: enter wrong username password,
+enter,"//*[@id=""UserName""]",123123
+enter,"//*[@id=""Password""]",primas
+click,"//*[@id=""loginForm""]/form/input",
+result,"//*[@id=""loginForm""]/form/div[1]/ul/li","The user name or password is incorrect, please try again.."
+name,TC4: enter wrong username password,
+enter,"//*[@id=""UserName""]",primas123
+enter,"//*[@id=""Password""]",primas
+click,"//*[@id=""loginForm""]/form/input",
+result,"//*[@id=""loginForm""]/form/div[1]/ul/li","The user name or password is incorrect, please try again."
+name,TC5: enter wrong username password,
+enter,"//*[@id=""UserName""]",40012
+enter,"//*[@id=""Password""]",40012
+click,"//*[@id=""loginForm""]/form/input",
+resultLink,geturl,https://labvn54.primas.net:9443/LinkScopeWeb/FreedomQDashboard

@@ -13,6 +13,7 @@ namespace BlazorApp1.Commons
         public string report { get; set; }
         public string logs { get; set; }
     }
+
     public class QueueAsyncTask
     {
         public static AsyncTask selectTask;

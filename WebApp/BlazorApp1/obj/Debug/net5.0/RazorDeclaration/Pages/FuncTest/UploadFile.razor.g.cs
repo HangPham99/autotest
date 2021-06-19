@@ -13,133 +13,133 @@ namespace BlazorApp1.Pages.FuncTest
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 1 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 2 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 3 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 4 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 5 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 6 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 7 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 8 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 9 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 10 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorApp1.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 11 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 12 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Blazorise.RichTextEdit;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 13 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Blazored.Modal;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 14 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Blazored.Modal.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 15 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\_Imports.razor"
+#line 15 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using BlazorInputFile;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
+#line 1 "D:\AutoTest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
 using System.IO;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
+#line 2 "D:\AutoTest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
 using BlazorApp1.Services.Interface;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
+#line 3 "D:\AutoTest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
 using BlazorApp1.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
+#line 4 "D:\AutoTest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
 using Microsoft.AspNetCore.Hosting;
 
 #line default
@@ -153,7 +153,7 @@ using Microsoft.AspNetCore.Hosting;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 45 "D:\KhoaLuan\autotest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
+#line 47 "D:\AutoTest\WebApp\BlazorApp1\Pages\FuncTest\UploadFile.razor"
        
     [CascadingParameter] BlazoredModalInstance ModalInstance { get; set; }
 
@@ -171,10 +171,9 @@ using Microsoft.AspNetCore.Hosting;
 
     async Task LoadFile(IFileListEntry file)
     {
-        var wwwwPath = this.Environment.WebRootPath;
-        string contentPath = this.Environment.ContentRootPath;
-        string path = Path.Combine(this.Environment.WebRootPath, string.Format("ProjectNo{0}", ProjectId), string.Format("ProjectDetailNo{0}", ProjectDetailId));
-        string filePath = Path.Combine(path, file.Name);
+        var fileGuid = Guid.NewGuid();
+        string path = Path.Combine(this.Environment.ContentRootPath, "Development", "unsafe_uploads");
+        string filePath = Path.Combine(path, string.Format("{0}_{1}.csv", file.Name.Split('.')[0], fileGuid.ToString()));
         file.OnDataRead += (sender, eventArgs) => InvokeAsync(StateHasChanged);
 
         if (!Directory.Exists(path))

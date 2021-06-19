@@ -25,11 +25,13 @@ namespace BlazorApp1.Controllers
         private readonly ILogger<FilesaveController> logger;
         public IHubContext<ChatHub> _chathub { get; }
         public ApplicationDbContext _mycontext { get; }
+        private static Random random = new Random();
+
         public FilesaveController(IWebHostEnvironment env,
-            ILogger<FilesaveController> logger,
-            IHubContext<ChatHub> chatHubContext,
-            ApplicationDbContext mycontext
-            )
+                                  ILogger<FilesaveController> logger,
+                                  IHubContext<ChatHub> chatHubContext,
+                                  ApplicationDbContext mycontext
+                                 )
         {
             this.env = env;
             this.logger = logger;
@@ -37,17 +39,17 @@ namespace BlazorApp1.Controllers
             FilesaveController.SChatHub = chatHubContext;
             this._mycontext = mycontext;
         }
-        private static Random random = new Random();
+
         private string RandomString(int length)
         {
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             return new string(Enumerable.Repeat(chars, length)
               .Select(s => s[random.Next(s.Length)]).ToArray());
         }
+
         [HttpPost]
-        public async Task<ActionResult<IList<UploadResult>>> PostFile(
-        [FromForm] string userid,
-        [FromForm] IEnumerable<IFormFile> files)
+        public async Task<ActionResult<IList<UploadResult>>> PostFile([FromForm] string userid,
+                                                                      [FromForm] IEnumerable<IFormFile> files)
         {
             var maxAllowedFiles = 3;
             long maxFileSize = 1024 * 1024 * 15;
@@ -150,6 +152,37 @@ namespace BlazorApp1.Controllers
             }
 
             return new CreatedResult(resourcePath, uploadResults);
+        }
+
+        [HttpPost("runtest")]
+        public async Task RunTest([FromForm] string userid,
+                                  [FromForm] string testcaseFilePath)
+        {
+            var guid = Guid.NewGuid();
+            var envPath = Path.Combine(this.env.ContentRootPath, "Development", "add");
+            var testRunCommandFormat = @"-jar ""{0}"" ""{1}"" ""{2}"" ""{3}""";
+
+            var javaex = Path.Combine(envPath,
+                                      "test1.jar");
+
+            var reports = Path.Combine(envPath,
+                                       "report", 
+                                       "report_" + guid.ToString() + ".html");
+
+            var logs = Path.Combine(envPath,
+                                    "logs", 
+                                    "logs_" + guid.ToString());
+
+            AsyncTask async = new AsyncTask()
+            {
+                command = String.Format(testRunCommandFormat, javaex, testcaseFilePath, reports, logs),
+                csv = testcaseFilePath,
+                report = reports,
+                logs = logs,
+                id = userid
+            };
+
+            QueueAsyncTask.myQueue1.Enqueue(async);
         }
     }
 }

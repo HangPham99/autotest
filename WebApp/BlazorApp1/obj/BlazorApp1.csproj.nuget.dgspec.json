@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KhoaLuan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj": {}
+    "D:\\AutoTest\\WebApp\\BlazorApp1\\BlazorApp1.csproj": {}
   },
   "projects": {
-    "D:\\KhoaLuan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj": {
+    "D:\\AutoTest\\WebApp\\BlazorApp1\\BlazorApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KhoaLuan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
+        "projectUniqueName": "D:\\AutoTest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
         "projectName": "BlazorApp1",
-        "projectPath": "D:\\KhoaLuan\\autotest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
-        "packagesPath": "C:\\Users\\nam\\.nuget\\packages\\",
-        "outputPath": "D:\\KhoaLuan\\autotest\\WebApp\\BlazorApp1\\obj\\",
+        "projectPath": "D:\\AutoTest\\WebApp\\BlazorApp1\\BlazorApp1.csproj",
+        "packagesPath": "C:\\Users\\Hikari\\.nuget\\packages\\",
+        "outputPath": "D:\\AutoTest\\WebApp\\BlazorApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hikari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +44,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "BlazorInputFile": {
+              "target": "Package",
+              "version": "[0.2.0, )"
+            },
             "Blazored.Modal": {
               "target": "Package",
               "version": "[6.0.1, )"
@@ -70,6 +75,10 @@
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[5.0.4, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[5.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

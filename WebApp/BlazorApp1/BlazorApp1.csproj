@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <PackageReference Include="Blazored.Modal" Version="6.0.1" />
+    <PackageReference Include="BlazorInputFile" Version="0.2.0" />
     <PackageReference Include="Blazorise.Bootstrap" Version="0.9.3.3" />
     <PackageReference Include="Blazorise.Icons.FontAwesome" Version="0.9.3.3" />
     <PackageReference Include="Blazorise.RichTextEdit" Version="0.9.3.3" />

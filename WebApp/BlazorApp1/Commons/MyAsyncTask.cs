@@ -32,6 +32,7 @@ namespace BlazorApp1.Commons
                     startInfo.Arguments = QueueAsyncTask.selectTask.command;
                     process.StartInfo = startInfo;
                     process.Start();
+                    ChatHub.SendMessangeToUser(QueueAsyncTask.selectTask.id, "Automation test session is started.");
                     LogFileMonitor monitor = null;
                     monitor = new LogFileMonitor(QueueAsyncTask.selectTask.logs+".log", "\r\n");
                     monitor.OnLine += (s, e) =>
@@ -43,6 +44,7 @@ namespace BlazorApp1.Commons
                     {
                      
                     }
+                    ChatHub.SendMessangeToUser(QueueAsyncTask.selectTask.id, "Automation test session is completed.");
                     monitor.Stop();
                 }
             }

@@ -1,4 +1,5 @@
 ﻿@page "/functiontesting/{FunctionId:int}"
+
 @using BlazorApp1.Services.Interface;
 @using BlazorApp1.Models;
 @using System.IO;
@@ -13,47 +14,47 @@
     <br />
     <Button Color="Color.Info" Clicked="UploadFile"> <i class="fas fa-plus"></i> Import </Button>
     <br />
-
     <br />
-
-    <Table>
-        <TableHeader>
-            <TableRow>
-                <TableHeaderCell>File name</TableHeaderCell>
-                <TableHeaderCell>Date Modified</TableHeaderCell>
-                <TableHeaderCell>File Status</TableHeaderCell>
-                <TableHeaderCell></TableHeaderCell>
-            </TableRow>
-        </TableHeader>
-        <TableBody>
-            @if (ListFunctionTesting != null)
-            {
-                @foreach (var functionTesting in ListFunctionTesting)
+    <div id="table-conatainer" style="height:600px;overflow-y:scroll">
+        <Table>
+            <TableHeader>
+                <TableRow>
+                    <TableHeaderCell>File name</TableHeaderCell>
+                    <TableHeaderCell>Date Modified</TableHeaderCell>
+                    <TableHeaderCell>File Status</TableHeaderCell>
+                    <TableHeaderCell></TableHeaderCell>
+                </TableRow>
+            </TableHeader>
+            <TableBody>
+                @if (ListFunctionTesting != null)
                 {
-                    <TableRow>
-                        <TableRowCell>@functionTesting.FileName</TableRowCell>
-                        <TableRowCell>@functionTesting.ModifiedDate</TableRowCell>
+                    @foreach (var functionTesting in ListFunctionTesting)
+                    {
+                        <TableRow>
+                            <TableRowCell>@functionTesting.FileName</TableRowCell>
+                            <TableRowCell>@functionTesting.ModifiedDate</TableRowCell>
 
-                        @if (functionTesting.FileStatus == "Online")
-                        {
-                            <TableRowCell><span class="badge rounded-pill bg-primary" style="color:white">Online</span></TableRowCell>
-                        }
-                        else
-                        {
-                            <TableRowCell><span class="badge rounded-pill bg-danger">File not found</span></TableRowCell>
-                        }
+                            @if (functionTesting.FileStatus == "Online")
+                            {
+                                <TableRowCell><span class="badge rounded-pill bg-primary" style="color:white">Online</span></TableRowCell>
+                            }
+                            else
+                            {
+                                <TableRowCell><span class="badge rounded-pill bg-danger">File not found</span></TableRowCell>
+                            }
 
-                        <TableRowCell>
-                            <Button class="btn" @onclick="() => NavigateToCounterComponent()"><i class="fas fa-arrow-right"></i> Detail</Button>
-                            <a class="btn" href="/download/@functionTesting.Id"><i class="fas fa-download" />&nbspDownload</a>
-                            <Button class="btn" @onclick="() => DeleteFile(functionTesting)"><i class="fas fa-trash"></i> Delete</Button>
-                        </TableRowCell>
-                    </TableRow>
+                            <TableRowCell>
+                                <Button class="btn" @onclick="() => NavigateToCounterComponent(functionTesting.Id.ToString())"><i class="fas fa-arrow-right"></i> Detail</Button>
+                                <a class="btn" href="/download/@functionTesting.Id"><i class="fas fa-download" />&nbspDownload</a>
+                                <Button class="btn" @onclick="() => DeleteFile(functionTesting)"><i class="fas fa-trash"></i> Delete</Button>
+                            </TableRowCell>
+                        </TableRow>
+                    }
                 }
-            }
+            </TableBody>
+        </Table>
+    </div>
 
-        </TableBody>
-    </Table>
 }
 
 
@@ -119,5 +120,8 @@
         }
     }
 
-    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("testscreen"); }
+    private void NavigateToCounterComponent(string fileId) 
+    { 
+        NavigationManager.NavigateTo($"testscreen/{fileId}"); 
+    }
 }

@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp1.Pages
+namespace BlazorApp1.Pages.ProjectDetailPage
 {
     #line hidden
     using System;
@@ -13,147 +13,125 @@ namespace BlazorApp1.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 2 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using Microsoft.AspNetCore.Authorization;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 4 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using Microsoft.AspNetCore.Components.Forms;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 5 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using Microsoft.AspNetCore.Components.Routing;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 6 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using Microsoft.AspNetCore.Components.Web;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 7 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using Microsoft.AspNetCore.Components.Web.Virtualization;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 8 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using Microsoft.JSInterop;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 9 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using BlazorApp1;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 10 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using BlazorApp1.Shared;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 11 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using Blazorise;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 12 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using Blazorise.RichTextEdit;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 13 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using Blazored.Modal;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 14 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\_Imports.razor"
-using Blazored.Modal.Services;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
-using BlazorApp1.Services.Interface;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 9 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 1 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
-using BlazorApp1.Commons;
+#line 2 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
-using System.IO;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 12 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
-using System.Text.Json;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 13 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
-using Microsoft.AspNetCore.SignalR.Client;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 14 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
-using System.Security.Claims;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 15 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 3 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/functiontesting")]
-    public partial class FunctionTesting : Microsoft.AspNetCore.Components.ComponentBase, IAsyncDisposable
+#nullable restore
+#line 4 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using Microsoft.AspNetCore.Components.Forms;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using Microsoft.AspNetCore.Components.Routing;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using Microsoft.AspNetCore.Components.Web;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using Microsoft.AspNetCore.Components.Web.Virtualization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 8 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using Microsoft.JSInterop;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 9 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using BlazorApp1;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 10 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using BlazorApp1.Shared;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using Blazorise;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using Blazorise.RichTextEdit;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using Blazored.Modal;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using Blazored.Modal.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "D:\AutoTest\WebApp\BlazorApp1\_Imports.razor"
+using BlazorInputFile;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 1 "D:\AutoTest\WebApp\BlazorApp1\Pages\ProjectDetailPage\EditFunction.razor"
+using BlazorApp1.Services.Interface;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "D:\AutoTest\WebApp\BlazorApp1\Pages\ProjectDetailPage\EditFunction.razor"
+using BlazorApp1.Models;
+
+#line default
+#line hidden
+#nullable disable
+    public partial class EditFunction : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -161,133 +139,44 @@ using Microsoft.AspNetCore.Components.Authorization;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 59 "C:\Users\HangPham\Documents\autotest\WebApp\BlazorApp1\Pages\FunctionTesting.razor"
+#line 22 "D:\AutoTest\WebApp\BlazorApp1\Pages\ProjectDetailPage\EditFunction.razor"
        
-    private IFileEntry loadedFile = null;
-    private List<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
-    private bool isLoading;
-    private List<UploadResult> uploadResults = new();
 
-    private HubConnection hubConnection;
-    private string userInput;
-    private string messageInput;
-    private List<string> messages = new List<string>();
-
-    private string _authMessage;
-    private string _userId;
-    private string _text;
-    private IEnumerable<Claim> _claims = Enumerable.Empty<Claim>();
+    [CascadingParameter] BlazoredModalInstance ModalInstance { get; set; }
+    [Parameter] public BlazorApp1.Models.ProjectDetail function { get; set; }
 
 
     protected override async Task OnInitializedAsync()
     {
-        ListFunctionTesting = FunctionTestingService.GetAllProject().ToList();
 
-        hubConnection = new HubConnectionBuilder()
-           .WithUrl(NavigationManager.ToAbsoluteUri("/chathub"))
-           .Build();
+    }
 
-        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-        var user = authState.User;
-
-        if (user.Identity.IsAuthenticated)
+    async void SaveFunction()
+    {
+        function.ModifiedDate = DateTime.UtcNow;
+        try
         {
-            _authMessage = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            await _service.UpdateFunction(function);
+            await ModalInstance.CloseAsync(ModalResult.Ok<BlazorApp1.Models.ProjectDetail>(function));
+        }
+        catch
+        {
+            await JsRuntime.InvokeVoidAsync("Error", "Something when wrong");
         }
 
-        await hubConnection.StartAsync();
-        await hubConnection.SendAsync("Subribe", _authMessage);
-
-        hubConnection.On<string>("ReceiveMessage", (message) =>
-        {
-            messages.Add(message);
-            try
-            {
-                StateHasChanged();
-            }
-            catch
-            {
-
-            }
-        });
-
     }
-    string message = "";
 
-    private void OnChanged(FileChangedEventArgs e)
+    async void Cancel()
     {
-        if (e.Files.Count() > 0)
-        {
-            loadedFile = e.Files[0];
-        }
+        await ModalInstance.CancelAsync();
     }
 
-    private async void UploadFile()
-    {
-
-        if (loadedFile != null)
-        {
-            using var content = new MultipartFormDataContent();
-
-            using (var stream = new MemoryStream())
-            {
-                await loadedFile.WriteToStreamAsync(stream);
-                stream.Seek(0, SeekOrigin.Begin);
-
-                content.Add(
-                   content: new StreamContent(stream),
-                   name: "\"files\"",
-                   fileName: loadedFile.Name);
-                content.Add(
-                    content: new StringContent(_authMessage),
-                    name: "\"userid\""
-                );
-
-                var client = ClientFactory.CreateClient();
-
-                var response =
-                    await client.PostAsync("https://localhost:5001/Filesave",
-                    content);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var options = new JsonSerializerOptions
-                    {
-                        PropertyNameCaseInsensitive = true,
-                    };
-                    using var responseStream =
-                        await response.Content.ReadAsStreamAsync();
-
-                    var newUploadResults = await JsonSerializer
-                        .DeserializeAsync<IList<UploadResult>>(responseStream, options);
-
-                    uploadResults = uploadResults.Concat(newUploadResults).ToList();
-                }
-            }
-        }
-    }
-    //file
-    string fileContent;
-
-    //link
-    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("testscreen"); }
-
-    public bool IsConnected =>
-       hubConnection.State == HubConnectionState.Connected;
-
-    public async ValueTask DisposeAsync()
-    {
-        await hubConnection.DisposeAsync();
-    }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpClientFactory ClientFactory { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider AuthenticationStateProvider { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JS { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IFunctionTesting FunctionTestingService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntime { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IProjectDetailService _service { get; set; }
     }
 }
 #pragma warning restore 1591
