@@ -39,7 +39,10 @@ namespace BlazorApp1.Services
 
         public async Task<FunctionTesting> FindById(int id)
         {
-            return await _context.FunctionTestings.FirstOrDefaultAsync(t => t.Id == id);
+            if (id == -1) //if id == -1 then download template
+                return new FunctionTesting { FileName = "Template", FilePath = "/template/template.csv" };
+            else
+                return await _context.FunctionTestings.FirstOrDefaultAsync(t => t.Id == id);
         }
 
         public async Task Delete(int id)
