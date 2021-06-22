@@ -1,0 +1,13 @@
+20:41:19.760 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+20:41:20.789 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+20:41:20.794 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+20:41:22.093 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+20:41:23.280 [main] INFO  Kltn2021.Passed.MustPass - primas
+20:41:27.448 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+20:41:28.547 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+20:41:29.625 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+20:41:31.933 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+20:41:33.100 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+20:41:34.254 [main] INFO  Kltn2021.Passed.MustPass - primascompany
+20:41:35.367 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+20:41:36.537 [main] INFO  Kltn2021.Passed.MustPass - Browser closed

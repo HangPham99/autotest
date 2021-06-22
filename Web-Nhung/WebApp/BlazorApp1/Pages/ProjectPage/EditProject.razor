@@ -1,0 +1,53 @@
+﻿@using BlazorApp1.Services.Interface
+@using BlazorApp1.Models
+@inject IProjectService _service
+@inject IJSRuntime JsRuntime;
+
+<div class="simple-form">
+
+    <div class="form-group">
+        <label for="movie-name">Project Name</label>
+        <input @bind="@project.ProjectName" type="text" class="form-control" id="project-name" style="min-width:500px"/>
+    </div>
+
+    <div class="form-group">
+        <label for="year">Link</label>
+        <input @bind="@project.Link" type="text" class="form-control" id="project-link" style="min-width:500px"/>
+    </div>
+
+    <button @onclick="SaveProject" class="btn btn-primary" style="margin:5px;">Submit</button>
+    <button @onclick="Cancel" class="btn btn-secondary" style="margin:5px;">Cancel</button>
+</div>
+
+@code {
+
+    [CascadingParameter] BlazoredModalInstance ModalInstance { get; set; }
+    [Parameter] public Project project { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+
+    async void SaveProject()
+    {
+        project.ModifiedDate = DateTime.UtcNow;
+        try
+        {
+            await _service.UpdateProject(project);
+            await ModalInstance.CloseAsync(ModalResult.Ok<Project>(project));
+        }
+        catch
+        {
+            await JsRuntime.InvokeVoidAsync("Error", "Something when wrong");
+        }
+
+    }
+
+    async void Cancel()
+    {
+        await ModalInstance.CancelAsync();
+    }
+
+}

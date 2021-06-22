@@ -1,0 +1,15 @@
+20:45:36.717 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+20:45:37.232 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+20:45:37.237 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+20:45:38.586 [main] INFO  Kltn2021.Passed.MustPass - hello
+20:45:39.808 [main] INFO  Kltn2021.Passed.MustPass - 123456
+20:45:41.077 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+20:45:42.132 [main] INFO  Kltn2021.Passed.MustPass - The user name or password is incorrect, please try again.
+20:45:42.132 [main] INFO  Kltn2021.Passed.MustPass - The user name or password is incorrect, please try again.
+20:45:42.133 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+20:45:43.214 [main] INFO  Kltn2021.Passed.MustPass - 123
+20:45:44.297 [main] INFO  Kltn2021.Passed.MustPass - 123
+20:45:45.479 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+20:45:48.487 [main] INFO  Kltn2021.Passed.MustPass - Your account has been locked, please contact your administrator!
+20:45:48.487 [main] INFO  Kltn2021.Passed.MustPass - The user name or password is incorrect, please try again....
+20:45:49.687 [main] INFO  Kltn2021.Passed.MustPass - Browser closed

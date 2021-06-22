@@ -1,0 +1,7 @@
+Action,Target,Value
+open,https://vi-vn.facebook.com/login
+name,"TC1: enter wrong username password"
+enter,"//*[@id="email"]",hello090909
+enter,"//*[@id="pass"]",123456
+click,"//*[@id="loginbutton"]"
+result,"//*[@id="email_container"]/div[2]","Email hoặc số di động bạn nhập không kết nối với tài khoản nào. Hãy tìm tài khoản của bạn và đăng nhập."

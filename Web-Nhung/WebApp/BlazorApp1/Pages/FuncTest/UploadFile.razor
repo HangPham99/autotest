@@ -1,0 +1,96 @@
+﻿@using System.IO;
+@using BlazorApp1.Services.Interface;
+@using BlazorApp1.Models;
+@using Microsoft.AspNetCore.Hosting;
+@inject IFunctionTesting FunctionTestingService
+@inject IWebHostEnvironment Environment;
+
+
+<p>Only support csv files. Max file upload size: 5MB</p>
+<label for="uploadFiles">Select File(s)</label>
+<BlazorInputFile.InputFile id="uploadFiles" multiple OnChange="HandleSelection" />
+<div style="min-width:600px; max-height:600px; overflow: auto">
+    @if (selectedFiles != null)
+    {
+        foreach (var file in selectedFiles)
+        {
+            var isLoading = file.Data.Position > 0;
+            <div class="file-row">
+                <mat-card>
+                    <mat-card-content>
+                        <div>
+                            <h2>@file.Name</h2>
+                            <p>Size: <strong>@file.Size bytes</strong></p>
+                            <p>Last modified: <strong>@file.LastModified.ToShortDateString()</strong>;</p>
+                            <p>Type: <strong>@file.Type</strong></p>
+                        </div>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <Button mat-raised-button Color="Color.Info" Clicked="() => LoadFile(file)" Disabled="@isLoading">
+                            @if (!isLoading)
+                            {
+                                <span>Upload this</span>
+                            }
+                            else
+                            {
+                                <span>Uploaded @((100.0 * file.Data.Position / file.Size).ToString("0"))%</span>
+                            }
+                        </Button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        }
+    }
+</div>
+<button @onclick="Close" class="btn btn-danger" style="margin-top: 3rem; float: right">Close</button>
+
+@code {
+    [CascadingParameter] BlazoredModalInstance ModalInstance { get; set; }
+
+    [Parameter] public int ProjectId { get; set; }
+    [Parameter] public int ProjectDetailId { get; set; }
+
+    private IFileListEntry[] selectedFiles;
+    private List<BlazorApp1.Models.FunctionTesting> UploadedFile = new List<Models.FunctionTesting>();
+
+
+    void HandleSelection(IFileListEntry[] files)
+    {
+        selectedFiles = files.Where(t => t.Type == "application/vnd.ms-excel" && t.Size <= 5242880).ToArray();
+    }
+
+    async Task LoadFile(IFileListEntry file)
+    {
+        var fileGuid = Guid.NewGuid();
+        string path = Path.Combine(this.Environment.ContentRootPath, "Development", "unsafe_uploads");
+        string filePath = Path.Combine(path, string.Format("{0}_{1}.csv", file.Name.Split('.')[0], fileGuid.ToString()));
+        file.OnDataRead += (sender, eventArgs) => InvokeAsync(StateHasChanged);
+
+        if (!Directory.Exists(path))
+        {
+            Directory.CreateDirectory(path);
+        }
+
+        using (FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate))
+        {
+            await file.Data.CopyToAsync(fs);
+            await fs.FlushAsync();
+        }
+
+        var newFuncTest = new BlazorApp1.Models.FunctionTesting()
+        {
+            FileName = file.Name,
+            ProjectDetailId = ProjectDetailId,
+            FilePath = filePath,
+            CreateDate = DateTime.UtcNow,
+            ModifiedDate = DateTime.UtcNow
+        };
+
+        this.UploadedFile.Add(newFuncTest);
+    }
+
+    private async void Close()
+    {
+        await ModalInstance.CloseAsync(ModalResult.Ok<List<BlazorApp1.Models.FunctionTesting>>(UploadedFile));
+    }
+}

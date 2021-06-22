@@ -1,0 +1,16 @@
+﻿Action,Target,Value,,,,,,
+open,<url>,,,,,,,
+name,<TC1: name testcase>,,,,,,<value>=,<anyvalue>
+click,<xpath>,,,,,,,{{STRING}} 
+enter,<xpath>,<value>,,,,,,{{STRING|LEN}} 
+result,<alert>,<expected result>,,,,,,{{NUMBER|LEN}}
+name,<TC2: name testcase>,,,,,,,{{NUMBER}} 
+click,<xpath>,,,,,,,{{NUMBERRANGE|FROM|TO}} 
+enter,<xpath>,<value>,,,,,,{{DATE}}
+newtab,<url>,,,,,,,{{DATE|FROM|TO}}
+result,<url>,<expected result>,,,,,,{{DATETIME|FROM|TO}}
+name,<TC3: name testcase>,,,,,,,{{NUMBER|2}}{{STRING|4}}
+click,<xpath>,,,,,,,
+enter,<xpath>,<{{STRING|LEN}}>,,,,,,
+newtab,<url>,,,,,,,
+result,<comparelink>,<expected result>,,,,,,

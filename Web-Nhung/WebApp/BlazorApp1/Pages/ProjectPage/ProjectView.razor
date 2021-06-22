@@ -1,0 +1,93 @@
+﻿@page "/projects"
+
+@using BlazorApp1.Services.Interface;
+@inject NavigationManager NavigationManager
+@inject IProjectService ProjectService
+@attribute [Authorize]
+<h3>Project</h3>
+<br />
+<br />
+<Button Color="Color.Info" Clicked="CreateProject"> + Add Project</Button>
+<br />
+<br />
+<Table>
+    <TableHeader>
+        <TableRow>
+            <TableHeaderCell>Id</TableHeaderCell>
+            <TableHeaderCell>Project name</TableHeaderCell>
+            <TableHeaderCell>Link</TableHeaderCell>
+            <TableHeaderCell>Created Date</TableHeaderCell>
+            <TableHeaderCell>Modified Date</TableHeaderCell>
+            <TableHeaderCell>    </TableHeaderCell>
+        </TableRow>
+    </TableHeader>
+    <TableBody>
+        @if (ListProject != null)
+        {
+            @foreach (var project in ListProject)
+            {
+                <TableRow>
+                    <TableRowCell>@project.Id</TableRowCell>
+                    <TableRowCell>@project.ProjectName</TableRowCell>
+                    <TableRowCell>@project.Link</TableRowCell>
+                    <TableRowCell>@project.CreateDate</TableRowCell>
+                    <TableRowCell>@project.ModifiedDate</TableRowCell>
+                    <TableRowCell>
+                        <Button class="btn" @onclick="() => NavigateDetail(project)"><i class="fas fa-info-circle"></i> Detail</Button>
+                        <Button class="btn" @onclick="() => UpdateProject(project)"><i class="fas fa-edit"></i> Edit</Button>
+                        <Button class="btn" @onclick="() => Delete_Click(project)"><i class="fas fa-trash"></i> Delete</Button>
+                    </TableRowCell>
+                </TableRow>
+            }
+        }
+
+    </TableBody>
+</Table>
+
+@code {
+    [CascadingParameter] public IModalService Modal { get; set; }
+    [CascadingParameter] protected Task<AuthenticationState> AuthStat { get; set; }
+    private IEnumerable<BlazorApp1.Models.Project> ListProject;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        ListProject = await ProjectService.GetAllProject();
+    }
+
+    private async void CreateProject()
+    {
+        var add = Modal.Show<AddProject>("Add new project");
+        var result = await add.Result;
+        ListProject = await ProjectService.GetAllProject();
+        StateHasChanged();
+    }
+
+    private async void UpdateProject(BlazorApp1.Models.Project project)
+    {
+        var parameters = new ModalParameters();
+        parameters.Add("project", project);
+        var update = Modal.Show<EditProject>("Edit project", parameters);
+        var result = await update.Result;
+        ListProject = await ProjectService.GetAllProject();
+        StateHasChanged();
+    }
+
+    protected async void Delete_Click(BlazorApp1.Models.Project project)
+    {
+        var parameters = new ModalParameters();
+        parameters.Add("project", project);
+        var update = Modal.Show<DeleteProject>("Delete confirmation", parameters);
+        var result = await update.Result;
+        ListProject = await ProjectService.GetAllProject();
+        StateHasChanged();
+    }
+
+    protected void NavigateDetail(BlazorApp1.Models.Project project)
+    {
+        NavigationManager.NavigateTo(string.Format("projectdetail/{0}", project.Id));
+    }
+
+    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("projectdetail"); }
+}
+

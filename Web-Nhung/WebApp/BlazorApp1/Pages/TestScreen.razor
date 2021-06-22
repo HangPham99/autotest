@@ -1,0 +1,179 @@
+﻿@page "/testscreen/{TestCaseFileId}"
+
+@using System.IO;
+@using Microsoft.AspNetCore.Hosting;
+@using BlazorApp1.Models;
+@using BlazorApp1.Services.Interface;
+@using Blazorise.RichTextEdit
+@using Microsoft.AspNetCore.SignalR.Client;
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims
+@using BlazorApp1.Commons;
+@using System.Text.Json;
+@inject IWebHostEnvironment Environment
+@inject ITestScreenService TestScreenService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+@inject IFunctionTesting FunctionTestingService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IHttpClientFactory ClientFactory
+@implements IAsyncDisposable
+
+<h3>Run Test</h3>
+<br />
+<Button id="btnRun" Color="Color.Success" Clicked="RunTestSession" disabled="@IsDisableButton">Run </Button>
+<a href="/download/@reportFilename">Export</a>
+<br />
+<br />
+<div id="table-conatainer" style="height:400px;overflow-y:scroll">
+    @if (FileContent != null)
+    {
+<Row>
+    <Column ColumnSize="ColumnSize.Is12">
+        <Table Bordered="true">
+            <TableHeader>
+                <TableRow>
+                    <TableHeaderCell>Action</TableHeaderCell>
+                    <TableHeaderCell>Target</TableHeaderCell>
+                    <TableHeaderCell>Value</TableHeaderCell>
+                </TableRow>
+            </TableHeader>
+            <TableBody>
+                @foreach (var testscreen in FileContent)
+                {
+<TableRow>
+    <TableRowCell>@testscreen.Action</TableRowCell>
+    <TableRowCell>@testscreen.Target</TableRowCell>
+    <TableRowCell>@testscreen.Value</TableRowCell>
+</TableRow>}
+            </TableBody>
+        </Table>
+    </Column>
+</Row>}
+
+</div>
+
+<div>
+    <h4>Log</h4>
+    <div style="
+        height: 200px;
+        width: 100%;
+        overflow-y: scroll;
+        margin-bottom: 20px; border:solid;
+        border-width: 1px;
+        border-color: darkgray" >
+        @foreach (var message in messages)
+        {
+       <p>@message</p>}
+    </div>
+</div>
+@code { private BlazorApp1.Models.FunctionTesting FunctionTesting;
+    private List<TestCaseFileContent> FileContent;
+
+    private HubConnection hubConnection;
+    private string userInput;
+    private string messageInput;
+    private List<string> messages = new List<string>();
+
+    private string _authMessage;
+    private string _userId;
+    private string _text;
+    private IEnumerable<Claim> _claims = Enumerable.Empty<Claim>();
+
+    private RichTextEdit richTextEditRef;
+    private bool readOnly;
+    private string contentAsHtml;
+    private string contentAsDeltaJson;
+    private string contentAsText;
+    private string savedContent;
+
+    private bool IsDisableButton;
+    private string reportFilename;
+
+    [Parameter]
+    public string TestCaseFileId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        FunctionTesting = await FunctionTestingService.FindById(Convert.ToInt32(TestCaseFileId));
+        IsDisableButton = false;
+
+        var result = await File.ReadAllLinesAsync(FunctionTesting.FilePath);
+        this.FileContent = result.Skip(1)
+                                 .Select(v => TestCaseFileContent.FromCsv(v))
+                                 .ToList();
+
+        hubConnection = new HubConnectionBuilder()
+        .WithUrl(NavigationManager.ToAbsoluteUri("/chathub"))
+        .Build();
+
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            _authMessage = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+        }
+
+        await hubConnection.StartAsync();
+        await hubConnection.SendAsync("Subribe", _authMessage);
+
+        hubConnection.On<string>("ReceiveMessage", (message) =>
+        {
+            if (message == "Automation test session is started.")
+                this.IsDisableButton = true;
+
+            if (message == "Automation test session is completed.")
+                this.IsDisableButton = false;
+
+            messages.Add(message);
+            try
+            {
+                StateHasChanged();
+            }
+            catch
+            {
+
+            }
+        });
+    }
+
+    public async Task RunTestSession()
+    {
+        using var content = new MultipartFormDataContent();
+        content.Add(
+            content: new StringContent(_authMessage),
+            name: "\"userid\""
+        );
+        content.Add(
+            content: new StringContent(FunctionTesting.FilePath),
+            name: "\"testcaseFilePath\""
+        );
+
+        var client = ClientFactory.CreateClient();
+
+        var response = await client.PostAsync("https://localhost:5001/Filesave/runtest", content);
+        reportFilename = await response.Content.ReadAsStringAsync();
+        reportFilename = reportFilename.Split(@"\")[11];
+    }
+
+    public async Task OnContentChanged()
+    {
+        contentAsHtml = await richTextEditRef.GetHtmlAsync();
+        contentAsDeltaJson = await richTextEditRef.GetDeltaAsync();
+        contentAsText = await richTextEditRef.GetTextAsync();
+    }
+
+    public async Task OnSave()
+    {
+        savedContent = await richTextEditRef.GetHtmlAsync();
+        await richTextEditRef.ClearAsync();
+    }
+
+    public bool IsConnected => hubConnection.State == HubConnectionState.Connected;
+
+    public async ValueTask DisposeAsync()
+    {
+        await hubConnection.DisposeAsync();
+    } }
+
