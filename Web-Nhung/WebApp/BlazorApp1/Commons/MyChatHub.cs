@@ -20,7 +20,8 @@ namespace BlazorApp1.Commons
         {
             sClients = Clients;
             ChatUser[userid] = Context.ConnectionId;
-            await Clients.Client(ChatUser[userid]).SendAsync("ReceiveMessage", "Connect Thành Công");
+            var Timestamp = new DateTimeOffset(DateTime.UtcNow);
+            await Clients.Client(ChatUser[userid]).SendAsync("ReceiveMessage", Timestamp.ToString() + ": The connection had been establited successfully!");
         }
         public async override Task OnDisconnectedAsync(Exception exception)
         {

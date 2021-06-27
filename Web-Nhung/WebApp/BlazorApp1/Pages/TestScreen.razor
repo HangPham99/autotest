@@ -22,7 +22,8 @@
 <h3>Run Test</h3>
 <br />
 <Button id="btnRun" Color="Color.Success" Clicked="RunTestSession" disabled="@IsDisableButton">Run </Button>
-<a href="/download/@reportFilename">Export</a>
+<a class="btn btn-info" href="/download/@reportFilename">Export</a>
+<a class="btn btn-secondary" href='javascript:history.go(-1)'> <i class="fas fa-angle-left"></i> Go Back</a>
 <br />
 <br />
 <div id="table-conatainer" style="height:400px;overflow-y:scroll">

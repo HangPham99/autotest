@@ -60,6 +60,22 @@ a, .btn-link {
     align-items: center;
 }
 
+.badge-text {
+    color: white !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.isDisabledHref {
+    color: currentColor;
+    opacity: 0.5;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+}
+
     .file-row h2 {
         margin: 0.3rem 0 0.6rem 0;
         font-weight: bold;
