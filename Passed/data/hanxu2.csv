@@ -1,0 +1,13 @@
+﻿Action,Target,Value
+open,https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login,
+name,TC1: enter wrong username password,
+click,/html/body/div[1]/div/div[2]/div/div[1]/div[1]/button,
+dropdown,"//*[@id=""userSelect""]",2
+click,/html/body/div[1]/div/div[2]/div/form/button,
+result ,/html/body/div[1]/div/div[2]/div/div[1]/strong/span,Harry Potter
+name,TC2: enter wrong username password,
+dropdown,"//*[@id=""accountSelect""]",2
+click,/html/body/div[1]/div/div[2]/div/div[3]/button[2]s,
+enter,/html/body/div[1]/div/div[2]/div/div[4]/div/form/div/input,5
+click,/html/body/div[1]/div/div[2]/div/div[4]/div/form/button,
+result ,/html/body/div[1]/div/div[2]/div/div[4]/div/span,Deposit Successful

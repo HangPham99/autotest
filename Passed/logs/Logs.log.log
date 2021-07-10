@@ -1,0 +1,1689 @@
+00:55:37.582 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+00:56:20.924 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+00:56:23.372 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+00:56:23.376 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+00:56:24.472 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:56:25.577 [main] INFO  Kltn2021.Passed.MustPass - 123
+00:56:26.658 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+00:56:27.808 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:56:27.865 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:56:27.866 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:56:27.866 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+00:56:28.967 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:56:30.035 [main] INFO  Kltn2021.Passed.MustPass - sdsf
+00:56:31.105 [main] INFO  Kltn2021.Passed.MustPass - sdvsd
+00:56:32.226 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:56:32.237 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:56:32.237 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:56:32.237 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+00:56:33.340 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:56:34.405 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+00:56:35.479 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+00:56:36.617 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:56:36.626 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:56:36.626 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:56:36.627 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+00:56:37.724 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:56:38.792 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+00:56:39.858 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+00:56:40.979 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:56:42.160 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+00:56:42.161 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:56:42.161 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+00:56:43.252 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:56:44.317 [main] INFO  Kltn2021.Passed.MustPass - *****
+00:56:45.390 [main] INFO  Kltn2021.Passed.MustPass - ******
+00:56:46.540 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:56:47.708 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+00:56:47.708 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:56:47.708 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+00:56:47.708 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+00:56:47.708 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+00:56:47.708 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+00:57:20.256 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+00:57:22.399 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+00:57:22.405 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+00:57:23.491 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:57:24.604 [main] INFO  Kltn2021.Passed.MustPass - 123
+00:57:25.677 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+00:57:26.880 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:57:26.895 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:57:26.895 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:57:26.895 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+00:57:28.000 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:57:29.066 [main] INFO  Kltn2021.Passed.MustPass - sdsf
+00:57:30.129 [main] INFO  Kltn2021.Passed.MustPass - sdvsd
+00:57:31.236 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:57:31.246 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:57:31.246 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:57:31.247 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+00:57:32.342 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:57:33.427 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+00:57:34.515 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+00:57:35.671 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:57:35.681 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:57:35.681 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:57:35.681 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+00:57:36.792 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:57:37.869 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+00:57:38.936 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+00:57:40.044 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:57:41.253 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+00:57:41.253 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:57:41.253 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+00:57:42.348 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:57:43.416 [main] INFO  Kltn2021.Passed.MustPass - *****
+00:57:44.480 [main] INFO  Kltn2021.Passed.MustPass - ******
+00:57:45.629 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:57:46.793 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+00:57:46.793 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:57:46.793 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+00:57:46.793 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+00:57:46.793 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+00:57:46.793 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+00:59:21.724 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+00:59:27.417 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+00:59:27.421 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+00:59:28.496 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:59:29.576 [main] INFO  Kltn2021.Passed.MustPass - 123
+00:59:30.658 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+00:59:31.788 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:59:31.804 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:59:31.804 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:59:31.804 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+00:59:32.949 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:59:34.022 [main] INFO  Kltn2021.Passed.MustPass - sdsf
+00:59:35.101 [main] INFO  Kltn2021.Passed.MustPass - sdvsd
+00:59:36.223 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:59:36.234 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:59:36.235 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:59:36.235 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+00:59:37.363 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:59:38.446 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+00:59:39.522 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+00:59:40.658 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:59:40.668 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:59:40.668 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:59:40.668 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+00:59:41.764 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:59:42.827 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+00:59:43.889 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+00:59:45.013 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:59:46.197 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+00:59:46.197 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:59:46.197 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+00:59:47.324 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:59:48.389 [main] INFO  Kltn2021.Passed.MustPass - *****
+00:59:49.465 [main] INFO  Kltn2021.Passed.MustPass - ******
+00:59:50.604 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:59:51.759 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+00:59:51.759 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+00:59:51.760 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+00:59:51.760 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+00:59:51.760 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+00:59:51.760 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:01:26.878 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:01:28.663 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:01:28.668 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:01:30.877 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[1]/div/div[2]/div/div[1]/div[1]/button
+01:01:32.064 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[1]/div/div[2]/div/form/button
+01:01:33.430 [main] INFO  Kltn2021.Passed.MustPass - Harry Potter
+01:01:33.430 [main] INFO  Kltn2021.Passed.MustPass - Harry Potter
+01:01:33.431 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+01:01:33.555 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [/html/body/div[1]/div/div[2]/div/div[3]/button[2]s] can not find!
+01:01:33.555 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+01:01:33.556 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:01:33.556 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 2 |   Pass: 1 |   Fail: 1
+01:01:33.556 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:03:04.735 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:03:07.269 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:03:07.275 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:03:08.394 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:03:09.556 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:03:10.644 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:03:11.809 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:03:11.850 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:03:11.850 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:03:11.850 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+01:03:12.961 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:03:14.037 [main] INFO  Kltn2021.Passed.MustPass - sdsf
+01:03:15.115 [main] INFO  Kltn2021.Passed.MustPass - sdvsd
+01:03:16.232 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:03:16.244 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:03:16.245 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:03:16.245 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+01:03:17.361 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:03:18.472 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+01:03:19.541 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+01:03:20.718 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:03:20.730 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:03:20.730 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:03:20.730 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+01:03:21.839 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:03:22.930 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+01:03:24.001 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+01:03:25.148 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:03:26.442 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+01:03:26.442 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:03:26.442 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+01:03:27.550 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:03:28.615 [main] INFO  Kltn2021.Passed.MustPass - *****
+01:03:29.686 [main] INFO  Kltn2021.Passed.MustPass - ******
+01:03:30.885 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:03:32.058 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+01:03:32.058 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:03:32.058 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+01:03:32.059 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:03:32.059 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+01:03:32.059 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:03:52.308 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:03:54.655 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:03:54.661 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:03:55.768 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:03:56.864 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:03:57.949 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:03:59.091 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:03:59.132 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:03:59.132 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:03:59.132 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+01:04:00.235 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:04:01.302 [main] INFO  Kltn2021.Passed.MustPass - sdsf
+01:04:02.374 [main] INFO  Kltn2021.Passed.MustPass - sdvsd
+01:04:03.528 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:04:03.540 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:04:03.540 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:04:03.540 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+01:04:04.648 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:04:05.747 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+01:04:06.829 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+01:04:07.991 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:04:08.001 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:04:08.001 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:04:08.001 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+01:04:09.114 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:04:10.176 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+01:04:11.249 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+01:04:12.369 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:04:13.585 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+01:04:13.585 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:04:13.585 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+01:04:14.700 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:04:15.766 [main] INFO  Kltn2021.Passed.MustPass - *****
+01:04:16.831 [main] INFO  Kltn2021.Passed.MustPass - ******
+01:04:17.981 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:04:19.193 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+01:04:19.193 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:04:19.193 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+01:04:19.193 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:04:19.193 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+01:04:19.193 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:06:36.529 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:06:38.797 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:06:38.803 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:06:39.884 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:06:40.964 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:06:42.056 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:06:43.183 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:06:43.200 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:06:43.200 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:06:43.200 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+01:06:44.295 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:06:45.364 [main] INFO  Kltn2021.Passed.MustPass - sdsf
+01:06:46.436 [main] INFO  Kltn2021.Passed.MustPass - sdvsd
+01:06:47.545 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:06:47.558 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:06:47.558 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:06:47.558 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+01:06:48.657 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:06:49.728 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+01:06:50.795 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+01:06:51.927 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:06:51.938 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:06:51.939 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:06:51.939 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+01:06:53.043 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:06:54.109 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+01:06:55.183 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+01:06:56.309 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:06:57.510 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+01:06:57.510 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:06:57.511 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+01:06:58.626 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:06:59.689 [main] INFO  Kltn2021.Passed.MustPass - *****
+01:07:00.760 [main] INFO  Kltn2021.Passed.MustPass - ******
+01:07:01.962 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:07:03.133 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+01:07:03.133 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:07:03.133 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+01:07:03.133 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:07:03.133 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+01:07:03.133 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:08:01.281 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:08:03.647 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:08:03.651 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:08:04.741 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:08:05.837 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:08:06.914 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:08:08.114 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:08:08.130 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:08:08.130 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:08:08.130 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+01:08:09.240 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:08:10.311 [main] INFO  Kltn2021.Passed.MustPass - sdsf
+01:08:11.391 [main] INFO  Kltn2021.Passed.MustPass - sdvsd
+01:08:12.529 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:08:12.543 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:08:12.544 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:08:12.544 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+01:08:13.672 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:08:14.749 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+01:08:15.827 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+01:08:16.996 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:08:17.007 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:08:17.007 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:08:17.007 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+01:08:18.119 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:08:19.194 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+01:08:20.277 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+01:08:21.440 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:08:22.634 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+01:08:22.634 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:08:22.634 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+01:08:23.743 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:08:24.818 [main] INFO  Kltn2021.Passed.MustPass - *****
+01:08:25.903 [main] INFO  Kltn2021.Passed.MustPass - ******
+01:08:27.068 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:08:28.331 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+01:08:28.331 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:08:28.331 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+01:08:28.331 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:08:28.331 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+01:08:28.331 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:10:21.262 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:10:23.659 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:10:23.665 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:10:24.760 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:10:25.857 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:10:26.934 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:10:28.119 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:10:28.135 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:10:28.136 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:10:28.136 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+01:10:29.244 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:10:29.277 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+01:10:29.277 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+01:10:29.277 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:10:29.278 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 2 |   Pass: 1 |   Fail: 1
+01:10:29.278 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:30:00.734 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:30:03.343 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:30:03.348 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:30:04.468 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:30:05.560 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:30:06.628 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:30:07.796 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:30:07.809 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:30:07.810 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:30:07.810 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+01:30:08.924 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:30:08.950 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+01:30:08.950 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+01:30:08.950 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:30:08.950 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 2 |   Pass: 1 |   Fail: 1
+01:30:08.950 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+01:31:25.128 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:31:27.666 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:31:27.672 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:31:28.760 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:31:29.841 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:31:30.920 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:31:32.217 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:31:32.253 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:31:32.253 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:31:32.253 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+01:31:33.372 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:31:33.444 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+01:31:34.569 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:35:38.219 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:35:40.779 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:35:40.785 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:35:41.889 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:35:42.992 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:35:44.069 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:35:45.220 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:40:24.049 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:40:26.484 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:40:26.489 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:40:27.583 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:40:28.704 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:40:29.786 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:40:30.930 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:40:30.945 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:40:30.945 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:40:30.946 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+01:40:32.037 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:40:32.111 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+01:40:33.220 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:45:40.337 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:45:42.644 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:45:42.652 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:45:43.757 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:45:44.869 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:45:45.947 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:45:47.098 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:45:47.115 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:45:47.115 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:45:47.115 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+01:45:48.286 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:45:48.364 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+01:45:49.485 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:48:32.175 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:48:34.900 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:48:34.905 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:48:35.988 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:48:37.068 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:48:38.136 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:48:39.264 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:48:39.280 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:48:39.280 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:48:39.280 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+01:48:40.390 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:48:40.416 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+01:48:41.535 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:49:14.499 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:49:17.746 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:49:17.751 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:49:18.838 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:49:19.932 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:49:21.003 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:49:22.378 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:50:33.727 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+01:50:36.151 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+01:50:36.155 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+01:50:37.239 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:50:38.325 [main] INFO  Kltn2021.Passed.MustPass - 123
+01:50:39.394 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+01:50:40.546 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+01:50:40.583 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:50:40.583 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+01:50:40.583 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+01:50:41.687 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+01:50:41.711 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+01:50:42.820 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:02:18.280 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+02:02:20.523 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+02:02:20.528 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+02:02:21.619 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:02:22.726 [main] INFO  Kltn2021.Passed.MustPass - 123
+02:02:23.801 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+02:02:24.987 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:02:25.003 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:02:25.003 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:02:25.003 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+02:02:26.115 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:02:26.142 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+02:03:55.945 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+02:03:58.330 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+02:03:58.335 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+02:03:59.429 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:04:00.537 [main] INFO  Kltn2021.Passed.MustPass - 123
+02:04:01.616 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+02:04:02.849 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:04:02.864 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:04:02.864 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:04:02.864 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+02:04:04.034 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:04:04.092 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+02:07:21.425 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+02:07:23.893 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+02:07:23.898 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+02:07:24.980 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:07:26.059 [main] INFO  Kltn2021.Passed.MustPass - 123
+02:07:27.137 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+02:07:28.251 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:07:28.264 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:07:28.264 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:07:28.264 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+02:07:29.400 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:07:29.424 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+02:07:30.464 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:07:31.543 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+02:07:32.614 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+02:07:33.725 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:07:33.734 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:07:33.734 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:07:33.735 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+02:07:34.833 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:07:35.930 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+02:07:36.996 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+02:07:38.112 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:07:39.325 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+02:07:39.326 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:07:39.326 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+02:07:40.420 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:07:41.487 [main] INFO  Kltn2021.Passed.MustPass - *****
+02:07:42.553 [main] INFO  Kltn2021.Passed.MustPass - ******
+02:07:43.657 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:07:44.814 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+02:07:44.814 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:07:44.814 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+02:07:44.815 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+02:07:44.815 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 2 |   Fail: 3
+02:07:44.815 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+02:20:19.989 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+02:20:22.541 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+02:20:22.546 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+02:20:23.663 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:20:24.763 [main] INFO  Kltn2021.Passed.MustPass - 123
+02:20:25.839 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+02:20:27.015 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:20:27.038 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:20:27.038 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:20:27.039 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+02:20:28.125 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:20:28.174 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+02:20:29.218 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:20:30.303 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+02:20:31.372 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+02:20:32.498 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:20:32.509 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:20:32.509 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:20:32.509 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+02:20:33.624 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:20:34.739 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+02:20:35.823 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+02:20:37.027 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:20:38.271 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+02:20:38.272 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:20:38.272 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+02:20:39.366 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:20:40.437 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+02:20:41.507 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+02:20:42.907 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:28:01.056 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+02:28:37.616 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+02:28:40.042 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+02:28:40.047 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+02:28:41.139 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:28:42.225 [main] INFO  Kltn2021.Passed.MustPass - 123
+02:28:43.309 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+02:28:44.464 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:28:44.477 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:28:44.478 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:28:44.478 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+02:28:45.619 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:28:45.687 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+02:28:46.734 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:28:47.834 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+02:28:48.911 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+02:28:50.018 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:28:50.027 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:28:50.028 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:28:50.028 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+02:28:51.138 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:28:52.249 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+02:28:53.326 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+02:28:54.471 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:28:55.654 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+02:28:55.654 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+02:28:55.654 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+02:28:56.751 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+02:28:57.819 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+02:28:58.887 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+02:29:00.244 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+02:30:35.697 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+02:45:19.732 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+02:45:19.842 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+02:45:19.844 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+02:45:20.895 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:14:09.403 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:14:09.614 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:14:09.620 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+21:15:02.322 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:15:02.544 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:15:02.552 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+21:15:03.663 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:18:03.536 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:18:03.626 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+21:18:03.626 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+21:18:03.626 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 0 |   Pass: 0 |   Fail: 0
+21:18:03.626 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+21:55:21.111 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:55:23.438 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:55:23.444 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+21:55:24.547 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:55:25.733 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:55:26.864 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+21:55:28.086 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:55:28.114 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:55:28.114 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:55:28.114 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+21:55:29.259 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:55:29.367 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+21:55:30.491 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:55:31.618 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+21:55:32.746 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+21:55:33.922 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:55:33.944 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:55:33.945 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:55:33.945 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+21:55:35.097 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:55:36.235 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+21:55:37.354 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+21:55:38.518 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:55:39.757 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+21:55:39.757 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:55:39.757 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+21:55:40.883 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:55:42.005 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+21:55:43.118 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+21:55:44.559 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:57:02.699 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:57:05.161 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:57:05.167 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+21:57:06.271 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:57:07.404 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:57:08.525 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+21:57:09.725 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:57:09.755 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:57:09.755 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:57:09.756 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+21:57:10.883 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:57:10.926 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+21:57:12.262 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:57:13.384 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+21:57:14.502 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+21:57:15.696 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:57:15.715 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:57:15.715 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:57:15.716 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+21:57:16.946 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:57:18.072 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+21:57:19.201 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+21:57:20.482 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:57:21.775 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+21:57:21.775 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:57:21.775 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+21:57:22.914 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:57:24.034 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+21:57:25.158 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+21:57:26.672 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:59:48.740 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:59:51.751 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:59:51.759 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+21:59:52.862 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:59:54.003 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:59:55.126 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+21:59:56.315 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:59:56.343 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:59:56.344 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:59:56.344 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+21:59:57.485 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:59:57.532 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+21:59:58.753 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:59:59.882 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+22:00:01.011 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+22:00:02.181 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:00:02.204 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:00:02.204 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:00:02.205 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+22:00:03.355 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:00:04.474 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+22:00:05.589 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+22:00:06.805 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:00:08.027 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+22:00:08.027 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:00:08.028 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+22:00:09.234 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:00:10.365 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+22:00:11.490 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+22:00:13.105 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:00:13.105 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+22:00:13.634 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+22:00:13.634 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+22:00:13.635 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 4 |   Pass: 2 |   Fail: 2
+22:00:13.635 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+22:39:17.306 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+22:39:19.590 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+22:39:19.594 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+22:39:20.680 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:39:21.793 [main] INFO  Kltn2021.Passed.MustPass - 123
+22:39:22.898 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+22:39:24.187 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:39:24.241 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:39:24.241 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:39:24.241 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+22:39:25.367 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:39:25.414 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+22:39:26.473 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:39:27.636 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+22:39:28.759 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+22:39:29.924 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:39:29.945 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:39:29.945 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:39:29.946 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+22:39:31.088 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:39:32.234 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+22:39:33.357 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+22:39:34.508 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:39:35.776 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+22:39:35.776 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:39:35.777 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+22:39:36.905 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:39:38.019 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+22:39:39.137 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+22:39:40.624 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:39:40.624 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+22:39:40.648 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [https://online.hcmute.edu.vn/] can not find!
+22:40:26.795 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+22:40:29.355 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+22:40:29.362 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+22:40:30.472 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:40:31.605 [main] INFO  Kltn2021.Passed.MustPass - 123
+22:40:32.741 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+22:40:33.939 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:40:33.969 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:40:33.969 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:40:33.969 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+22:40:35.090 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:40:35.134 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+22:40:36.206 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:40:37.341 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+22:40:38.463 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+22:40:39.630 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:40:39.663 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:40:39.663 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:40:39.664 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password
+22:40:40.875 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:40:42.009 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+22:40:43.126 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+22:40:44.487 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:40:45.743 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+22:40:45.743 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:40:45.744 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter wrong username password
+22:40:46.866 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:40:47.978 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+22:40:49.087 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+22:40:50.705 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:40:50.705 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+22:40:50.728 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [https://online.hcmute.edu.vn/] can not find!
+22:41:42.017 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+22:41:44.555 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+22:41:44.561 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+22:41:45.662 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:41:46.791 [main] INFO  Kltn2021.Passed.MustPass - 123
+22:41:47.908 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+22:41:49.209 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:41:49.240 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:41:49.240 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:41:49.240 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+22:41:50.374 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:41:50.414 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+22:41:51.537 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:41:52.669 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+22:41:53.792 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+22:41:54.983 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:41:55.004 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:41:55.004 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:41:55.004 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password
+22:41:56.143 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:41:57.262 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+22:41:58.374 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+22:41:59.785 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:42:01.014 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+22:42:01.014 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+22:42:01.015 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter wrong username password
+22:42:02.129 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+22:42:03.249 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+22:42:04.367 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+22:42:05.895 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+22:42:05.895 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+22:42:06.443 [main] INFO  Kltn2021.Passed.MustPass - UTE Portal :: HCMC University of Technology and Education
+22:42:06.443 [main] INFO  Kltn2021.Passed.MustPass - UTE Portal :: HCMC University of Technology and Education
+22:42:06.443 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+22:42:06.443 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+22:42:06.443 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+22:42:06.443 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+23:07:08.667 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+23:07:10.927 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+23:07:10.933 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+23:07:12.038 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:07:13.190 [main] INFO  Kltn2021.Passed.MustPass - 123
+23:07:14.360 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+23:07:15.595 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:07:15.627 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+23:07:15.627 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+23:07:15.628 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+23:07:16.761 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:07:16.811 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+23:07:16.812 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+23:07:16.812 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+23:07:16.812 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 2 |   Pass: 1 |   Fail: 1
+23:07:16.812 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+23:14:34.732 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+23:14:37.407 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+23:14:37.412 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+23:14:38.521 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:14:39.659 [main] INFO  Kltn2021.Passed.MustPass - 123
+23:14:40.780 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+23:14:41.986 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:14:42.050 [main] INFO  Kltn2021.Passed.MustPass - Value=[123, sdfsd]
+23:14:42.051 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+23:14:43.187 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:14:43.257 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+23:14:44.334 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:14:45.486 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+23:14:46.627 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+23:14:47.824 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:14:47.848 [main] INFO  Kltn2021.Passed.MustPass - Value=[2015-01-06, 13FYOF]
+23:14:47.848 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password
+23:14:48.976 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:14:50.128 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+23:14:51.251 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+23:14:52.417 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:14:53.661 [main] INFO  Kltn2021.Passed.MustPass - Value=[5, 4255166446]
+23:14:53.661 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter wrong username password
+23:14:54.796 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:14:55.904 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+23:14:57.025 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+23:14:58.485 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:14:58.485 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+23:14:58.972 [main] INFO  Kltn2021.Passed.MustPass - Value=[17110132, iloveyou123]
+23:14:58.972 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+23:14:58.973 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+23:14:58.973 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+23:14:58.973 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+23:22:42.435 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+23:22:45.026 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+23:22:45.032 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+23:22:46.124 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:22:47.241 [main] INFO  Kltn2021.Passed.MustPass - 123
+23:22:48.352 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+23:22:49.528 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:22:49.553 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+23:22:50.685 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:22:50.722 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+23:22:51.843 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:22:52.943 [main] INFO  Kltn2021.Passed.MustPass - 2008-10-23
+23:22:54.038 [main] INFO  Kltn2021.Passed.MustPass - 57VZ0t
+23:22:55.194 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:22:55.213 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password
+23:22:56.354 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:22:57.464 [main] INFO  Kltn2021.Passed.MustPass - 5
+23:22:58.577 [main] INFO  Kltn2021.Passed.MustPass - 2585582998
+23:22:59.749 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:23:01.020 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter wrong username password
+23:23:02.130 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:23:03.229 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+23:23:04.320 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+23:23:05.803 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:23:05.803 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+23:23:06.267 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+23:23:06.268 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+23:23:06.268 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+23:23:06.268 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+23:35:07.264 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+23:35:09.568 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+23:35:09.573 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+23:35:10.688 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:35:11.830 [main] INFO  Kltn2021.Passed.MustPass - 123
+23:35:12.972 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+23:35:14.294 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:35:14.351 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+23:35:15.495 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:35:15.567 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+23:35:15.568 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+23:35:16.757 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:35:17.884 [main] INFO  Kltn2021.Passed.MustPass - 1997-06-16
+23:35:18.993 [main] INFO  Kltn2021.Passed.MustPass - 648h2p
+23:35:20.161 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:35:20.222 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password
+23:35:21.351 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:35:22.478 [main] INFO  Kltn2021.Passed.MustPass - 5
+23:35:23.600 [main] INFO  Kltn2021.Passed.MustPass - 8986093404
+23:35:24.847 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:35:26.132 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter wrong username password
+23:35:27.284 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+23:35:28.405 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+23:35:29.518 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+23:35:31.073 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+23:35:31.074 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+23:35:31.520 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+23:35:31.520 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+23:35:31.520 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+23:35:31.520 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+00:01:27.308 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+00:01:29.646 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+00:01:29.652 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+00:01:30.751 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:01:31.900 [main] INFO  Kltn2021.Passed.MustPass - 123
+00:01:33.054 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+00:01:34.266 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:01:34.299 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+00:01:35.451 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:01:35.523 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+00:01:35.523 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+00:01:36.646 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:01:37.774 [main] INFO  Kltn2021.Passed.MustPass - 2020-06-28
+00:01:38.910 [main] INFO  Kltn2021.Passed.MustPass - 17iPjX
+00:01:40.127 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:01:40.150 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password
+00:01:41.303 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:01:42.457 [main] INFO  Kltn2021.Passed.MustPass - 4
+00:01:43.582 [main] INFO  Kltn2021.Passed.MustPass - 9038138014
+00:01:44.748 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:01:46.062 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter wrong username password
+00:01:47.180 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+00:01:48.306 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+00:01:49.419 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+00:01:51.403 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+00:01:51.404 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+00:01:51.912 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+00:01:51.912 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+00:01:51.912 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+00:01:51.912 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+21:49:32.315 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:49:33.838 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:49:33.846 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+21:49:35.611 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:49:36.711 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:49:37.890 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+21:49:39.133 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:49:39.163 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+21:49:40.295 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:49:40.376 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+21:49:40.377 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+21:49:41.497 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:49:42.618 [main] INFO  Kltn2021.Passed.MustPass - 2015-06-16
+21:49:43.754 [main] INFO  Kltn2021.Passed.MustPass - 37z5EI
+21:49:45.060 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:49:45.084 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password
+21:49:46.227 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:49:47.380 [main] INFO  Kltn2021.Passed.MustPass - 3
+21:49:48.497 [main] INFO  Kltn2021.Passed.MustPass - 2601070841
+21:49:49.781 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:49:51.038 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter wrong username password
+21:49:52.162 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:49:53.283 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+21:49:54.417 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+21:49:55.956 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:49:55.956 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+21:49:56.473 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+21:49:56.474 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+21:49:56.474 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+21:49:56.474 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+22:08:57.876 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+22:08:57.883 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+22:08:57.883 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 0 |   Pass: 0 |   Fail: 0
+22:08:57.884 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+22:10:52.191 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+22:10:52.197 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+22:10:52.197 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 0 |   Pass: 0 |   Fail: 0
+22:10:52.197 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+10:24:57.018 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+10:27:39.387 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+10:49:18.922 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+10:49:19.981 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+10:49:19.983 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+10:49:21.323 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:49:22.469 [main] INFO  Kltn2021.Passed.MustPass - 123
+10:49:23.603 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+10:49:24.832 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:49:24.888 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+10:49:26.044 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:49:26.107 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+10:49:26.108 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+10:49:27.238 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:49:28.332 [main] INFO  Kltn2021.Passed.MustPass - 1998-10-15
+10:49:29.406 [main] INFO  Kltn2021.Passed.MustPass - 65ag1G
+10:49:30.542 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:49:30.564 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password
+10:49:31.683 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:49:32.777 [main] INFO  Kltn2021.Passed.MustPass - 2
+10:49:33.891 [main] INFO  Kltn2021.Passed.MustPass - 5772536015
+10:49:35.086 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:49:36.238 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter wrong username password
+10:49:37.375 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:49:38.492 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+10:49:39.560 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+10:49:40.999 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:49:40.999 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+10:49:41.805 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+10:49:41.806 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+10:49:41.806 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+10:49:41.806 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+10:56:36.701 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+10:56:37.786 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+10:56:37.788 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+10:56:39.277 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:56:40.370 [main] INFO  Kltn2021.Passed.MustPass - 123
+10:56:41.457 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+10:56:42.609 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:56:42.626 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+10:56:43.810 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:56:43.842 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+10:56:43.843 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+10:56:44.936 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:56:46.036 [main] INFO  Kltn2021.Passed.MustPass - 1999-11-08
+10:56:47.157 [main] INFO  Kltn2021.Passed.MustPass - 78RGUR
+10:56:48.276 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:56:48.284 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password
+10:56:49.327 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:56:50.412 [main] INFO  Kltn2021.Passed.MustPass - 3
+10:56:51.488 [main] INFO  Kltn2021.Passed.MustPass - 8962460878
+10:56:52.638 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:56:53.743 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter wrong username password
+10:56:54.780 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:56:55.926 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+10:56:57.093 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+10:56:58.614 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:56:58.631 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+10:56:58.631 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+10:56:58.631 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+10:56:58.631 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+11:10:28.603 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+11:10:29.698 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+11:10:29.715 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+11:10:31.060 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:10:32.214 [main] INFO  Kltn2021.Passed.MustPass - 123
+11:10:33.309 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+11:10:34.562 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:10:34.593 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+11:10:35.734 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:10:35.774 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+11:10:35.774 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+11:10:36.896 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:10:37.978 [main] INFO  Kltn2021.Passed.MustPass - 1997-08-11
+11:10:39.118 [main] INFO  Kltn2021.Passed.MustPass - 80q2kj
+11:10:40.300 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:10:40.313 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password
+11:10:41.412 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:10:42.528 [main] INFO  Kltn2021.Passed.MustPass - 4
+11:10:43.649 [main] INFO  Kltn2021.Passed.MustPass - 7791056825
+11:10:44.820 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:10:45.978 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter wrong username password
+11:10:47.063 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:10:48.130 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+11:10:49.191 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+11:10:50.769 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:10:50.822 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+11:10:50.822 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+11:10:50.822 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+11:10:50.822 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+10:10:41.011 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+10:10:42.470 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+10:10:42.474 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+10:10:43.963 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:10:45.154 [main] INFO  Kltn2021.Passed.MustPass - 123
+10:10:46.331 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+10:10:48.495 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:10:48.542 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+10:10:49.685 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:10:49.791 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+10:10:49.792 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+10:10:51.148 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:10:52.355 [main] INFO  Kltn2021.Passed.MustPass - 1995-08-22
+10:10:53.530 [main] INFO  Kltn2021.Passed.MustPass - 76h4bU
+10:10:55.054 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:10:55.073 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password
+10:10:56.779 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:10:57.959 [main] INFO  Kltn2021.Passed.MustPass - 5
+10:10:59.086 [main] INFO  Kltn2021.Passed.MustPass - 1990.10.19 18:40:15
+10:11:00.273 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:11:01.580 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter wrong username password
+10:11:04.564 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:11:05.717 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+10:11:06.895 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+10:11:08.457 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:11:08.509 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+10:11:08.509 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+10:11:08.510 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+10:11:08.510 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+10:14:25.157 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+10:14:26.264 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+10:14:26.266 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+10:14:27.592 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:14:28.694 [main] INFO  Kltn2021.Passed.MustPass - 123
+10:14:29.797 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+10:14:30.990 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:14:31.029 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+10:14:32.297 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:14:32.353 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+10:14:32.354 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+10:14:33.428 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:14:34.638 [main] INFO  Kltn2021.Passed.MustPass - 1991.01.18 21:49:51the string.2016-04-04
+10:14:35.741 [main] INFO  Kltn2021.Passed.MustPass - 25q0tS
+10:14:36.893 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:14:36.924 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password
+10:14:38.151 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:14:39.309 [main] INFO  Kltn2021.Passed.MustPass - 5
+10:14:40.483 [main] INFO  Kltn2021.Passed.MustPass - 1990.06.29 17:55:21
+10:14:41.722 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:14:43.069 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter wrong username password
+10:14:44.210 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+10:14:45.347 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+10:14:46.465 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+10:14:47.979 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+10:14:47.996 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+10:14:47.996 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+10:14:47.996 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+10:14:47.997 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+11:26:11.557 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+11:26:12.564 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+11:26:12.567 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+11:26:13.854 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:26:14.939 [main] INFO  Kltn2021.Passed.MustPass - 123
+11:26:16.025 [main] INFO  Kltn2021.Passed.MustPass - 123
+11:26:17.170 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:26:17.194 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter right username password
+11:26:18.279 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:26:18.311 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+11:26:18.312 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter max username password
+11:26:19.368 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:26:20.481 [main] INFO  Kltn2021.Passed.MustPass - 2007-11-05
+11:26:21.580 [main] INFO  Kltn2021.Passed.MustPass - 28gsnK
+11:26:22.744 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:26:22.763 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter special character username password
+11:26:23.874 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:26:24.974 [main] INFO  Kltn2021.Passed.MustPass - 4
+11:26:26.075 [main] INFO  Kltn2021.Passed.MustPass - 1990.05.30 05:49:12
+11:26:27.302 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:26:29.489 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter right username password
+11:26:30.579 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:26:31.666 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+11:26:32.754 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+11:26:34.201 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:26:34.258 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+11:26:34.258 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+11:26:34.259 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+11:26:34.259 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+11:39:57.224 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+11:39:58.176 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+11:39:58.178 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+11:39:59.550 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:40:00.638 [main] INFO  Kltn2021.Passed.MustPass - 123
+11:40:01.731 [main] INFO  Kltn2021.Passed.MustPass - 123
+11:40:02.880 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:40:02.896 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter right username password
+11:40:03.994 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:40:04.065 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+11:40:04.066 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter max username password
+11:40:05.124 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:40:06.240 [main] INFO  Kltn2021.Passed.MustPass - 2007-04-26
+11:40:07.322 [main] INFO  Kltn2021.Passed.MustPass - 37tARF
+11:40:08.467 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:40:08.478 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter special character username password
+11:40:09.653 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:40:10.737 [main] INFO  Kltn2021.Passed.MustPass - 4
+11:40:11.839 [main] INFO  Kltn2021.Passed.MustPass - 1990.06.08 07:11:33
+11:40:12.975 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:40:15.197 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter right username password
+11:40:16.352 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:40:17.424 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+11:40:18.511 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+11:40:20.234 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:40:20.252 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+11:40:20.252 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+11:40:20.252 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+11:40:20.253 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+11:42:05.620 [main] INFO  Kltn2021.Passed.MustPass 11:42:06.682 [main] INFO  Kltn2021.Passed.MustPass 11:42:06.686 [main] INFO  Kltn2021.Passed.MustPass 11:42:07.946 [main] INFO  Kltn2021.Passed.MustPass 11:42:09.039 [main] INFO  Kltn2021.Passed.MustPass 11:42:10.130 [main] INFO  Kltn2021.Passed.MustPass 11:42:11.330 [main] INFO  Kltn2021.Passed.MustPass 11:42:11.349 [main] INFO  Kltn2021.Passed.MustPass 11:42:12.450 [main] INFO  Kltn2021.Passed.MustPass 11:42:12.487 [main] ERROR Kltn2021.Passed.MustPass 11:42:12.487 [main] INFO  Kltn2021.Passed.MustPass 11:42:13.585 [main] INFO  Kltn2021.Passed.MustPass 11:42:14.677 [main] INFO  Kltn2021.Passed.MustPass 11:42:15.740 [main] INFO  Kltn2021.Passed.MustPass 11:42:16.887 [main] INFO  Kltn2021.Passed.MustPass 11:42:16.915 [main] INFO  Kltn2021.Passed.MustPass 11:42:18.021 [main] INFO  Kltn2021.Passed.MustPass 11:42:19.109 [main] INFO  Kltn2021.Passed.MustPass 11:42:20.204 [main] INFO  Kltn2021.Passed.MustPass 11:42:21.373 [main] INFO  Kltn2021.Passed.MustPass 11:42:23.606 [main] INFO  Kltn2021.Passed.MustPass 11:42:24.722 [main] INFO  Kltn2021.Passed.MustPass 11:42:25.838 [main] INFO  Kltn2021.Passed.MustPass 11:42:26.974 [main] INFO  Kltn2021.Passed.MustPass 11:42:28.413 [main] INFO  Kltn2021.Passed.MustPass 11:42:28.430 [main] INFO  Kltn2021.Passed.MustPass 11:42:28.430 [main] INFO  Kltn2021.Passed.MustPass 11:42:28.431 [main] INFO  Kltn2021.Passed.MustPass 11:42:28.431 [main] INFO  Kltn2021.Passed.MustPass 11:43:31.339 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+11:43:32.206 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+11:43:32.209 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+11:43:33.522 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:43:34.609 [main] INFO  Kltn2021.Passed.MustPass - 123
+11:43:35.682 [main] INFO  Kltn2021.Passed.MustPass - 123
+11:43:36.912 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:43:36.927 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter right username password
+11:43:38.077 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:43:38.097 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+11:43:38.098 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter max username password
+11:43:39.198 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:43:40.260 [main] INFO  Kltn2021.Passed.MustPass - 1991-01-08
+11:43:41.334 [main] INFO  Kltn2021.Passed.MustPass - 64v6pX
+11:43:42.455 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:43:42.465 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter special character username password
+11:43:43.618 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:43:44.686 [main] INFO  Kltn2021.Passed.MustPass - 4
+11:43:45.748 [main] INFO  Kltn2021.Passed.MustPass - 1990.01.30 02:45:03
+11:43:46.896 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:43:49.099 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter right username password
+11:43:50.801 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:43:51.902 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+11:43:52.987 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+11:43:54.353 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:43:54.372 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+11:43:54.372 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+11:43:54.372 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+11:43:54.372 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+11:46:55.819 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+11:46:56.738 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+11:46:56.741 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+11:46:58.034 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:46:59.137 [main] INFO  Kltn2021.Passed.MustPass - 123
+11:47:00.250 [main] INFO  Kltn2021.Passed.MustPass - 123
+11:47:01.461 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:47:01.480 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter right username password
+11:47:02.677 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:47:02.717 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+11:47:02.719 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter max username password
+11:47:03.762 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:47:04.894 [main] INFO  Kltn2021.Passed.MustPass - 2015-02-16
+11:47:05.979 [main] INFO  Kltn2021.Passed.MustPass - 89XaQQ
+11:47:07.140 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:47:07.159 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter special character username password
+11:47:08.274 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:47:09.378 [main] INFO  Kltn2021.Passed.MustPass - 5
+11:47:10.465 [main] INFO  Kltn2021.Passed.MustPass - 1990.10.05 05:25:54
+11:47:11.614 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:47:13.807 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter right username password
+11:47:14.902 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:47:15.962 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+11:47:17.053 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+11:47:18.172 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:58:14.178 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+11:58:15.184 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+11:58:15.186 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+11:58:16.514 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:58:17.603 [main] INFO  Kltn2021.Passed.MustPass - 123
+11:58:18.710 [main] INFO  Kltn2021.Passed.MustPass - 123
+11:58:19.875 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:58:19.908 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter right username password
+11:58:21.104 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:58:21.175 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+11:58:21.175 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter max username password
+11:58:22.273 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:58:23.409 [main] INFO  Kltn2021.Passed.MustPass - 1991-03-18
+11:58:24.487 [main] INFO  Kltn2021.Passed.MustPass - 85dDeQ
+11:58:25.620 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:58:25.642 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter special character username password
+11:58:26.799 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:58:27.891 [main] INFO  Kltn2021.Passed.MustPass - 3
+11:58:28.997 [main] INFO  Kltn2021.Passed.MustPass - 1990.10.09 11:32:10
+11:58:30.241 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+11:58:32.495 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter right username password
+11:58:33.601 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+11:58:34.677 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+11:58:35.767 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+11:58:36.896 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+12:00:01.602 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+12:00:02.806 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+12:00:02.810 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+12:00:04.074 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+12:00:05.147 [main] INFO  Kltn2021.Passed.MustPass - 123
+12:00:06.222 [main] INFO  Kltn2021.Passed.MustPass - 123
+12:00:07.358 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+12:00:07.394 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter right username password
+12:00:08.539 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+12:00:08.586 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+12:00:08.587 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter max username password
+12:00:09.688 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+12:00:10.806 [main] INFO  Kltn2021.Passed.MustPass - 2017-04-02
+12:00:11.902 [main] INFO  Kltn2021.Passed.MustPass - 55oQ2t
+12:00:13.080 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+12:00:13.103 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter special character username password
+12:00:14.211 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+12:00:15.312 [main] INFO  Kltn2021.Passed.MustPass - 3
+12:00:16.413 [main] INFO  Kltn2021.Passed.MustPass - 1990.08.07 00:45:55
+12:00:17.550 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+12:00:19.761 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter right username password
+12:00:20.872 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+12:00:21.974 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+12:00:23.046 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+12:00:24.181 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+12:03:52.783 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+12:03:53.686 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+12:03:53.689 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+12:03:54.953 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+12:03:56.053 [main] INFO  Kltn2021.Passed.MustPass - 123
+12:03:57.154 [main] INFO  Kltn2021.Passed.MustPass - 123
+12:03:58.304 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+12:03:58.329 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter right username password
+12:03:59.424 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+12:03:59.465 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+12:03:59.465 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter max username password
+12:04:00.571 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+12:04:01.660 [main] INFO  Kltn2021.Passed.MustPass - 1994-04-21
+12:04:02.744 [main] INFO  Kltn2021.Passed.MustPass - 10C28k
+12:04:03.890 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+12:04:03.912 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter special character username password
+12:04:05.010 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+12:04:06.096 [main] INFO  Kltn2021.Passed.MustPass - 3
+12:04:07.182 [main] INFO  Kltn2021.Passed.MustPass - 1990.05.18 22:51:36
+12:04:08.330 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+12:04:10.530 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter right username password
+12:04:11.636 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+12:04:12.725 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+12:04:13.814 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+12:04:14.946 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+12:04:17.135 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+12:04:17.135 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+12:04:17.135 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 2 |   Fail: 3
+12:04:17.135 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+21:13:16.869 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:13:22.963 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:13:22.966 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+21:13:24.284 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:13:25.383 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:13:26.500 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:13:27.664 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:13:27.682 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter right username password
+21:13:28.745 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:13:28.779 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+21:13:28.779 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter max username password
+21:13:29.884 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:13:31.014 [main] INFO  Kltn2021.Passed.MustPass - 2003-03-19
+21:13:32.124 [main] INFO  Kltn2021.Passed.MustPass - 94ophz
+21:13:33.287 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:13:33.298 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter special character username password
+21:13:34.417 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:13:35.521 [main] INFO  Kltn2021.Passed.MustPass - 3
+21:13:36.603 [main] INFO  Kltn2021.Passed.MustPass - 1990.09.24 04:36:28
+21:13:37.720 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:13:39.836 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter right username password
+21:13:40.878 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:13:41.971 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+21:13:43.057 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+21:13:44.230 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:13:46.370 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+21:13:46.370 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+21:13:46.370 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 2 |   Fail: 3
+21:13:46.370 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+14:41:07.404 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+14:41:08.483 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+14:41:08.486 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+14:41:10.384 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+14:41:11.496 [main] INFO  Kltn2021.Passed.MustPass - 123
+14:41:12.617 [main] INFO  Kltn2021.Passed.MustPass - 123
+14:41:13.803 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+14:41:13.864 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter right username password
+14:41:15.007 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+14:41:15.076 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+14:41:15.077 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter max username password
+14:41:16.210 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+14:41:17.379 [main] INFO  Kltn2021.Passed.MustPass - 1996-12-02
+14:41:18.518 [main] INFO  Kltn2021.Passed.MustPass - 94zbe4
+14:41:19.702 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+14:41:19.725 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter special character username password
+14:41:20.874 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+14:41:22.017 [main] INFO  Kltn2021.Passed.MustPass - 2
+14:41:23.171 [main] INFO  Kltn2021.Passed.MustPass - 1990.08.18 19:39:40
+14:41:24.384 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+14:41:26.755 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter right username password
+14:41:27.932 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+14:41:29.076 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+14:41:30.204 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+14:41:31.385 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+14:41:33.594 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+14:41:33.594 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+14:41:33.594 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 2 |   Fail: 3
+14:41:33.594 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+14:56:51.872 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+14:56:54.219 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+14:56:54.225 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+14:56:55.696 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+14:56:56.843 [main] INFO  Kltn2021.Passed.MustPass - 123
+14:56:58.007 [main] INFO  Kltn2021.Passed.MustPass - 123
+14:56:59.204 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+14:56:59.240 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter right username password
+14:57:00.393 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+14:57:00.448 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+14:57:00.449 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter max username password
+14:57:01.587 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+14:57:02.779 [main] INFO  Kltn2021.Passed.MustPass - 1995-09-03
+14:57:03.908 [main] INFO  Kltn2021.Passed.MustPass - 66jjIT
+14:57:05.093 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+14:57:05.117 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter special character username password
+14:57:06.263 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+14:57:07.460 [main] INFO  Kltn2021.Passed.MustPass - 5
+14:57:08.609 [main] INFO  Kltn2021.Passed.MustPass - 1990.02.17 23:00:57
+14:57:09.759 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+14:57:12.126 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter right username password
+14:57:13.264 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+14:57:14.413 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+14:57:15.551 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+14:57:17.011 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+14:57:17.040 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+14:57:17.040 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+14:57:17.040 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+14:57:17.040 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+15:23:26.669 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+15:23:27.867 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+15:23:28.995 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+15:23:30.109 [main] INFO  Kltn2021.Passed.MustPass - primas
+15:23:33.962 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+15:23:35.052 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+15:23:36.139 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+15:23:38.300 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+15:23:38.307 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+15:23:39.447 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+15:23:40.584 [main] INFO  Kltn2021.Passed.MustPass - 123
+15:41:11.798 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+15:41:12.351 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+15:41:13.462 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+15:41:14.581 [main] INFO  Kltn2021.Passed.MustPass - primas
+15:41:17.563 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+15:41:18.654 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+15:41:19.725 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+15:41:22.050 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+15:41:22.055 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+15:41:23.188 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+15:41:24.328 [main] INFO  Kltn2021.Passed.MustPass - 123
+15:41:25.461 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+16:23:42.324 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+16:23:42.845 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+16:23:43.948 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+16:23:45.055 [main] INFO  Kltn2021.Passed.MustPass - primas
+16:23:50.450 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+16:23:51.554 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+16:23:52.631 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+16:23:54.750 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+16:23:54.756 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+16:23:55.885 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+16:23:57.024 [main] INFO  Kltn2021.Passed.MustPass - 123
+16:23:58.143 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:05:35.693 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+17:05:36.174 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+17:05:37.286 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+17:05:38.403 [main] INFO  Kltn2021.Passed.MustPass - primas
+17:05:41.218 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+17:05:42.308 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+17:05:43.385 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+17:05:45.466 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+17:05:45.470 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+17:05:46.575 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:05:47.698 [main] INFO  Kltn2021.Passed.MustPass - 123
+17:05:48.788 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:08:29.273 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+17:08:30.169 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+17:08:31.281 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+17:08:32.399 [main] INFO  Kltn2021.Passed.MustPass - primas
+17:08:37.181 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+17:08:38.285 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+17:08:39.361 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+17:08:41.672 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+17:08:41.677 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+17:08:42.780 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:08:43.922 [main] INFO  Kltn2021.Passed.MustPass - 123
+17:08:44.999 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:10:40.501 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+17:10:41.126 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+17:10:42.235 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+17:10:43.357 [main] INFO  Kltn2021.Passed.MustPass - primas
+17:10:46.690 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+17:10:47.778 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+17:10:48.870 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+17:10:50.936 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+17:10:50.942 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+17:10:52.061 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:10:53.201 [main] INFO  Kltn2021.Passed.MustPass - 123
+17:10:54.283 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:12:00.143 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+17:12:00.891 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+17:12:01.984 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+17:12:03.089 [main] INFO  Kltn2021.Passed.MustPass - primas
+17:12:06.573 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+17:12:07.664 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+17:12:08.756 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+17:12:11.028 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+17:12:11.035 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+17:12:12.146 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:12:13.268 [main] INFO  Kltn2021.Passed.MustPass - 123
+17:12:14.346 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:14:41.252 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+17:14:42.006 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+17:14:43.107 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+17:14:44.233 [main] INFO  Kltn2021.Passed.MustPass - primas
+17:14:48.957 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+17:14:50.045 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+17:14:51.135 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+17:14:53.402 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+17:14:53.409 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+17:14:54.524 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:14:55.667 [main] INFO  Kltn2021.Passed.MustPass - 123
+17:14:56.756 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:29:26.679 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+17:29:27.424 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+17:29:28.530 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+17:29:29.641 [main] INFO  Kltn2021.Passed.MustPass - primas
+17:29:33.472 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+17:29:34.559 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+17:29:35.640 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+17:29:37.884 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+17:29:37.890 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+17:29:38.991 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:29:40.107 [main] INFO  Kltn2021.Passed.MustPass - 123
+17:29:41.207 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:29:43.334 [main] INFO  Kltn2021.Passed.MustPass - TC 2: Add character 
+17:29:44.418 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:29:45.540 [main] INFO  Kltn2021.Passed.MustPass - 
+17:29:46.609 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:42:04.825 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+17:42:05.318 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+17:42:06.418 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+17:42:07.533 [main] INFO  Kltn2021.Passed.MustPass - primas
+17:42:10.836 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+17:42:11.971 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+17:42:13.045 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+17:42:15.315 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+17:42:15.320 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+17:42:16.437 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:42:17.570 [main] INFO  Kltn2021.Passed.MustPass - 123
+17:42:18.649 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:44:12.320 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+17:44:12.783 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+17:44:13.889 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+17:44:15.012 [main] INFO  Kltn2021.Passed.MustPass - primas
+17:44:17.760 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+17:44:18.849 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+17:44:19.930 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+17:44:22.117 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+17:44:22.124 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+17:44:23.266 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:44:24.394 [main] INFO  Kltn2021.Passed.MustPass - 123
+17:44:25.470 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:46:03.173 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+17:46:03.661 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+17:46:04.763 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+17:46:05.896 [main] INFO  Kltn2021.Passed.MustPass - primas
+17:46:08.627 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+17:46:09.716 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+17:46:10.793 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+17:46:12.940 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+17:46:12.945 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+17:46:14.059 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:46:15.184 [main] INFO  Kltn2021.Passed.MustPass - 123
+17:46:16.279 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:46:18.415 [main] INFO  Kltn2021.Passed.MustPass - TC 2: Add character 
+17:46:19.505 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:46:20.629 [main] INFO  Kltn2021.Passed.MustPass - 
+17:46:21.703 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:47:53.941 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+17:47:54.467 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+17:47:55.559 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+17:47:56.690 [main] INFO  Kltn2021.Passed.MustPass - primas
+17:47:59.360 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+17:48:00.462 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+17:48:01.537 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+17:48:04.125 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+17:48:04.131 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+17:48:05.230 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:48:06.357 [main] INFO  Kltn2021.Passed.MustPass - 123
+17:48:07.446 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:48:09.537 [main] INFO  Kltn2021.Passed.MustPass - TC 2: Add character 
+17:48:10.624 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:48:11.742 [main] INFO  Kltn2021.Passed.MustPass - hjsja
+17:48:12.834 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:48:14.909 [main] INFO  Kltn2021.Passed.MustPass - TC 3: Add character & number 
+17:48:16.032 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:48:17.169 [main] INFO  Kltn2021.Passed.MustPass - shdj8787
+17:48:18.262 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:48:20.324 [main] INFO  Kltn2021.Passed.MustPass - TC 4: Add special character
+17:48:21.413 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:48:22.532 [main] INFO  Kltn2021.Passed.MustPass - ^%&&^
+17:48:23.622 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:48:25.684 [main] INFO  Kltn2021.Passed.MustPass - TC 5: Add datetime
+17:48:26.775 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:48:27.897 [main] INFO  Kltn2021.Passed.MustPass - ^%&&^
+17:48:28.974 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:49:58.479 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+17:49:59.245 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+17:50:00.363 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+17:50:01.487 [main] INFO  Kltn2021.Passed.MustPass - primas
+17:50:04.159 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+17:50:05.245 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+17:50:06.329 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+17:50:08.543 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+17:50:08.552 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+17:50:09.662 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:50:10.802 [main] INFO  Kltn2021.Passed.MustPass - 123
+17:50:11.889 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:50:13.985 [main] INFO  Kltn2021.Passed.MustPass - TC 2: Add character 
+17:50:15.079 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:50:16.210 [main] INFO  Kltn2021.Passed.MustPass - hjsja
+17:50:17.296 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:50:19.356 [main] INFO  Kltn2021.Passed.MustPass - TC 3: Add character & number 
+17:50:20.474 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:50:21.600 [main] INFO  Kltn2021.Passed.MustPass - shdj8787
+17:50:22.670 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:50:24.730 [main] INFO  Kltn2021.Passed.MustPass - TC 4: Add special character
+17:50:25.821 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:50:26.946 [main] INFO  Kltn2021.Passed.MustPass - ^%&&^
+17:50:28.022 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:50:30.076 [main] INFO  Kltn2021.Passed.MustPass - TC 5: Add datetime
+17:50:31.207 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+17:50:32.354 [main] INFO  Kltn2021.Passed.MustPass - ^%&&^
+17:50:33.439 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+17:50:37.731 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+17:50:37.731 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+17:50:37.731 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 4 |   Fail: 1
+17:50:37.732 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+21:21:34.151 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:21:34.784 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:21:35.896 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+21:21:37.007 [main] INFO  Kltn2021.Passed.MustPass - primas
+21:21:41.201 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+21:21:42.289 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+21:21:43.359 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+21:21:45.501 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+21:21:45.509 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+21:21:46.609 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+21:21:47.739 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:21:48.824 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+21:21:50.924 [main] INFO  Kltn2021.Passed.MustPass - TC 2: Add character 
+21:21:52.013 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+21:21:53.146 [main] INFO  Kltn2021.Passed.MustPass - hjsja
+21:21:54.217 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+21:21:56.272 [main] INFO  Kltn2021.Passed.MustPass - TC 3: Add character & number 
+21:21:57.372 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+21:21:58.494 [main] INFO  Kltn2021.Passed.MustPass - shdj8787
+21:21:59.578 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+21:22:01.641 [main] INFO  Kltn2021.Passed.MustPass - TC 4: Add special character
+21:22:02.786 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+21:22:03.946 [main] INFO  Kltn2021.Passed.MustPass - ^%&&^
+21:22:05.045 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+21:22:07.102 [main] INFO  Kltn2021.Passed.MustPass - TC 5: Add datetime
+21:22:08.197 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+21:22:09.341 [main] INFO  Kltn2021.Passed.MustPass - ^%&&^
+21:22:10.426 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+21:22:12.830 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+21:22:12.830 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+21:22:12.830 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 4 |   Fail: 1
+21:22:12.830 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+21:26:42.242 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:26:42.861 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:26:43.963 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+21:26:45.069 [main] INFO  Kltn2021.Passed.MustPass - primas
+21:26:49.577 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+21:26:50.665 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+21:26:51.753 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+21:26:54.007 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+21:26:54.012 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+21:26:55.125 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+21:26:56.253 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:26:57.344 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+21:31:02.368 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:31:02.992 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:31:04.093 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+21:31:05.195 [main] INFO  Kltn2021.Passed.MustPass - primas
+21:31:09.927 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+21:31:11.018 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+21:31:12.121 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a
+21:31:14.325 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/ul/li[2]/a
+21:31:14.329 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+21:31:15.458 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+21:31:16.587 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:31:17.687 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+21:31:19.801 [main] INFO  Kltn2021.Passed.MustPass - TC 2: Add character 
+21:31:20.887 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+21:31:22.037 [main] INFO  Kltn2021.Passed.MustPass - hjsja
+21:31:23.124 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+21:31:25.191 [main] INFO  Kltn2021.Passed.MustPass - TC 3: Add character & number 
+21:31:26.319 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+21:31:27.441 [main] INFO  Kltn2021.Passed.MustPass - shdj8787
+21:31:28.524 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+21:31:30.586 [main] INFO  Kltn2021.Passed.MustPass - TC 4: Add special character
+21:31:31.686 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+21:31:32.829 [main] INFO  Kltn2021.Passed.MustPass - ^%&&^
+21:31:33.916 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+21:31:35.959 [main] INFO  Kltn2021.Passed.MustPass - TC 5: Add datetime
+21:31:37.062 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+21:31:38.225 [main] INFO  Kltn2021.Passed.MustPass - ^%&&^
+21:31:39.290 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+21:31:41.612 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+21:31:41.612 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+21:31:41.613 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 4 |   Fail: 1
+21:31:41.613 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+21:32:48.898 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:32:49.979 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:32:49.984 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+21:32:51.331 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:32:52.467 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:32:53.618 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:32:54.827 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:32:54.865 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter right username password
+21:32:56.009 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:32:56.060 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+21:32:56.061 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter max username password
+21:32:57.187 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:32:58.337 [main] INFO  Kltn2021.Passed.MustPass - 2004-11-18
+21:32:59.473 [main] INFO  Kltn2021.Passed.MustPass - 58xYg8
+21:33:00.630 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:33:00.653 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter special character username password
+21:33:01.849 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:33:02.950 [main] INFO  Kltn2021.Passed.MustPass - 4
+21:33:04.065 [main] INFO  Kltn2021.Passed.MustPass - 1990.04.11 18:49:41
+21:33:05.258 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:33:05.638 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter right username password
+21:33:06.761 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:33:07.880 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+21:33:08.999 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+21:33:10.524 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:36:00.458 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:36:01.505 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:36:01.510 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+21:36:02.829 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:36:03.934 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:36:05.054 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:36:06.282 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:36:06.343 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter right username password
+21:36:07.480 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:36:07.570 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [//*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_txtUserName"]df] can not find!
+21:36:07.571 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter max username password
+21:36:08.736 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:36:09.884 [main] INFO  Kltn2021.Passed.MustPass - 2012-06-13
+21:36:11.007 [main] INFO  Kltn2021.Passed.MustPass - 72ro7F
+21:36:12.185 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:36:12.208 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter special character username password
+21:36:13.361 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:36:14.514 [main] INFO  Kltn2021.Passed.MustPass - 4
+21:36:15.630 [main] INFO  Kltn2021.Passed.MustPass - 1990.01.22 07:08:54
+21:36:16.835 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:36:17.125 [main] INFO  Kltn2021.Passed.MustPass - TC5: enter right username password
+21:36:18.264 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:36:19.395 [main] INFO  Kltn2021.Passed.MustPass - 17110132
+21:36:20.516 [main] INFO  Kltn2021.Passed.MustPass - iloveyou123
+21:36:21.969 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:36:21.994 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+21:36:21.994 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+21:36:21.994 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+21:36:21.994 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------

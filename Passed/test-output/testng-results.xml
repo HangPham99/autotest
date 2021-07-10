@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-14T13:08:15 ICT" name="Default suite" finished-at="2021-06-14T13:08:31 ICT" duration-ms="15361">
+    <groups>
+    </groups>
+    <test started-at="2021-06-14T13:08:15 ICT" name="Default test" finished-at="2021-06-14T13:08:31 ICT" duration-ms="15361">
+      <class name="Kltn2021.Passed.MustPass">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Kltn2021.Passed.MustPass@13c3c1e1]" started-at="2021-06-14T13:08:15 ICT" name="beforeTest" finished-at="2021-06-14T13:08:18 ICT" duration-ms="3158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="check(java.lang.String)[pri:0, instance:Kltn2021.Passed.MustPass@13c3c1e1]" started-at="2021-06-14T13:08:19 ICT" name="check" data-provider="data-provider" finished-at="2021-06-14T13:08:30 ICT" duration-ms="11249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\\Users\\HangPham\\Downloads\\Passed\\data\\testInput.csv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Kltn2021.Passed.MustPass@13c3c1e1]" started-at="2021-06-14T13:08:30 ICT" name="closeBrowser" finished-at="2021-06-14T13:08:31 ICT" duration-ms="926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Kltn2021.Passed.MustPass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
