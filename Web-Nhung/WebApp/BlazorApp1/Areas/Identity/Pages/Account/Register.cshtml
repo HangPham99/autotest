@@ -3,10 +3,10 @@
 @{
     ViewData["Title"] = "Register";
 }
-    <h1>@ViewData["Title"]</h1>
+    <h1 style="text-align:center">@ViewData["Title"]</h1>
 
     <div class="row" style="text-align:center">
-        <div class="col-md-4">
+        <div style="text-align:center; width: 300px">
             <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
                 <hr />
                 <div asp-validation-summary="All" class="text-danger"></div>
