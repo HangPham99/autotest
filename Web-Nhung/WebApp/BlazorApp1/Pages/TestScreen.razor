@@ -10,6 +10,7 @@
 @using System.Security.Claims
 @using BlazorApp1.Commons;
 @using System.Text.Json;
+
 @inject IWebHostEnvironment Environment
 @inject ITestScreenService TestScreenService
 @inject NavigationManager NavigationManager
@@ -25,6 +26,26 @@
 <a class="btn btn-info" href="/download/@reportFilename">Export</a>
 <a class="btn btn-secondary" href='javascript:history.go(-1)'> <i class="fas fa-angle-left"></i> Go Back</a>
 <br />
+<br />
+<div>
+    <Switch TValue="bool" @bind-Checked="@checksetting">Setting Test</Switch>
+</div>
+<br />
+<div>
+    <CardGroup>
+        <div>
+            <Label>Start Time </Label>
+            <TimeEdit TValue="TimeSpan?" @bind-Time="@selectedTime" />
+            <br />
+            <RadioGroup TValue="string" Name="colors">
+                <Radio TValue="string" Value="@("onetime")">One Time</Radio>
+                <Radio TValue="string" Value="@("daily")">Daily</Radio>
+                <Radio TValue="string" Value="@("weekly")">Weekly</Radio>
+                <Radio TValue="string" Value="@("monthly")">Monthly</Radio>
+            </RadioGroup>
+        </div>
+    </CardGroup>
+</div>
 <br />
 <div id="table-conatainer" style="height:400px;overflow-y:scroll">
     @if (FileContent != null)
@@ -51,7 +72,7 @@
         </Table>
     </Column>
 </Row>}
-
+    
 </div>
 
 <div>
@@ -68,7 +89,11 @@
        <p>@message</p>}
     </div>
 </div>
-@code { private BlazorApp1.Models.FunctionTesting FunctionTesting;
+@code { 
+    string checkedValue = "onetime";
+    bool checksetting;
+    TimeSpan? selectedTime;
+    private BlazorApp1.Models.FunctionTesting FunctionTesting;
     private List<TestCaseFileContent> FileContent;
 
     private HubConnection hubConnection;
@@ -176,5 +201,39 @@
     public async ValueTask DisposeAsync()
     {
         await hubConnection.DisposeAsync();
-    } }
+    }
+
+}
+<style>
+    .radio-control {
+        margin: 5% 0 5% 40%;
+    }
+
+    @@media only screen and (max-width: 700px) {
+        .radio-control {
+            margin-left: 35%;
+            margin-top: 8%;
+        }
+
+        .control-section {
+            min-height: 200px;
+        }
+    }
+
+    @@media only screen and (max-width: 500px) {
+        .radio-control {
+            margin-top: 20%;
+            margin-left: 21%;
+            margin-bottom: 27%;
+        }
+    }
+
+    .control-section .row {
+        margin: 20px 0;
+    }
+
+    .e-bigger .radio-control h4 {
+        font-size: 20px;
+    }
+</style>
 

@@ -110,6 +110,7 @@ namespace BlazorApp1
             });
             MyAsyncTask mytask = new MyAsyncTask(chatHubContext);
             mytask.startTask();
+            
         }
     }
 }

@@ -1,0 +1,41 @@
+21:51:24.363 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:51:26.570 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:51:26.579 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+21:51:28.391 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:51:29.652 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:51:30.955 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+21:51:32.357 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:51:33.759 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:51:33.759 [main] INFO  Kltn2021.Passed.MustPass - L?i ??ng nh?p: T�n ??ng nh?p v� m?t kh?u kh�ng ?�ng!
+21:51:33.759 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+21:51:35.163 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:51:36.420 [main] INFO  Kltn2021.Passed.MustPass - sdsf
+21:51:37.645 [main] INFO  Kltn2021.Passed.MustPass - sdvsd
+21:51:39.708 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:51:40.923 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:51:40.923 [main] INFO  Kltn2021.Passed.MustPass - L?i ??ng nh?p: T�n ??ng nh?p v� m?t kh?u kh�ng ?�ng!
+21:51:40.923 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+21:51:42.519 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:51:43.840 [main] INFO  Kltn2021.Passed.MustPass - {{DATE|1990|2021}}
+21:51:44.995 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|2}}{{STRING|4}}
+21:51:46.280 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:51:47.495 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng!
+21:51:47.496 [main] INFO  Kltn2021.Passed.MustPass - L?i ??ng nh?p: T�n ??ng nh?p v� m?t kh?u kh�ng ?�ng!
+21:51:47.496 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+21:51:48.734 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:51:49.977 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBERRANGE|2|5}}
+21:51:51.306 [main] INFO  Kltn2021.Passed.MustPass - {{NUMBER|10}}
+21:51:52.573 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:51:53.794 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+21:51:53.794 [main] INFO  Kltn2021.Passed.MustPass - L?i ??ng nh?p: T�n ??ng nh?p v� m?t kh?u kh�ng ?�ng!
+21:51:53.794 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+21:51:55.077 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:51:56.461 [main] INFO  Kltn2021.Passed.MustPass - *****
+21:51:57.757 [main] INFO  Kltn2021.Passed.MustPass - ******
+21:51:59.134 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:52:00.325 [main] INFO  Kltn2021.Passed.MustPass - Lỗi đăng nhập: Tên đăng nhập và mật khẩu không đúng?
+21:52:00.325 [main] INFO  Kltn2021.Passed.MustPass - L?i ??ng nh?p: T�n ??ng nh?p v� m?t kh?u kh�ng ?�ng!
+21:52:00.325 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+21:52:00.325 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+21:52:00.325 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 0 |   Fail: 5
+21:52:00.325 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
