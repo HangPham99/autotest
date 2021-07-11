@@ -2,8 +2,10 @@
 using BlazorApp1.Data;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -156,8 +158,12 @@ namespace BlazorApp1.Controllers
 
         [HttpPost("runtest")]
         public async Task<string> RunTest([FromForm] string userid,
-                                  [FromForm] string testcaseFilePath)
+                                          [FromForm] string testcaseFilePath,
+                                          [FromForm] string pjDetailId,
+                                          [FromForm] string userMail)
         {
+            var currentFunction = await _mycontext.ProjectDetails.FirstOrDefaultAsync(t => t.Id == Convert.ToInt32(pjDetailId));
+            var currentPj = await _mycontext.Projects.FirstOrDefaultAsync(t => t.Id == currentFunction.ProjectId);
             var guid = Guid.NewGuid();
             var envPath = Path.Combine(this.env.ContentRootPath, "Development", "add");
             var testRunCommandFormat = @"-jar ""{0}"" ""{1}"" ""{2}"" ""{3}""";
@@ -179,7 +185,11 @@ namespace BlazorApp1.Controllers
                 csv = testcaseFilePath,
                 report = reports,
                 logs = logs,
-                id = userid
+                id = userid,
+                userMail = userMail,
+                FileName = Path.GetFileName(testcaseFilePath),
+                FunctionName = currentFunction.FunctionName,
+                ProjectName = currentPj.ProjectName
             };
 
             QueueAsyncTask.myQueue1.Enqueue(async);

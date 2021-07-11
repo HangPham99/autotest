@@ -73,7 +73,7 @@
         parameters.Add("ProjectId", ProjectId);
         var add = Modal.Show<AddFunction>("Add new function", parameters);
         var result = await add.Result;
-        ListFunction = await ProjectDetailService.GetAllProject();
+        ListFunction = await ProjectDetailService.GetAllFunctionByProjectId(Project.Id);
         StateHasChanged();
     }
 
@@ -83,17 +83,17 @@
         parameters.Add("function", function);
         var update = Modal.Show<EditFunction>("Edit function", parameters);
         var result = await update.Result;
-        ListFunction = await ProjectDetailService.GetAllProject();
+        ListFunction = await ProjectDetailService.GetAllFunctionByProjectId(Project.Id);
         StateHasChanged();
     }
 
     protected async void Delete_Click(BlazorApp1.Models.ProjectDetail function)
     {
         var parameters = new ModalParameters();
-        parameters.Add("project", function);
+        parameters.Add("function", function);
         var update = Modal.Show<DeleteFunction>("Delete confirmation", parameters);
         var result = await update.Result;
-        ListFunction = await ProjectDetailService.GetAllProject();
+        ListFunction = await ProjectDetailService.GetAllFunctionByProjectId(Project.Id);
         StateHasChanged();
     }
 

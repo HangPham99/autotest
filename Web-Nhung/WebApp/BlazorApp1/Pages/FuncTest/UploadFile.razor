@@ -35,6 +35,11 @@
                             {
                                 <span>Uploaded @((100.0 * file.Data.Position / file.Size).ToString("0"))%</span>
                             }
+
+                            @if (@file.Data.Length == -1)
+                            {
+                                <span>File contents not match!</span>
+                            }
                         </Button>
                     </mat-card-actions>
                 </mat-card>
@@ -77,16 +82,63 @@
             await fs.FlushAsync();
         }
 
-        var newFuncTest = new BlazorApp1.Models.FunctionTesting()
+        bool okToKeep = true;
+        string[] fileContents = System.IO.File.ReadAllLines(filePath);
+        if (fileContents.Count() != 0)
         {
-            FileName = file.Name,
-            ProjectDetailId = ProjectDetailId,
-            FilePath = filePath,
-            CreateDate = DateTime.UtcNow,
-            ModifiedDate = DateTime.UtcNow
-        };
+            string firstLine = fileContents[0];
+            var cols = firstLine.Split(',');
+            if (!(cols.Count() == 3 && cols[0] == "Action" && cols[1] == "Target" && cols[2] == "Value"))
+                okToKeep = false;
+        }
+        else
+            okToKeep = false;
 
-        this.UploadedFile.Add(newFuncTest);
+        if (okToKeep)
+        {
+            var newFuncTest = new BlazorApp1.Models.FunctionTesting()
+            {
+                FileName = file.Name,
+                ProjectDetailId = ProjectDetailId,
+                FilePath = filePath,
+                CreateDate = DateTime.UtcNow,
+                ModifiedDate = DateTime.UtcNow
+            };
+
+            this.UploadedFile.Add(newFuncTest);
+        }
+        else
+        {
+            File.Delete(filePath);
+        }
+
+
+    }
+
+    async Task<bool> validateFileContents(StreamReader sr)
+    {
+        try
+        {
+            string line;
+            var count = 0;
+            while ((line = await sr.ReadLineAsync()) != null)
+            {
+                if (count++ == 0)
+                {
+                    var cols = line.Split(',');
+                    if (!(cols.Count() == 3 && cols[0] == "Action" && cols[1] == "Target" && cols[2] == "Value"))
+                        return false;
+                    else
+                        return true;
+                }
+            }
+
+            return true;
+        }
+        catch (Exception ex)
+        {
+            return false;
+        }
     }
 
     private async void Close()

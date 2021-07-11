@@ -10,6 +10,10 @@
 @using System.Security.Claims
 @using BlazorApp1.Commons;
 @using System.Text.Json;
+@using MailKit.Net.Smtp;
+@using MimeKit;
+@using Microsoft.AspNetCore.Identity;
+
 
 @inject IWebHostEnvironment Environment
 @inject ITestScreenService TestScreenService
@@ -19,80 +23,91 @@
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject IHttpClientFactory ClientFactory
 @implements IAsyncDisposable
+@inject UserManager<IdentityUser> _userManager
+@inject ITestScheduleService _testSchedulerService
 
-<h3>Run Test</h3>
+<h2>Run Test</h2>
 <br />
 <Button id="btnRun" Color="Color.Success" Clicked="RunTestSession" disabled="@IsDisableButton">Run </Button>
 <a class="btn btn-info" href="/download/@reportFilename">Export</a>
 <a class="btn btn-secondary" href='javascript:history.go(-1)'> <i class="fas fa-angle-left"></i> Go Back</a>
 <br />
 <br />
-<div>
-    <Switch TValue="bool" @bind-Checked="@checksetting">Setting Test</Switch>
-</div>
-<br />
-<div>
-    <CardGroup>
+
+<div class="panel panel-default">
+    <div>
+        <h3>Run Schedule setting</h3>
+        <Switch TValue="bool" @bind-Checked="@IsScheduledTest">Schedule this test</Switch>
+    </div>
+    <br />
+    <div class="panel-body">
         <div>
-            <Label>Start Time </Label>
-            <TimeEdit TValue="TimeSpan?" @bind-Time="@selectedTime" />
+            <CardGroup >
+                <div>
+                    <Label>Start Time </Label>
+                    <TimeEdit Disabled="@(!IsScheduledTest)" TValue="TimeSpan?" @bind-Time="@SetRunTime" />
+                    <br />
+                    <RadioGroup Disabled="@(!IsScheduledTest)" TValue="string" Name="colors">
+                        <Radio Disabled="@(!IsScheduledTest)" @bind-Checked="@IsOnce" TValue="string" Value="@("onetime")">One Time</Radio>
+                        <Radio Disabled="@(!IsScheduledTest)" @bind-Checked="@IsDly" TValue="string" Value="@("daily")">Daily</Radio>
+                        <Radio Disabled="@(!IsScheduledTest)" @bind-Checked="@IsWly" TValue="string" Value="@("weekly")">Weekly</Radio>
+                        <Radio Disabled="@(!IsScheduledTest)" @bind-Checked="@IsMth" TValue="string" Value="@("monthly")">Monthly</Radio>
+                    </RadioGroup>
+                </div>
+            </CardGroup>
             <br />
-            <RadioGroup TValue="string" Name="colors">
-                <Radio TValue="string" Value="@("onetime")">One Time</Radio>
-                <Radio TValue="string" Value="@("daily")">Daily</Radio>
-                <Radio TValue="string" Value="@("weekly")">Weekly</Radio>
-                <Radio TValue="string" Value="@("monthly")">Monthly</Radio>
-            </RadioGroup>
+            <Button class="btn-primary" @onclick="SaveScheduleSetting" style="padding-top: 10px">Save setting</Button>
         </div>
-    </CardGroup>
+    </div>
 </div>
+
 <br />
+<h3>Test file content preview</h3>
 <div id="table-conatainer" style="height:400px;overflow-y:scroll">
     @if (FileContent != null)
     {
-<Row>
-    <Column ColumnSize="ColumnSize.Is12">
-        <Table Bordered="true">
-            <TableHeader>
-                <TableRow>
-                    <TableHeaderCell>Action</TableHeaderCell>
-                    <TableHeaderCell>Target</TableHeaderCell>
-                    <TableHeaderCell>Value</TableHeaderCell>
-                </TableRow>
-            </TableHeader>
-            <TableBody>
-                @foreach (var testscreen in FileContent)
-                {
-<TableRow>
-    <TableRowCell>@testscreen.Action</TableRowCell>
-    <TableRowCell>@testscreen.Target</TableRowCell>
-    <TableRowCell>@testscreen.Value</TableRowCell>
-</TableRow>}
-            </TableBody>
-        </Table>
-    </Column>
-</Row>}
-    
-</div>
+        <Row>
+            <Column ColumnSize="ColumnSize.Is12">
+                <Table Bordered="true">
+                    <TableHeader>
+                        <TableRow>
+                            <TableHeaderCell>Action</TableHeaderCell>
+                            <TableHeaderCell>Target</TableHeaderCell>
+                            <TableHeaderCell>Value</TableHeaderCell>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        @foreach (var testscreen in FileContent)
+                        {
+                            <TableRow>
+                                <TableRowCell>@testscreen.Action</TableRowCell>
+                                <TableRowCell>@testscreen.Target</TableRowCell>
+                                <TableRowCell>@testscreen.Value</TableRowCell>
+                            </TableRow>}
+                    </TableBody>
+                </Table>
+            </Column>
+        </Row>}
 
+</div>
+<br />
 <div>
-    <h4>Log</h4>
+    <h3>Log</h3>
     <div style="
         height: 200px;
         width: 100%;
         overflow-y: scroll;
         margin-bottom: 20px; border:solid;
         border-width: 1px;
-        border-color: darkgray" >
+        border-color: darkgray">
         @foreach (var message in messages)
         {
-       <p>@message</p>}
+            <p>@message</p>}
     </div>
 </div>
-@code { 
+@code {
     string checkedValue = "onetime";
     bool checksetting;
-    TimeSpan? selectedTime;
     private BlazorApp1.Models.FunctionTesting FunctionTesting;
     private List<TestCaseFileContent> FileContent;
 
@@ -116,6 +131,14 @@
     private bool IsDisableButton;
     private string reportFilename;
 
+    private bool IsScheduledTest;
+    private TimeSpan? SetRunTime;
+    private bool IsOnce;
+    private bool IsDly;
+    private bool IsWly;
+    private bool IsMth;
+    private TestSchedule SchedInfo;
+
     [Parameter]
     public string TestCaseFileId { get; set; }
 
@@ -126,6 +149,7 @@
 
         var result = await File.ReadAllLinesAsync(FunctionTesting.FilePath);
         this.FileContent = result.Skip(1)
+                                 .Where(v => !string.IsNullOrEmpty(v))
                                  .Select(v => TestCaseFileContent.FromCsv(v))
                                  .ToList();
 
@@ -139,6 +163,42 @@
         if (user.Identity.IsAuthenticated)
         {
             _authMessage = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+        }
+
+        SchedInfo = await _testSchedulerService.GetTestScheduleByFuncId(FunctionTesting.Id);
+        if(SchedInfo == null)
+        {
+            IsScheduledTest = false;
+            IsOnce = true;
+            IsDly = false;
+            IsWly = false;
+            IsMth = false;
+            SetRunTime = new TimeSpan(0, 0, 0);
+        }
+        else
+        {
+            IsScheduledTest = true;
+            IsOnce = false;
+            IsDly = false;
+            IsWly = false;
+            IsMth = false;
+            switch (SchedInfo.RunType)
+            {
+                case ScheduleRunType.ONE:
+                    IsOnce = true;
+                    break;
+                case ScheduleRunType.DLY:
+                    IsDly = true;
+                    break;
+                case ScheduleRunType.WLY:
+                    IsWly = true;
+                    break;
+                case ScheduleRunType.MTH:
+                    IsMth = true;
+                    break;
+            }
+
+            SetRunTime = SchedInfo.RunTime;
         }
 
         await hubConnection.StartAsync();
@@ -166,6 +226,10 @@
 
     public async Task RunTestSession()
     {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        var currentUser = await _userManager.GetUserAsync(user);
+
         using var content = new MultipartFormDataContent();
         content.Add(
             content: new StringContent(_authMessage),
@@ -175,12 +239,20 @@
             content: new StringContent(FunctionTesting.FilePath),
             name: "\"testcaseFilePath\""
         );
+        content.Add(
+            content: new StringContent( FunctionTesting.ProjectDetailId.ToString()),
+            name: "\"pjDetailId\""
+        );
+        content.Add(
+            content: new StringContent(currentUser.NormalizedEmail),
+            name: "\"userMail\""
+        );
 
         var client = ClientFactory.CreateClient();
 
         var response = await client.PostAsync("https://localhost:5001/Filesave/runtest", content);
         reportFilename = await response.Content.ReadAsStringAsync();
-        reportFilename = reportFilename.Split(@"\")[11];
+        reportFilename = reportFilename.Split(@"\").LastOrDefault();
     }
 
     public async Task OnContentChanged()
@@ -201,6 +273,33 @@
     public async ValueTask DisposeAsync()
     {
         await hubConnection.DisposeAsync();
+    }
+
+    public async void SaveScheduleSetting()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        var currentUser = await _userManager.GetUserAsync(user);
+
+        var schedInfo = new TestSchedule();
+        if (SchedInfo != null)
+            schedInfo.Id = SchedInfo.Id;
+        schedInfo.FunctionTestingId = FunctionTesting.Id;
+        schedInfo.ProjectName = "";
+        schedInfo.FunctionName = "";
+        schedInfo.NotifyEmail = currentUser.Email;
+        schedInfo.FilePath = FunctionTesting.FilePath;
+        schedInfo.RunTime = SetRunTime == null ? new TimeSpan(0,0,0) : SetRunTime.Value;
+        if (IsOnce)
+            schedInfo.RunType = ScheduleRunType.ONE;
+        if (IsDly)
+            schedInfo.RunType = ScheduleRunType.DLY;
+        if (IsWly)
+            schedInfo.RunType = ScheduleRunType.WLY;
+        if (IsMth)
+            schedInfo.RunType = ScheduleRunType.MTH;
+
+        await _testSchedulerService.UpsertTestSchedule(schedInfo, IsScheduledTest);
     }
 
 }

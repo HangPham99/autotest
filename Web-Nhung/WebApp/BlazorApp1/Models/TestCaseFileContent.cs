@@ -13,12 +13,16 @@ namespace BlazorApp1.Models
 
         public static TestCaseFileContent FromCsv(string csvLine)
         {
-            string[] values = csvLine.Split(',');
-            TestCaseFileContent fileContent = new TestCaseFileContent();
-            fileContent.Action = Convert.ToString(values[0]);
-            fileContent.Target = Convert.ToString(values[1]);
-            fileContent.Value = Convert.ToString(values[2]);
-            return fileContent;
+            if (!string.IsNullOrEmpty(csvLine))
+            {
+                string[] values = csvLine.Split(',');
+                TestCaseFileContent fileContent = new TestCaseFileContent();
+                fileContent.Action = Convert.ToString(values[0]);
+                fileContent.Target = Convert.ToString(values[1]);
+                fileContent.Value = Convert.ToString(values[2]);
+                return fileContent;
+            }
+            return null;
         }
     }
 }

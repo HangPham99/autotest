@@ -19,5 +19,6 @@ namespace BlazorApp1.Data
         public DbSet<TestScreen> TestScreens { get; set; }
         public DbSet<Report> Reports { get; set; }
         public DbSet<FunctionTesting> FunctionTestings { get; set; }
+        public DbSet<TestSchedule> TestSchedules { get; set; }
     }
 }

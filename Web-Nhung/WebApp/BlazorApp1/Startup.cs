@@ -73,6 +73,7 @@ namespace BlazorApp1
             services.AddScoped<IProjectDetailService, ProjectDetailService>();
             services.AddScoped<ITestScreenService, TestScreenService>();
             services.AddScoped<IFunctionTesting, FunctionTestingService>();
+            services.AddScoped<ITestScheduleService, TestScheduleService>();
           
             services.AddResponseCompression(opts =>
             {
