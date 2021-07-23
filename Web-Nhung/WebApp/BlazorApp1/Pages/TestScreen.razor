@@ -288,7 +288,10 @@
         schedInfo.ProjectName = "";
         schedInfo.FunctionName = "";
         schedInfo.NotifyEmail = currentUser.Email;
-        schedInfo.FilePath = FunctionTesting.FilePath;
+
+        string csvFileContents = File.ReadAllText(FunctionTesting.FilePath);  
+
+        schedInfo.FilePath = csvFileContents;
         schedInfo.RunTime = SetRunTime == null ? new TimeSpan(0,0,0) : SetRunTime.Value;
         if (IsOnce)
             schedInfo.RunType = ScheduleRunType.ONE;
