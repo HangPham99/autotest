@@ -1,0 +1,32 @@
+19:34:50.787 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+19:34:52.203 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+19:34:53.677 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+19:34:54.947 [main] INFO  Kltn2021.Passed.MustPass - primas
+19:35:00.828 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+19:35:01.973 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[6]/a/span
+19:35:03.075 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[6]/ul/li[1]/a
+19:35:06.048 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[6]/ul/li[1]/ul/li[2]/a
+19:35:06.052 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+19:35:07.262 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+19:35:08.431 [main] INFO  Kltn2021.Passed.MustPass - 123
+19:35:09.571 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+19:35:11.651 [main] INFO  Kltn2021.Passed.MustPass - TC 2: Add character 
+19:35:12.786 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+19:35:13.953 [main] INFO  Kltn2021.Passed.MustPass - hjsja
+19:35:15.074 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+19:35:17.118 [main] INFO  Kltn2021.Passed.MustPass - TC 3: Add character & number 
+19:35:18.359 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+19:35:19.611 [main] INFO  Kltn2021.Passed.MustPass - shdj8787
+19:35:20.723 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+19:35:22.993 [main] INFO  Kltn2021.Passed.MustPass - TC 4: Add special character
+19:35:24.176 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+19:35:25.457 [main] INFO  Kltn2021.Passed.MustPass - ^%&&^
+19:35:26.605 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+19:35:28.647 [main] INFO  Kltn2021.Passed.MustPass - TC 5: Add datetime
+19:35:29.817 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+19:35:31.028 [main] INFO  Kltn2021.Passed.MustPass - ^%&&^
+19:35:32.130 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]
+19:35:34.284 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+19:35:34.284 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+19:35:34.285 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 3 |   Fail: 2
+19:35:34.285 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------

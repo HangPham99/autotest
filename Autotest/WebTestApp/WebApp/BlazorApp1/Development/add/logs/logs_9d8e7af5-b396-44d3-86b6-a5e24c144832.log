@@ -1,0 +1,7 @@
+17:32:08.857 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+17:32:20.156 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+17:32:21.547 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+17:32:22.849 [main] INFO  Kltn2021.Passed.MustPass - primas
+17:32:36.740 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+17:32:37.974 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/a/span
+17:32:43.950 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[5]/ul/li[1]/a

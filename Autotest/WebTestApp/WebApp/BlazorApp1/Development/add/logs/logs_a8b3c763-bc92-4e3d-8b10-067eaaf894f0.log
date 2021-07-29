@@ -1,0 +1,12 @@
+20:22:54.236 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+20:22:55.908 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+20:22:57.741 [main] INFO  Kltn2021.Passed.MustPass - linkscope
+20:22:59.218 [main] INFO  Kltn2021.Passed.MustPass - primas
+20:23:07.469 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+20:23:08.850 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[6]/a/span
+20:23:10.093 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[6]/ul/li[1]/a
+20:23:13.977 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="sidebarnav"]/li[6]/ul/li[1]/ul/li[2]/a
+20:23:13.983 [main] INFO  Kltn2021.Passed.MustPass - TC 1: Add number
+20:23:15.343 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="main-wrapper"]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label
+20:23:16.643 [main] INFO  Kltn2021.Passed.MustPass - 123
+20:23:17.828 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[9]/div[2]/div/div[4]/a[1]

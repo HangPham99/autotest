@@ -1,0 +1,21 @@
+16:27:17.898 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+16:27:19.503 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+16:27:19.507 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+16:27:21.953 [main] INFO  Kltn2021.Passed.MustPass - hello
+16:27:23.226 [main] INFO  Kltn2021.Passed.MustPass - 123456
+16:27:24.495 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+16:27:25.563 [main] INFO  Kltn2021.Passed.MustPass - The user name or password is incorrect, please try again.
+16:27:25.563 [main] INFO  Kltn2021.Passed.MustPass - The user name or password is incorrect, please try again.
+16:27:25.563 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+16:27:26.701 [main] INFO  Kltn2021.Passed.MustPass - 123
+16:27:27.838 [main] INFO  Kltn2021.Passed.MustPass - 123
+16:27:28.918 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+16:27:31.686 [main] INFO  Kltn2021.Passed.MustPass - The user name or password is incorrect, please try again....
+16:27:31.686 [main] INFO  Kltn2021.Passed.MustPass - The user name or password is incorrect, please try again.
+16:27:31.686 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+16:27:32.895 [main] INFO  Kltn2021.Passed.MustPass - 123123
+16:27:34.079 [main] INFO  Kltn2021.Passed.MustPass - primas
+16:27:35.335 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="loginForm"]/form/input
+16:27:37.838 [main] INFO  Kltn2021.Passed.MustPass - The user name or password is incorrect, please try again..
+16:27:37.838 [main] INFO  Kltn2021.Passed.MustPass - The user name or password is incorrect, please try again.
+16:27:37.838 [main] INFO  Kltn2021.Passed.MustPass - TC4: enter wrong username password

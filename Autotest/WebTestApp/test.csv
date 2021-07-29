@@ -1,0 +1,11 @@
+,username,password,result
+TC1: enter wrong username, password
+,hanxu,123456,Pass
+TC2: enter right username, password
+,123,123,Fail
+TC3: enter right username, password
+,primas,primas,Fail
+TC4: enter right username, password
+,primas,primas,Pass
+TC5: enter maximum username, password
+,222,hihi,Pass

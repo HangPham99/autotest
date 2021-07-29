@@ -1,0 +1,177 @@
+﻿@page "/functiontesting"
+@using BlazorApp1.Services.Interface;
+@inject IFunctionTesting FunctionTestingService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IHttpClientFactory ClientFactory
+@implements IAsyncDisposable
+@using System.Net.Http;
+@using BlazorApp1.Commons;
+@using System.IO;
+@using System.Text.Json;
+@using Microsoft.AspNetCore.SignalR.Client;
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Components.Authorization
+
+
+
+
+<h3>FunctionTesting</h3>
+<br />
+<Button disabled="@(!IsConnected)" Color="Color.Info" Clicked="@UploadFile">Import </Button>
+<div>
+    <FileEdit Changed="@OnChanged" />
+</div>
+<Table>
+    <TableHeader>
+        <TableRow>
+            <TableHeaderCell>File name</TableHeaderCell>
+            <TableHeaderCell>Date Modified</TableHeaderCell>
+            <TableHeaderCell>     </TableHeaderCell>
+        </TableRow>
+    </TableHeader>
+    <TableBody>
+        @foreach (var functionTesting in ListFunctionTesting)
+        {
+            <TableRow>
+                <TableRowCell>@functionTesting.FileName</TableRowCell>
+                <TableRowCell>@functionTesting.ModifiedDate</TableRowCell>
+
+                <TableRowCell>
+                    <Icon @onclick="NavigateToCounterComponent" Name=" IconName.ArrowRight" />
+                    <Icon Name="IconName.Delete" />
+                    <Icon Name="IconName.Download" />
+                </TableRowCell>
+            </TableRow>}
+    </TableBody>
+</Table>
+<br />
+<h4>Log</h4>
+<div style="height:500px; width:100%; overflow-y:scroll; border:solid; border-width:1px;border-color:darkgray">
+    @foreach (var message in messages)
+    {
+        <p>@message</p>
+    }
+</div>
+<br />
+
+
+@code {
+    private IFileEntry loadedFile = null;
+    private List<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
+    private bool isLoading;
+    private List<UploadResult> uploadResults = new();
+
+    private HubConnection hubConnection;
+    private string userInput;
+    private string messageInput;
+    private List<string> messages = new List<string>();
+
+    private string _authMessage;
+    private string _userId;
+    private string _text;
+    private IEnumerable<Claim> _claims = Enumerable.Empty<Claim>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        ListFunctionTesting = FunctionTestingService.GetAllProject().ToList();
+
+        hubConnection = new HubConnectionBuilder()
+           .WithUrl(NavigationManager.ToAbsoluteUri("/chathub"))
+           .Build();
+
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            _authMessage = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+        }
+
+        await hubConnection.StartAsync();
+        await hubConnection.SendAsync("Subribe", _authMessage);
+
+        hubConnection.On<string>("ReceiveMessage", (message) =>
+        {
+            messages.Add(message);
+            try
+            {
+                StateHasChanged();
+            }
+            catch
+            {
+
+            }
+        });
+
+    }
+    string message = "";
+
+    private void OnChanged(FileChangedEventArgs e)
+    {
+        if (e.Files.Count() > 0)
+        {
+            loadedFile = e.Files[0];
+        }
+    }
+
+    private async void UploadFile()
+    {
+
+        if (loadedFile != null)
+        {
+            using var content = new MultipartFormDataContent();
+
+            using (var stream = new MemoryStream())
+            {
+                await loadedFile.WriteToStreamAsync(stream);
+                stream.Seek(0, SeekOrigin.Begin);
+
+                content.Add(
+                   content: new StreamContent(stream),
+                   name: "\"files\"",
+                   fileName: loadedFile.Name);
+                content.Add(
+                    content: new StringContent(_authMessage),
+                    name: "\"userid\""
+                );
+
+                var client = ClientFactory.CreateClient();
+
+                var response =
+                    await client.PostAsync("https://localhost:5001/Filesave",
+                    content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var options = new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true,
+                    };
+                    using var responseStream =
+                        await response.Content.ReadAsStreamAsync();
+
+                    var newUploadResults = await JsonSerializer
+                        .DeserializeAsync<IList<UploadResult>>(responseStream, options);
+
+                    uploadResults = uploadResults.Concat(newUploadResults).ToList();
+                }
+            }
+        }
+    }
+    //file
+    string fileContent;
+
+    //link
+    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("testscreen"); }
+
+    public bool IsConnected =>
+       hubConnection.State == HubConnectionState.Connected;
+
+    public async ValueTask DisposeAsync()
+    {
+        await hubConnection.DisposeAsync();
+    }
+}

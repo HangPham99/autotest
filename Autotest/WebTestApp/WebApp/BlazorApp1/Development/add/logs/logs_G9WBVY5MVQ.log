@@ -1,0 +1,13 @@
+23:42:11.050 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+23:42:13.163 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+23:42:13.168 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+23:42:15.794 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[1]/div/div[2]/div/div[1]/div[1]/button
+23:42:17.116 [main] INFO  Kltn2021.Passed.MustPass - /html/body/div[1]/div/div[2]/div/form/button
+23:42:18.164 [main] INFO  Kltn2021.Passed.MustPass - Harry Potter
+23:42:18.164 [main] INFO  Kltn2021.Passed.MustPass - Harry Potter
+23:42:18.165 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+23:42:18.366 [main] ERROR Kltn2021.Passed.MustPass - Location xpath [/html/body/div[1]/div/div[2]/div/div[3]/button[2]s] can not find!
+23:42:18.367 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+23:42:18.367 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------
+23:42:18.367 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 2 |   Pass: 1 |   Fail: 1
+23:42:18.367 [main] INFO  Kltn2021.Passed.MustPass - -------------------------------------------------------------------------------------------------------------------------------

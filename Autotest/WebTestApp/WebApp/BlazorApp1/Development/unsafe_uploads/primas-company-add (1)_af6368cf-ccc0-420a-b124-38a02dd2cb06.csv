@@ -1,0 +1,33 @@
+﻿Action,Target,Value
+open,https://labvn61.primas.net:8443/LinkScopeWeb,
+enter,"//*[@id=""UserName""]",linkscope
+enter,"//*[@id=""Password""]",primas
+click,"//*[@id=""loginForm""]/form/input",
+click,"//*[@id=""sidebarnav""]/li[6]/a/span",
+click,"//*[@id=""sidebarnav""]/li[6]/ul/li[1]/a",
+click,"//*[@id=""sidebarnav""]/li[6]/ul/li[1]/ul/li[2]/a",
+name,TC 1: Add number,
+click,"//*[@id=""main-wrapper""]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label",
+enter,"//*[@id=""CompanyName""]",123
+click,/html/body/div[9]/div[2]/div/div[4]/a[1],
+result,green_inner_element,Successfully saved configurations.
+name,TC 2: Add character ,
+click,"//*[@id=""main-wrapper""]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label",
+enter,"//*[@id=""CompanyName""]",hjsja
+click,/html/body/div[9]/div[2]/div/div[4]/a[1],
+result,green_inner_element,Successfully saved configurations.
+name,TC 3: Add character & number ,
+click,"//*[@id=""main-wrapper""]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label",
+enter,"//*[@id=""CompanyName""]",shdj8787
+click,/html/body/div[9]/div[2]/div/div[4]/a[1],
+result,green_inner_element,SSuccessfully saved configurations.
+name,TC 4: Add special character,
+click,"//*[@id=""main-wrapper""]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label",
+enter,"//*[@id=""CompanyName""]",^%&&^
+click,/html/body/div[9]/div[2]/div/div[4]/a[1],
+result,green_inner_element,Successfully saved configurations.
+name,TC 5: Add datetime,
+click,"//*[@id=""main-wrapper""]/div[3]/div[2]/div[2]/div[2]/div/div[1]/button/label",
+enter,"//*[@id=""CompanyName""]",^%&&^
+click,/html/body/div[9]/div[2]/div/div[4]/a[1],
+result,red_inner_element,Successfully saved configurations.

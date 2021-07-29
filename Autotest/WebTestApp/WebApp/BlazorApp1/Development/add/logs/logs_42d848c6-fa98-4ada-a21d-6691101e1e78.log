@@ -1,0 +1,5 @@
+16:23:56.196 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+16:23:57.936 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+16:23:57.941 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+16:23:59.642 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+16:24:00.856 [main] INFO  Kltn2021.Passed.MustPass - 123

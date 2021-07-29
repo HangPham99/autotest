@@ -1,0 +1,31 @@
+21:46:10.765 [main] INFO  Kltn2021.Passed.MustPass - New driver instantiated
+21:46:16.616 [main] INFO  Kltn2021.Passed.MustPass - Web application launched
+21:46:16.624 [main] INFO  Kltn2021.Passed.MustPass - TC1: enter wrong username password
+21:46:19.103 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:46:20.583 [main] INFO  Kltn2021.Passed.MustPass - 123
+21:46:22.029 [main] INFO  Kltn2021.Passed.MustPass - sdfsd
+21:46:24.067 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:46:25.021 [main] INFO  Kltn2021.Passed.MustPass - TC2: enter wrong username password
+21:46:26.708 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:46:28.198 [main] INFO  Kltn2021.Passed.MustPass - sdsf
+21:46:29.665 [main] INFO  Kltn2021.Passed.MustPass - sdvsd
+21:46:31.774 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:46:32.564 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+21:46:35.150 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:46:37.122 [main] INFO  Kltn2021.Passed.MustPass - 1992-02-22
+21:46:38.990 [main] INFO  Kltn2021.Passed.MustPass - 42Hzyu
+21:46:41.392 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:46:42.658 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+21:46:45.549 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:46:47.643 [main] INFO  Kltn2021.Passed.MustPass - 4
+21:46:49.569 [main] INFO  Kltn2021.Passed.MustPass - 4000821919
+21:46:51.013 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:46:52.214 [main] INFO  Kltn2021.Passed.MustPass - TC3: enter wrong username password
+21:46:54.622 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_lbtDangnhap"]
+21:46:56.311 [main] INFO  Kltn2021.Passed.MustPass - *****
+21:46:58.148 [main] INFO  Kltn2021.Passed.MustPass - ******
+21:47:00.009 [main] INFO  Kltn2021.Passed.MustPass - //*[@id="ctl00_ContentPlaceHolder1_ctl00_ctl00_btLogin"]
+21:47:01.336 [main] INFO  Kltn2021.Passed.MustPass - Browser closed
+21:47:01.336 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------
+21:47:01.339 [main] INFO  Kltn2021.Passed.MustPass - Total testcase: 5 |   Pass: 0 |   Fail: 5
+21:47:01.339 [main] INFO  Kltn2021.Passed.MustPass - --------------------------------------------------------------------------------------------------------------

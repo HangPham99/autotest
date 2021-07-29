@@ -1,0 +1,279 @@
+﻿@page "/testscreen/{TestCaseFileId}"
+
+@using System.IO;
+@using Microsoft.AspNetCore.Hosting;
+@using BlazorApp1.Models;
+@using BlazorApp1.Services.Interface;
+@using Blazorise.RichTextEdit
+@using Microsoft.AspNetCore.SignalR.Client;
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims
+@using BlazorApp1.Commons;
+@using System.Text.Json;
+@using MailKit.Net.Smtp;
+@using MimeKit;
+@using Microsoft.AspNetCore.Identity;
+
+
+@inject IWebHostEnvironment Environment
+@inject ITestScreenService TestScreenService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+@inject IFunctionTesting FunctionTestingService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IHttpClientFactory ClientFactory
+@implements IAsyncDisposable
+@inject UserManager<IdentityUser> _userManager
+@inject ITestScheduleService _testSchedulerService
+
+<h2>Run Test</h2>
+<br />
+<Button id="btnRun" Color="Color.Success" Clicked="RunTestSession" disabled="@IsDisableButton">Run </Button>
+<a class="btn btn-info" disabled="@IsDisableButton" href="/download/@reportFilename">Export</a>
+<a class="btn btn-secondary" href='javascript:history.go(-1)'> <i class="fas fa-angle-left"></i> Go Back</a>
+<br/>
+
+<br />
+<h3>Test file content preview</h3>
+<div id="table-conatainer" style="height:400px;overflow-y:scroll">
+    @if (FileContent != null)
+    {
+        <Row>
+            <Column ColumnSize="ColumnSize.Is12">
+                <Table Bordered="true">
+                    <TableHeader>
+                        <TableRow>
+                            <TableHeaderCell>Action</TableHeaderCell>
+                            <TableHeaderCell>Target</TableHeaderCell>
+                            <TableHeaderCell>Value</TableHeaderCell>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        @foreach (var testscreen in FileContent)
+                        {
+                            <TableRow>
+                                <TableRowCell>@testscreen.Action</TableRowCell>
+                                <TableRowCell>@testscreen.Target</TableRowCell>
+                                <TableRowCell>@testscreen.Value</TableRowCell>
+                            </TableRow>}
+                    </TableBody>
+                </Table>
+            </Column>
+        </Row>}
+
+</div>
+<br />
+<div>
+    <h3>Log</h3>
+    <div style="
+        height: 200px;
+        width: 100%;
+        overflow-y: scroll;
+        margin-bottom: 20px; border:solid;
+        border-width: 1px;
+        border-color: darkgray">
+        @foreach (var message in messages)
+        {
+            <p>@message</p>}
+    </div>
+</div>
+@code {
+    string checkedValue = "onetime";
+    bool checksetting;
+    private BlazorApp1.Models.FunctionTesting FunctionTesting;
+    private List<TestCaseFileContent> FileContent;
+
+    private HubConnection hubConnection;
+    private string userInput;
+    private string messageInput;
+    private List<string> messages = new List<string>();
+
+    private string _authMessage;
+    private string _userId;
+    private string _text;
+    private IEnumerable<Claim> _claims = Enumerable.Empty<Claim>();
+
+    private RichTextEdit richTextEditRef;
+    private bool readOnly;
+    private string contentAsHtml;
+    private string contentAsDeltaJson;
+    private string contentAsText;
+    private string savedContent;
+
+    private bool IsDisableButton;
+    private string reportFilename;
+
+    private bool IsScheduledTest;
+    private TimeSpan? SetRunTime;
+    private bool IsOnce;
+    private bool IsDly;
+    private bool IsWly;
+    private bool IsMth;
+    private TestSchedule SchedInfo;
+
+    [Parameter]
+    public string TestCaseFileId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        FunctionTesting = await FunctionTestingService.FindById(Convert.ToInt32(TestCaseFileId));
+        IsDisableButton = false;
+
+        var result = await File.ReadAllLinesAsync(FunctionTesting.FilePath);
+        this.FileContent = result.Skip(1)
+                                 .Where(v => !string.IsNullOrEmpty(v))
+                                 .Select(v => TestCaseFileContent.FromCsv(v))
+                                 .ToList();
+
+        hubConnection = new HubConnectionBuilder()
+        .WithUrl(NavigationManager.ToAbsoluteUri("/chathub"))
+        .Build();
+
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity.IsAuthenticated)
+        {
+            _authMessage = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+        }
+
+        SchedInfo = await _testSchedulerService.GetTestScheduleByFuncId(FunctionTesting.Id);
+        if(SchedInfo == null)
+        {
+            IsScheduledTest = false;
+            IsOnce = true;
+            IsDly = false;
+            IsWly = false;
+            IsMth = false;
+            SetRunTime = new TimeSpan(0, 0, 0);
+        }
+        else
+        {
+            IsScheduledTest = true;
+            IsOnce = false;
+            IsDly = false;
+            IsWly = false;
+            IsMth = false;
+            switch (SchedInfo.RunType)
+            {
+                case ScheduleRunType.ONE:
+                    IsOnce = true;
+                    break;
+                case ScheduleRunType.DLY:
+                    IsDly = true;
+                    break;
+                case ScheduleRunType.WLY:
+                    IsWly = true;
+                    break;
+                case ScheduleRunType.MTH:
+                    IsMth = true;
+                    break;
+            }
+
+            SetRunTime = SchedInfo.RunTime;
+        }
+
+        await hubConnection.StartAsync();
+        await hubConnection.SendAsync("Subribe", _authMessage);
+
+        hubConnection.On<string>("ReceiveMessage", (message) =>
+        {
+            if (message == "Automation test session is started.")
+                this.IsDisableButton = true;
+
+            if (message == "Automation test session is completed.")
+                this.IsDisableButton = false;
+
+            messages.Add(message);
+            try
+            {
+                StateHasChanged();
+            }
+            catch
+            {
+
+            }
+        });
+    }
+
+    public async Task RunTestSession()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        var currentUser = await _userManager.GetUserAsync(user);
+
+        using var content = new MultipartFormDataContent();
+        content.Add(
+            content: new StringContent(_authMessage),
+            name: "\"userid\""
+        );
+        content.Add(
+            content: new StringContent(FunctionTesting.FilePath),
+            name: "\"testcaseFilePath\""
+        );
+        content.Add(
+            content: new StringContent( FunctionTesting.ProjectDetailId.ToString()),
+            name: "\"pjDetailId\""
+        );
+        content.Add(
+            content: new StringContent(currentUser.NormalizedEmail),
+            name: "\"userMail\""
+        );
+
+        var client = ClientFactory.CreateClient();
+
+        var response = await client.PostAsync("https://localhost:5001/Filesave/runtest", content);
+        reportFilename = await response.Content.ReadAsStringAsync();
+        reportFilename = reportFilename.Split(@"\").LastOrDefault();
+    }
+
+    public async Task OnContentChanged()
+    {
+        contentAsHtml = await richTextEditRef.GetHtmlAsync();
+        contentAsDeltaJson = await richTextEditRef.GetDeltaAsync();
+        contentAsText = await richTextEditRef.GetTextAsync();
+    }
+
+    public async Task OnSave()
+    {
+        savedContent = await richTextEditRef.GetHtmlAsync();
+        await richTextEditRef.ClearAsync();
+    }
+
+    public bool IsConnected => hubConnection.State == HubConnectionState.Connected;
+
+    public async ValueTask DisposeAsync()
+    {
+        await hubConnection.DisposeAsync();
+    }
+
+    public async void SaveScheduleSetting()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        var currentUser = await _userManager.GetUserAsync(user);
+
+        var schedInfo = new TestSchedule();
+        if (SchedInfo != null)
+            schedInfo.Id = SchedInfo.Id;
+        schedInfo.FunctionTestingId = FunctionTesting.Id;
+        schedInfo.ProjectName = "";
+        schedInfo.FunctionName = "";
+        schedInfo.NotifyEmail = currentUser.Email;
+        schedInfo.FilePath = FunctionTesting.FilePath;
+        schedInfo.RunTime = SetRunTime == null ? new TimeSpan(0,0,0) : SetRunTime.Value;
+        if (IsOnce)
+            schedInfo.RunType = ScheduleRunType.ONE;
+        if (IsDly)
+            schedInfo.RunType = ScheduleRunType.DLY;
+        if (IsWly)
+            schedInfo.RunType = ScheduleRunType.WLY;
+        if (IsMth)
+            schedInfo.RunType = ScheduleRunType.MTH;
+
+        await _testSchedulerService.UpsertTestSchedule(schedInfo, IsScheduledTest);
+    }
+
+}
+
+

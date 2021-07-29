@@ -1,0 +1,108 @@
+﻿@page "/projectdetail/{ProjectId:int}"
+
+@using BlazorApp1.Services.Interface;
+@inject NavigationManager NavigationManager
+@inject IProjectDetailService ProjectDetailService
+@inject IProjectService ProjectService
+@if (Project != null)
+{
+<h3>Project Function: @Project.ProjectName</h3>
+    <br />
+    <Button Color="Color.Info" Clicked="CreateFunction"> + Add Function</Button>
+    <a class="btn btn-secondary" href='javascript:history.go(-1)'> <i class="fas fa-angle-left"></i> Go Back</a>
+    <br />
+    <br />
+    <Table>
+        <TableHeader>
+            <TableRow>
+                <TableHeaderCell>Id</TableHeaderCell>
+                <TableHeaderCell>Function name</TableHeaderCell>
+                <TableHeaderCell>Created Date</TableHeaderCell>
+                <TableHeaderCell>Schedule Test</TableHeaderCell>
+                <TableHeaderCell>    </TableHeaderCell>
+            </TableRow>
+        </TableHeader>
+        <TableBody>
+            @if (ListFunction != null)
+            {
+                @foreach (var function in ListFunction)
+                {
+                    <TableRow>
+                        <TableRowCell>@function.Id</TableRowCell>
+                        <TableRowCell>@function.FunctionName</TableRowCell>
+                        <TableRowCell>@function.CreateDate</TableRowCell>
+                        <TableRowCell>
+                            <Switch TValue="bool"> </Switch>
+                        </TableRowCell>
+                        <TableRowCell>
+                            <Button class="btn" @onclick="() => NavigateDetail(function.Id)"><i class="fas fa-info-circle"></i> Detail</Button>
+                            <Button class="btn" @onclick="() => UpdateFunction(function)"><i class="fas fa-edit"></i> Edit</Button>
+                            <Button class="btn" @onclick="() => Delete_Click(function)"><i class="fas fa-trash"></i> Delete</Button>
+                        </TableRowCell>
+                    </TableRow>
+                }
+            }
+
+        </TableBody>
+    </Table>
+}
+
+@code {
+    [CascadingParameter] public IModalService Modal { get; set; }
+
+    private IEnumerable<BlazorApp1.Models.ProjectDetail> ListFunction;
+
+    [Parameter]
+    public int ProjectId { get; set; }
+    private BlazorApp1.Models.Project Project { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Project = await ProjectService.GetProjectById(ProjectId);
+
+        if (Project != null)
+        {
+            ListFunction = await ProjectDetailService.GetAllFunctionByProjectId(Project.Id);
+        }
+    }
+
+    private async void CreateFunction()
+    {
+        var parameters = new ModalParameters();
+        parameters.Add("ProjectId", ProjectId);
+        var add = Modal.Show<AddFunction>("Add new function", parameters);
+        var result = await add.Result;
+        ListFunction = await ProjectDetailService.GetAllFunctionByProjectId(Project.Id);
+        StateHasChanged();
+    }
+
+    private async void UpdateFunction(BlazorApp1.Models.ProjectDetail function)
+    {
+        var parameters = new ModalParameters();
+        parameters.Add("function", function);
+        var update = Modal.Show<EditFunction>("Edit function", parameters);
+        var result = await update.Result;
+        ListFunction = await ProjectDetailService.GetAllFunctionByProjectId(Project.Id);
+        StateHasChanged();
+    }
+
+    protected async void Delete_Click(BlazorApp1.Models.ProjectDetail function)
+    {
+        var parameters = new ModalParameters();
+        parameters.Add("function", function);
+        var update = Modal.Show<DeleteFunction>("Delete confirmation", parameters);
+        var result = await update.Result;
+        ListFunction = await ProjectDetailService.GetAllFunctionByProjectId(Project.Id);
+        StateHasChanged();
+    }
+
+    protected void NavigateDetail(int functionId)
+    {
+        NavigationManager.NavigateTo(string.Format("functiontesting/{0}", functionId));
+    }
+
+    //link
+    private void NavigateToCounterComponent() { NavigationManager.NavigateTo("functiontesting"); }
+
+}

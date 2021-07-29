@@ -1,0 +1,140 @@
+﻿@page "/functiontesting/{FunctionId:int}"
+
+@using BlazorApp1.Services.Interface;
+@using BlazorApp1.Models;
+@using System.IO;
+@using System;
+@using Microsoft.AspNetCore.Mvc;
+@inject IFunctionTesting FunctionTestingService
+@inject IProjectDetailService ProjectDetailService
+@inject NavigationManager NavigationManager
+@if (ProjectDetail != null)
+{
+    <h3> File Test of: @ProjectDetail.FunctionName </h3>
+    <br />
+    <h5>You can try our template test case file in <a href="/download/-1"> here</a></h5>
+    <br />
+    <Button Color="Color.Info" Clicked="UploadFile"> <i class="fas fa-plus"></i> Import </Button>
+    <a class="btn btn-secondary" href='javascript:history.go(-1)'> <i class="fas fa-angle-left"></i> Go Back</a>
+    <br />
+    <br />
+    <div id="table-conatainer" style="height:600px;overflow-y:scroll">
+        <Table>
+            <TableHeader>
+                <TableRow>
+                    <TableHeaderCell>File name</TableHeaderCell>
+                    <TableHeaderCell>Date Modified</TableHeaderCell>
+                    <TableHeaderCell>File Status</TableHeaderCell>
+                    <TableHeaderCell></TableHeaderCell>
+                </TableRow>
+            </TableHeader>
+            <TableBody>
+                @if (ListFunctionTesting != null)
+                {
+                    @foreach (var functionTesting in ListFunctionTesting)
+                    {
+                        <TableRow>
+                            <TableRowCell>@functionTesting.FileName</TableRowCell>
+                            <TableRowCell>@functionTesting.ModifiedDate</TableRowCell>
+
+                            @if (functionTesting.FileStatus == onlineString)
+                            {
+                                <TableRowCell><span class="badge-text badge rounded-pill bg-primary" style="color:white">Online</span></TableRowCell>
+                            }
+                            else
+                            {
+                                <TableRowCell><span class="badge-text badge rounded-pill bg-danger">File not found</span></TableRowCell>
+                            }
+
+                            <TableRowCell>
+                                <Button class="btn" @onclick="() => NavigateToCounterComponent(functionTesting.Id.ToString())" Disabled="!functionTesting.FileStatus.Equals(onlineString)"><i class="fas fa-arrow-right"></i> Detail</Button>
+                                @if (functionTesting.FileStatus == onlineString)
+                                {
+                                    <a class="btn" href="/download/@functionTesting.Id.ToString()"><i class="fas fa-download" />&nbspDownload</a>
+                                }
+                                else
+                                {
+                                    <a class="btn isDisabledHref" href="/" onclick="return false;"><i class="fas fa-download" />&nbspDownload</a>
+                                }
+                                <Button class="btn" @onclick="() => DeleteFile(functionTesting)"><i class="fas fa-trash"></i> Delete</Button>
+
+                            </TableRowCell>
+                        </TableRow>
+                    }
+                }
+            </TableBody>
+        </Table>
+    </div>
+
+}
+
+
+@code {
+    [CascadingParameter] public IModalService Modal { get; set; }
+    private IEnumerable<BlazorApp1.Models.FunctionTesting> ListFunctionTesting;
+
+    [Parameter]
+    public int FunctionId { get; set; }
+    private string onlineString = "Online";
+
+    private ProjectDetail ProjectDetail { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        ProjectDetail = await ProjectDetailService.GetProjectDetailById(FunctionId);
+
+        if (ProjectDetail != null)
+        {
+            ListFunctionTesting = await GetAll(FunctionId);
+        }
+    }
+
+    private async void UploadFile()
+    {
+        var parameters = new ModalParameters();
+        parameters.Add("ProjectDetailId", ProjectDetail.Id);
+        parameters.Add("ProjectId", ProjectDetail.ProjectId);
+        var formModal = Modal.Show<UploadFile>("Upload new file", parameters);
+        var resut = await formModal.Result;
+        var data = (List<BlazorApp1.Models.FunctionTesting>)resut.Data;
+
+        if (data.Count != 0)
+        {
+            foreach (var item in data)
+            {
+                await FunctionTestingService.AddFunction(item);
+            }
+
+            ListFunctionTesting = await GetAll(FunctionId);
+            StateHasChanged();
+        }
+    }
+
+    private async Task<IEnumerable<BlazorApp1.Models.FunctionTesting>> GetAll(int funcid)
+    {
+        var results = await FunctionTestingService.GetAllFunctionByProjectDetailId(funcid);
+        foreach (var file in results)
+        {
+            file.FileStatus = File.Exists(file.FilePath) ? "Online" : "Not found";
+        }
+
+        return results;
+    }
+
+    private async void DeleteFile(BlazorApp1.Models.FunctionTesting functionTesting)
+    {
+        if (File.Exists(functionTesting.FilePath))
+        {
+            File.Delete(functionTesting.FilePath);
+        }
+
+        await FunctionTestingService.Delete(functionTesting.Id);
+
+        ListFunctionTesting = await GetAll(FunctionId);
+        StateHasChanged();
+    }
+
+    private void NavigateToCounterComponent(string fileId)
+    {
+        NavigationManager.NavigateTo($"testscreen/{fileId}");
+    }
+}
